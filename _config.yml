@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Amith's Webpage"
+title                    : "Home"
 title_separator          : "-"
 name                     : &name "Amith Kamath"
-description              : &description "Academic and technical archive"
+description              : &description "Academic and technical Archive"
 url                      : https://amithjkamath.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "amithjkamath/amithjkamath.github.io"
@@ -106,7 +106,7 @@ author:
   orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
-  stackoverflow    : "https://stackoverflow.com/users/1704995/akamath"
+  stackoverflow    : "1704995/akamath"
   steam            :
   tumblr           :
   twitter          : "amithjkamath"
