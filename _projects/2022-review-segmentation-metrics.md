@@ -15,15 +15,6 @@ The 2015 review by Taha and Hanbury [1] segments (pun unintended) image segmenta
 
 1. Overlap: this is based on the four quadrants of True/False Positive/Negative, and are by far the most popular metrics used (especially Dice). Essentially, they measure some ratio of overlap versus the overall set. Unfortunately, in practice - these metrics could be very biased. Specifically, for objects that are larger, the scores are typically not very sensitive to errors, while for smaller objects, the scores become much more sensitive.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/overlapMetrics.png" title="overlap metrics" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Comparison of three popular overlap based metrics - Dice, Jaccard or IoU and F1 score.
-</div>
-
 Well known varieties: Dice, Jaccard, F1
 
 2. Volume: this too depends on the True/False Positive/Negative quadrants, however, it does not consider the intersection at all. It is defined as: 1 - (|False Negative - False Positive|)/(Sum of GT and Estimate). Interestingly, this metric can be 1 even when the overlap is empty! 
