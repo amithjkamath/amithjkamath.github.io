@@ -5,6 +5,7 @@ description: More details about our MedNeurIPS '22 abstract.
 img: assets/img/medneurips-context-vs-fbr-idea.png
 importance: 1
 category: research
+related_publications: true
 ---
 
 This is a WIP (Work-In-Progress): this message will be removed once sufficient progress has been made. 
