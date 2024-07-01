@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:scroll: Our paper "Comparing the Performance of Radiation Oncologists versus a Deep Learning Dose Predictor" is accepted as an oral presentation at MIDL '24. More to come soon.
+:scroll: Our paper "Comparing the Performance of Radiation Oncologists versus a Deep Learning Dose Predictor" is accepted as an oral presentation at MIDL 2024. More to come soon.
