@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:scroll: Our papers titled "Do we really need that skip connection? Understanding its' interplay with task complexity" and "Dose Guidance for Radiotherapy-oriented Deep Learning Segmentation" are both (early) accepted at [MICCAI '23](https://conferences.miccai.org/2023/) in Vancouver. More details soon!
+:scroll: Our papers titled "Do we really need that skip connection? Understanding its interplay with task complexity" and "Dose Guidance for Radiotherapy-oriented Deep Learning Segmentation" are both (early) accepted at [MICCAI 2023](https://conferences.miccai.org/2023/) in Vancouver. More details soon!
