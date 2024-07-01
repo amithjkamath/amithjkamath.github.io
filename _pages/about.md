@@ -2,24 +2,25 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: Yet another PhD student.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: profile.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>ARTORG Center for Biomedical Engineering Research</p>
+    <p>University of Bern</p>
 
 news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+My name is [Amith](https://en.wikipedia.org/wiki/Amit) (meaning 'infinite' in Sanskrit) and I enjoy investigating problems in image analysis and building tools to solve them. I like mathematics as applied to gain a better understanding of what we see (naturally, or otherwise).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am currently a doctoral student with Prof. Mauricio Reyes in the Medical Image Analysis lab, at the [ARTORG Center](https://www.artorg.unibe.ch), learning more about pixel-level segmentation using Deep Learning models and its' robustness in clinical settings as applied to radiotherapy planning. Earlier, I learnt vision and robotics [at Georgia Tech remotely](https://omscs.gatech.edu), and wrote a [masters' dissertation at Minnesota,](https://github.com/amithjkamath/CSAODFcode) focusing on reducing MRI acquisition times while maintaining accurate orientation measurement of white matter fibers in our brains.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Along the way, I wrote code [for image/vision at the MathWorks](https://www.mathworks.com/products/computer-vision.html), built technical content for [undergraduate courses](https://github.com/MathWorks-Teaching-Resources), ran interactive [workshops/seminars across India](https://youtube.com/playlist?list=PLo8azKzU7Iq8IHJ5PW8DAk-yaO8i4lBP_), all in the broad areas of computer science, biomedical engineering, and mathematics. 
+
+[Here](assets/pdf/amithjkamath_cv.pdf) is a more detailed CV. I am grateful to call Bern, Bengaluru, Boston, Minneapolis, and Mangalore as home at various points in time.
