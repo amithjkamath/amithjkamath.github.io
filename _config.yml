@@ -304,7 +304,7 @@ jekyll-archives:
     category: "/blog/category/:name/"
 
 display_tags: ["code"] # these tags will be displayed on the front page of your blog
-display_categories: ["paper-summary", "computer-vision", "mia", "matlab", "programming" # these categories will be displayed on the front page of your blog
+display_categories: ["paper-summary", "computer-vision", "mia", "matlab", "programming"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
