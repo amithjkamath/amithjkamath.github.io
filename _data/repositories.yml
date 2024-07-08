@@ -4,6 +4,7 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
-  - amithjkamath/radonc-vs-dldp
+  - ubern-mia/radonc-vs-dldp
+  - ubern-mia/bender
   - amithjkamath/deepdosesens
   - amithjkamath/astra
