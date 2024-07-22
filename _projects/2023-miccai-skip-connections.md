@@ -4,7 +4,7 @@ title: Do we really need that skip connection?
 description: More details about our MICCAI '23 work.
 img: assets/img/miccai-skip-connections.png
 importance: 1
-category: research
+category: papers
 ---
 
 This is a WIP (Work-In-Progress): this message will be removed once sufficient progress has been made. 

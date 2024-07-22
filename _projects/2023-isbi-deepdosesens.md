@@ -4,7 +4,7 @@ title: Deep Dose Predictor Sensitivity
 description: More details about our ISBI '23 poster.
 img: assets/img/isbi-problem-statement.png
 importance: 1
-category: research
+category: papers
 ---
 
 This is a WIP (Work-In-Progress): this message will be removed once sufficient progress has been made. 

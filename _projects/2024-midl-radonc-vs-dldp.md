@@ -4,7 +4,7 @@ title: Comparing the Performance of Radiation Oncologists versus a Deep Learning
 description: More details about our MIDL '24 work.
 img: assets/img/midl-radonc-vs-dldp.png
 importance: 1
-category: research
+category: papers
 ---
 
 This is a WIP (Work-In-Progress): this message will be removed once sufficient progress has been made. 

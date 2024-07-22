@@ -4,7 +4,7 @@ title: Metrics for Radiotherapy Dose - going beyond geometric measures
 description: how are appropriate dose metrics evaluated?
 img: assets/img/7.jpg
 importance: 1
-category: exploration
+category: themes
 ---
 
 This is a WIP (Work-In-Progress): this message will be removed once sufficient progress has been made. 

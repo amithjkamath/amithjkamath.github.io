@@ -309,8 +309,8 @@ display_categories: ["paper-summary", "computer-vision", "mia", "matlab", "progr
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Kamath]
+  first_name: [Amith, J.]
 
   style: apa
   locale: en

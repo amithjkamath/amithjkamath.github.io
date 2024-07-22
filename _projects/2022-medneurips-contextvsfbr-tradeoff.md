@@ -4,7 +4,7 @@ title: Context versus Foreground-to-Background Ratio
 description: More details about our MedNeurIPS '22 abstract.
 img: assets/img/medneurips-context-vs-fbr-idea.png
 importance: 1
-category: research
+category: papers
 related_publications: true
 ---
 

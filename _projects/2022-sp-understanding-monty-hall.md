@@ -4,7 +4,7 @@ title: Monty Hall
 description: an interactive game to understand conditional probability
 img: assets/img/monty-hall-demo.png
 importance: 1
-category: exploration
+category: teaching
 ---
 
 Mathematics lectures can often be dry and boring - especially when the results are not intuitive, or even counter intuitive. For this reason, introducing concepts like conditional probability using a game - called the Monty Hall problem - is a good example of how instructors could "make learning Math great again". 
