@@ -9,7 +9,7 @@ category: papers
 
 This is a WIP (Work-In-Progress): this message will be removed once sufficient progress has been made. 
 
-This page includes some additional details around the paper: "Do we really need that skip connection? Understanding its' interplay with task complexity", as presented at the International Conference on Medical Image Computing and Computer-Assisted Intervention, 2023.
+This page includes some additional details around the paper: "Do we really need that skip connection? Understanding its' interplay with task complexity", as presented at the International Conference on Medical Image Computing and Computer-Assisted Intervention, 2023 {% cite kamath2023skipconnections %}.
 
 #add a video link here
 #[![2 minute video abstract](https://img.youtube.com/vi/<TBD>/0.jpg)](https://www.youtube.com/watch?v=<TBD>)

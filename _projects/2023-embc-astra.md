@@ -9,7 +9,7 @@ category: papers
 
 This is a WIP (Work-In-Progress): this message will be removed once sufficient progress has been made. 
 
-This post covers some additional details around the paper: "ASTRA: Atomic Surface Transformations for Radiotherapy quality Assurance", as presented at the IEEE Engineering in Medicine and Biology Conference, 2023.
+This post covers some additional details around the paper: "ASTRA: Atomic Surface Transformations for Radiotherapy quality Assurance", as presented at the IEEE Engineering in Medicine and Biology Conference, 2023 {% cite kamath2023astra %}.
 
 add a video link here
 [![2 minute video abstract](https://img.youtube.com/vi/vghlJh8ACOY/0.jpg)](https://www.youtube.com/watch?v=vghlJh8ACOY)

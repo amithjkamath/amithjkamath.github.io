@@ -5,6 +5,7 @@ description: A summary of AI in Radiation Oncology
 img: assets/img/1.jpg
 importance: 1
 category: themes
+related_publications: true
 ---
 
 This is a WIP (Work-In-Progress): this message will be removed once sufficient progress has been made. 

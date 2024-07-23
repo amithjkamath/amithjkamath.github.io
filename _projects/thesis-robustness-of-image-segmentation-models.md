@@ -15,13 +15,6 @@ Auto-segmentation or generally automating parts of the medical image segmentatio
 
 One metric of difficulty (for humans) could be to rank images where the inter-expert variability is the largest, in which case the model would also be expected to perform worse as compared to a presumed ground truth standard. More broadly, it would be useful to come up with some level of performance bounds for the behavior of these systems - either through conformal predictions, or another probabilistic method where clinicians can then be given a confidence rating along with the actual result of the algorithm to indicate its trustworthiness. 
 
-In this line of thought, what we do in this work involved trying to deconstruct parts of the architecture of well known segmentation models called the U-Net - which includes skip connections, and understanding how architecture changes can impact robustness of results across a variety of noise settings. The goal of this work is to come up with some kind of a recipe to demonstrate that if the distribution of input images contains a certain level of noise, then, a certain architecture of segmentation models is preferable to others (if it exists). 
+In this line of thought, what we do in this work involved trying to deconstruct parts of the architecture of well known segmentation models called the U-Net - which includes skip connections, and understanding how architecture changes can impact robustness of results across a variety of noise settings. The goal of this work is to come up with some kind of a recipe to demonstrate that if the distribution of input images contains a certain level of noise, then, a certain architecture of segmentation models is preferable to others (if it exists) {% cite kamath2023skipconnections %}. 
 
-Furthermore, we analyze what happens when such models have a sliding window inference mechanism, where if the foreground to background ratio (smaller foreground pixels indicate that the haystack in which we try to find a needle is larger) varies, how do various architectures behave in such situations. Sliding window inference is now commonplace due to varying image volume sizes and GPU memory constraints in training such large models. 
-
-
-References
-------
-
-[1] Do we really need that skip connection? Understanding its' interplay with task complexity (our MICCAI 23 paper)
-[2] How do 3D image segmentation networks behave across the context versus foreground ratio trade-off? (our Medical Imaging meets NeurIPS 22 paper)
+Furthermore, we analyze what happens when such models have a sliding window inference mechanism, where if the foreground to background ratio (smaller foreground pixels indicate that the haystack in which we try to find a needle is larger) varies, how do various architectures behave in such situations. Sliding window inference is now commonplace due to varying image volume sizes and GPU memory constraints in training such large models {% cite kamath2022contextvsfbr %}. 

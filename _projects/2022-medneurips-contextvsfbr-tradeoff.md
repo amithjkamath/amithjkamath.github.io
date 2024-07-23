@@ -10,7 +10,7 @@ related_publications: true
 
 This is a WIP (Work-In-Progress): this message will be removed once sufficient progress has been made. 
 
-This page includes some additional details around the paper: "How do 3D image segmentation networks behave across the context versus foreground ratio trade-off?", as presented at the Medical Imaging meets NeurIPS Workshop, NeurIPS 2022.
+This page includes some additional details around the paper: "How do 3D image segmentation networks behave across the context versus foreground ratio trade-off?", as presented at the Medical Imaging meets NeurIPS Workshop, NeurIPS 2022 {% cite kamath2022contextvsfbr %}.
 
 Modern 3D medical image segmentation is typically done using a sliding window approach due to GPU memory constraints. However, this presents an interesting trade-off between the amount of global context the network sees at once, versus the proportion of foreground voxels available in each training sample. It is known already that Unets perform worse with low global context, but enlarging the context comes at the cost of heavy class imbalance between background (typically very large) and foreground (much smaller) while training. In this abstract, we analyze the behavior of Transformer-based (UNETR) and attention gated (Attention-Unet) models along with vanilla-Unets across this trade-off. We explore this using a synthetic data set, and a subset of the spleen segmentation data set from the Medical Segmentation Decathlon to demonstrate our results. 
 

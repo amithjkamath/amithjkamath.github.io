@@ -9,7 +9,7 @@ category: papers
 
 This is a WIP (Work-In-Progress): this message will be removed once sufficient progress has been made. 
 
-This page includes some additional details around the paper: "Comparing the Performance of Radiation Oncologists versus a Deep Learning Dose Predictor to Estimate Dosimetric Impact of Segmentation Variations for Radiotherapy", as presented at the Medical Imaging with Deep Learning Conference, 2024.
+This page includes some additional details around the paper: "Comparing the Performance of Radiation Oncologists versus a Deep Learning Dose Predictor to Estimate Dosimetric Impact of Segmentation Variations for Radiotherapy", as presented at the Medical Imaging with Deep Learning Conference, 2024 {% cite kamath2024radoncvsdldp %}.
 
 [![Oral talk at MIDL 2024:](https://img.youtube.com/vi/Co9yUIAw6H0/0.jpg)](https://youtu.be/Co9yUIAw6H0?t=3587)
 
