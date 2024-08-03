@@ -1,36 +1,64 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Amith Kamath",
+    "label": "Researcher",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "amithjkamath@outlook.com",
+    "phone": "77 258 94 33",
+    "url": "https://amithjkamath.github.io/",
+    "summary": "Yet another PhD Student",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "Murtenstrasse 50",
+      "postalCode": "3008",
+      "city": "Bern",
+      "countryCode": "CH",
+      "region": "Berne"
     },
     "profiles": [
       {
         "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "username": "amithjkamath",
+        "url": "https://twitter.com/amithjkamath"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "name": "ARTORG Center for Biomedical Engineering Research",
+      "position": "PhD Student Researcher",
+      "url": "https://artorg.unibe.ch",
+      "startDate": "2021-10-01",
+      "endDate": "2025-09-30",
+      "summary": "Doctoral student in Biomedical Engineering focusing on automated quality assurance for radiotherapy treatment planning.",
+      "highlights": [
+        "Medical Imaging"
+      ]
+    },
+    {
+      "name": "MathWorks",
+      "position": "Product Manager for AI in Academia",
+      "url": "https://www.mathworks.com",
+      "startDate": "2019-07-01",
+      "endDate": "2021-10-01",
+      "summary": "Created notebooks and exercises for Deep Learning, Machine Learning and Computer Vision in use in > 20 Undergraduate engineering programs. Delivered talks and hands-on workshops in > 40 events and conferences across India.",
+      "highlights": [
+        "Artificial Intelligence",
+        "Computer Vision",
+        "Medical Imaging"
+      ]
+    },
+    {
+      "name": "MathWorks",
+      "position": "Software Engineer",
+      "url": "https://www.mathworks.com",
+      "startDate": "2019-06-31",
+      "endDate": "2013-02-25",
+      "summary": "Improved performance of video reading to > 60fps using DXVA, color conversion functions by > 20x using TBB, morphological operators by 3x using IPP, and edge detection algorithms using openCV.",
+      "highlights": [
+        "Image Processing",
+        "Computer Vision",
+        "Autonomous Driving"
+      ]
     }
   ],
   "volunteer": [
@@ -42,20 +70,70 @@
       "startDate": "2014-04-01",
       "endDate": "2015-07-01",
       "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "highlights": [
+        "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.",
+        "Men of the year 2014 by Time magazine"
+      ]
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
+      "institution": "University of Bern, Bern, Switzerland",
+      "location": "Bern, Switzerland",
+      "url": "https://artorg.unibe.ch",
+      "area": "Biomedical Engineering",
       "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "startDate": "2021-10-01",
+      "endDate": "2025-09-31",
+      "score": "6",
+      "courses": [
+        "Deep Learning"
+      ]
+    },
+    {
+      "institution": "Georgia Institute of Technology, Atlanta, USA",
+      "location": "Atlanta, USA",
+      "url": "https://omscs.gatech.edu",
+      "area": "Computer Science",
+      "studyType": "MS",
+      "startDate": "2016-01-01",
+      "endDate": "2020-12-31",
+      "score": "3.7",
+      "courses": [
+        "Machine Learning",
+        "Computer Vision",
+        "Computational Photography",
+        "Reinforcement Learning"
+      ]
+    },
+    {
+      "institution": "University of Minnesota, Minneapolis, USA",
+      "location": "Minneapolis, USA",
+      "url": "https://www.ece.umn.edu",
+      "area": "Electrical Engineering",
+      "studyType": "MS",
+      "startDate": "2010-08-01",
+      "endDate": "2012-09-30",
+      "score": "3.7",
+      "courses": [
+        "Image Processing",
+        "Learning from Data"
+      ]
+    },
+    {
+      "institution": "National Institute of Technology Karnataka, Surathkal, India",
+      "location": "Surathkal, India",
+      "url": "https://www.nitk.ac.in/",
+      "area": "Electrical Engineering",
+      "studyType": "BTech",
+      "startDate": "2006-08-01",
+      "endDate": "2010-05-32",
+      "score": "8.3",
+      "courses": [
+        "Signal Processing",
+        "Control Systems",
+        "Computer Programming"
+      ]
     }
   ],
   "awards": [
@@ -74,41 +152,6 @@
       "issuer": "Stanford University",
       "url": "https://example.com",
       "icon": "fa-solid fa-location-dot"
-    },
-    {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
     }
   ],
   "publications": [
@@ -151,13 +194,13 @@
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "English",
       "fluency": "Native speaker",
       "icon": ""
     },
     {
-      "language": "English",
-      "fluency": "Fluent",
+      "language": "Konkani",
+      "fluency": "Native speaker",
       "icon": ""
     }
   ],
@@ -180,18 +223,16 @@
       "name": "Professor John Doe",
       "icon": "fa-solid fa-laptop",
       "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
     }
   ],
   "projects": [
     {
       "name": "Quantum Computing",
       "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
+      "highlights": [
+        "Quantum Teleportation",
+        "Quantum Cryptography"
+      ],
       "startDate": "2018-01-01",
       "endDate": "2018-01-01",
       "url": "https://example.com"

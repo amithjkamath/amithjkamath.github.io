@@ -20,12 +20,4 @@ In this line of thought, this post considers what happens between the contouring
 
 Specifically, it is known for example that non-smooth contours around the target volumes are not well handled by dose planning tools due to the physical constraints of the multi-leaf collimators and the speed at which these can move while treating complex shaped tumors through an arc. This means that deliberately smoothing the surface of the tumor segmentation (even if it does not make anatomic sense at times) can help design better plans - thereby meaning that a smoothness constraint for measuring the quality of tumor contours would help make the overall plan better.
 
-In our research, we attempt to incorporate dosimetric measures into the segmentation process - thereby hoping to come up with a better overall outcome rather than optimizing metrics for each sub-stage of the pipeline, which sometimes may not cumulatively lead to the optimal outcome {% cite kamath2023sensitivitydoseprediction %} {% cite kamath2023astra %} {% cite kamath2024radoncvsdldp %}. 
-
-
-References
-------
-
-[1] How sensitive are Deep Learning based Radiotherapy Dose Prediction Models to Variability in Organs at Risk Segmentation? (our ISBI 23 paper)
-[2] ASTRA: Atomic Surface Transformations for Radiotherapy quality Assurance (our EMBC 23 paper)
-[3] Comparing the Performance of Radiation Oncologists versus a Deep Learning Dose Predictor to Estimate Dosimetric Impact of Segmentation Variations for Radiotherapy (our MIDL 24 paper)
+In our research, we attempt to incorporate dosimetric measures into the segmentation process - thereby hoping to come up with a better overall outcome rather than optimizing metrics for each sub-stage of the pipeline, which sometimes may not cumulatively lead to the optimal outcome {% cite kamath2023sensitivitydoseprediction %} {% cite kamath2023astra %} {% cite kamath2024radoncvsdldp %}.
