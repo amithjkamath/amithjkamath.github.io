@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:scroll: Our 3 minute pitch about AI in radiotherapy research happened to win the Falling Walls Fribourg 2024 event. Next stop: Berlin in November.
+:mega: Our 3 minute pitch about AI in radiotherapy research happened to win the Falling Walls Fribourg 2024 event. Next stop: Berlin in November.
