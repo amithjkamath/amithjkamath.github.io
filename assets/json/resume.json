@@ -1,12 +1,12 @@
 {
-  "Basics": {
+  "basics": {
     "name": "Amith J. Kamath",
     "label": "PhD Researcher in Medical Image Analysis",
     "image": "",
     "email": "",
     "phone": "",
     "url": "https://amithjkamath.github.io",
-    "Summary": "PhD Researcher in Biomedical Engineering with a focus on artificial intelligence for radiotherapy QA. Experienced in computer vision, medical imaging, and software development.",
+    "summary": "PhD Researcher in Biomedical Engineering with a focus on artificial intelligence for radiotherapy QA. Experienced in computer vision, medical imaging, and software development.",
     "Location": {
       "address": "University of Bern",
       "postalCode": "",
@@ -14,7 +14,7 @@
       "countryCode": "CH",
       "region": "Bern"
     },
-    "Profiles": [
+    "profiles": [
       {
         "network": "LinkedIn",
         "username": "amithjkamath",
@@ -42,7 +42,7 @@
       }
     ]
   },
-  "Work": [
+  "work": [
     {
       "name": "The MathWorks",
       "position": "Product Manager - AI in Academia (Asia Pacific)",
@@ -90,11 +90,11 @@
     }
   ],
   "volunteer": [],
-  "Education": [
+  "education": [
     {
       "institution": "University of Bern",
       "location": "Bern, Switzerland",
-      "url": "http://www.unibe.ch",
+      "url": "http://artorg.unibe.ch",
       "area": "Biomedical Engineering",
       "studyType": "PhD",
       "startDate": "2021-01-01",
@@ -123,7 +123,7 @@
     {
       "institution": "University of Minnesota Twin Cities",
       "location": "Minneapolis, MN",
-      "url": "http://www.umn.edu",
+      "url": "http://www.ece.umn.edu",
       "area": "Electrical Engineering",
       "studyType": "Master of Science",
       "startDate": "2010-01-01",
@@ -136,7 +136,7 @@
     {
       "institution": "National Institute of Technology Karnataka",
       "location": "Surathkal, India",
-      "url": "http://www.nitk.ac.in",
+      "url": "http://eee.nitk.ac.in",
       "area": "Electrical Engineering",
       "studyType": "Bachelor of Technology",
       "startDate": "2006-01-01",
@@ -147,7 +147,7 @@
       ]
     }
   ],
-  "Awards": [
+  "awards": [
     {
       "title": "Young Researcher Promotion Grant to organize BART '25",
       "date": "2024-07-01",
