@@ -1,20 +1,20 @@
 {
-  "basics": {
+  "Basics": {
     "name": "Amith J. Kamath",
     "label": "PhD Researcher in Medical Image Analysis",
     "image": "",
-    "email": "amithjkamath@outlook.com",
+    "email": "",
     "phone": "",
     "url": "https://amithjkamath.github.io",
-    "summary": "PhD Researcher in Biomedical Engineering with a focus on artificial intelligence for radiotherapy QA. Experienced in computer vision, medical imaging, and software development.",
-    "location": {
+    "Summary": "PhD Researcher in Biomedical Engineering with a focus on artificial intelligence for radiotherapy QA. Experienced in computer vision, medical imaging, and software development.",
+    "Location": {
       "address": "University of Bern",
       "postalCode": "",
       "city": "Bern",
       "countryCode": "CH",
       "region": "Bern"
     },
-    "profiles": [
+    "Profiles": [
       {
         "network": "LinkedIn",
         "username": "amithjkamath",
@@ -42,7 +42,7 @@
       }
     ]
   },
-  "work": [
+  "Work": [
     {
       "name": "The MathWorks",
       "position": "Product Manager - AI in Academia (Asia Pacific)",
@@ -90,7 +90,7 @@
     }
   ],
   "volunteer": [],
-  "education": [
+  "Education": [
     {
       "institution": "University of Bern",
       "location": "Bern, Switzerland",
@@ -147,7 +147,7 @@
       ]
     }
   ],
-  "awards": [
+  "Awards": [
     {
       "title": "Young Researcher Promotion Grant to organize BART '25",
       "date": "2024-07-01",
@@ -192,96 +192,10 @@
     }
   ],
   "certificates": [],
-  "publications": [
-    {
-      "name": "Do we really need that skip connection?",
-      "publisher": "MICCAI 2023",
-      "releaseDate": "2023-09-01",
-      "url": "",
-      "summary": "Analyzed skip connection importance relative to task complexity."
-    },
-    {
-      "name": "ASTRA: Atomic Surface Transformations for Radiotherapy QA",
-      "publisher": "EMBC 2023",
-      "releaseDate": "2023-07-01",
-      "url": "",
-      "summary": "Award-winning paper proposing a novel QA framework for radiotherapy."
-    },
-    {
-      "name": "Dose Prediction Model Sensitivity",
-      "publisher": "ISBI 2023",
-      "releaseDate": "2023-04-01",
-      "url": "",
-      "summary": "Study on robustness of dose prediction to organ segmentation variability."
-    },
-    {
-      "name": "Context-Foreground Tradeoff in 3D Segmentation",
-      "publisher": "NeurIPS Workshop 2022",
-      "releaseDate": "2022-12-01",
-      "url": "",
-      "summary": "Investigated trade-offs in 3D segmentation network design."
-    },
-    {
-      "name": "Optimal Acquisition Protocol for White Matter Mapping",
-      "publisher": "ISMRM 2013",
-      "releaseDate": "2013-05-01",
-      "url": "",
-      "summary": "CSA-ODF based mapping approach for diffusion MRI."
-    },
-    {
-      "name": "Generalized CSA-ODF for Fiber Orientation Mapping",
-      "publisher": "MICCAI CDMRI 2012",
-      "releaseDate": "2012-10-01",
-      "url": "",
-      "summary": "Introduced a new ODF reconstruction and acquisition strategy."
-    }
-  ],
-  "skills": [
-    {
-      "name": "Programming and Tools",
-      "level": "",
-      "icon": "",
-      "keywords": [
-        "Python",
-        "MATLAB",
-        "C",
-        "C++",
-        "Shell Scripting",
-        "LaTeX",
-        "VS Code",
-        "PyCharm",
-        "QT",
-        "CMake",
-        "Git"
-      ]
-    },
-    {
-      "name": "Domains",
-      "level": "",
-      "icon": "",
-      "keywords": [
-        "Computer Vision",
-        "Medical Imaging",
-        "Image Processing",
-        "Machine Learning",
-        "Radiotherapy QA"
-      ]
-    }
-  ],
+  "publications": [],
+  "skills": [],
   "languages": [],
-  "interests": [
-    {
-      "name": "Research & Development",
-      "icon": "",
-      "keywords": [
-        "AI in Medicine",
-        "Medical Image Analysis",
-        "Software Design",
-        "Diffusion MRI",
-        "Deep Learning"
-      ]
-    }
-  ],
+  "interests": [],
   "references": [],
   "projects": []
 }
