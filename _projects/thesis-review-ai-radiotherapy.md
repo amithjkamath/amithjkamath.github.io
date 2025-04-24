@@ -1,10 +1,10 @@
 ---
 layout: page
-title: AI + Radiation Oncology
-description: A summary of AI in Radiation Oncology
-img: assets/img/1.jpg
+title: Radiation Oncology for Developers and Researchers
+description: An overview of Radiation Oncology for the AI practitioner
+img: assets/img/3.jpg
 importance: 1
-category: themes
+category: others
 related_publications: true
 ---
 

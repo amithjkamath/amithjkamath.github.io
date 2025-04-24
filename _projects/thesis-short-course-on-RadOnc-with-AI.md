@@ -1,10 +1,11 @@
 ---
-layout: post
-title: Topics in AI for Radiation Oncology
-date: 2025-04-10 00:00:00
-description: A brief overview of topics in AI for Radiation Oncology
-tags: teaching
-categories: teaching
+layout: page
+title: Short Course on Radiation Oncology with AI
+description: A work-in-progress course plan for Radiation Oncology and AI
+img: assets/img/2.jpg
+importance: 1
+category: others
+related_publications: true
 ---
 
 This is a heavily borrowed (from ChatGPT and other online sources) structure for a semester long course on AI in Radiation Oncology, aiming to provide participants with a robust understanding of AI applications in radiation oncology imaging, blending theoretical knowledge with practical insights to prepare them for the evolving landscape of medical imaging and therapy.​
@@ -120,6 +121,7 @@ Limitations: Radiation exposure; long prep and scan times.
 ## Week 7: AI in Treatment Planning
 
 * Automated Treatment Planning: Leveraging AI for plan optimization and dose calculation.​
+  * [IMRT](/glossary/#IMRT), [VMAT](/glossary/#VMAT) and others.
 * Knowledge-based Planning: Utilizing historical data to inform new treatment plans.​
 * Case Studies: Examples of AI-driven treatment planning systems.​
 

@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Introducing Clinical Relevance in Quality Assurance
+title: Dose Prediction for Contour Quality Evalution
 description: The need for understanding downstream tasks in relation to measuring quality of AI model automation.
 img: assets/img/1.jpg
-importance: 1
+importance: 2
 category: themes
 related_publications: true
 ---
