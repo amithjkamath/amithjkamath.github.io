@@ -44,18 +44,14 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/teaching/";
               },
-            },{id: "post-topics-in-ai-for-radiation-oncology",
-        
-          title: "Topics in AI for Radiation Oncology",
-        
-        description: "A brief overview of topics in AI for Radiation Oncology",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/AI-in-Radiation-Oncology/";
-          
-        },
-      },{id: "post-a-post-with-plotly-js",
+            },{id: "dropdown-glossary",
+              title: "Glossary",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/glossary/";
+              },
+            },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
         
@@ -854,26 +850,31 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
-            },},{id: "projects-introducing-clinical-relevance-in-quality-assurance",
-          title: 'Introducing Clinical Relevance in Quality Assurance',
+            },},{id: "projects-qualitative-analysis-of-radiation-oncology-contour-corrections",
+          title: 'Qualitative analysis of Radiation Oncology Contour Corrections',
+          description: "Understanding what human-experts think about the impact of contour evaluations",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/thesis-contour-correction-qualitative-analysis/";
+            },},{id: "projects-dose-prediction-for-contour-quality-evalution",
+          title: 'Dose Prediction for Contour Quality Evalution',
           description: "The need for understanding downstream tasks in relation to measuring quality of AI model automation.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/thesis-introducing-clinical-relevance-in-quality-assurance/";
-            },},{id: "projects-ai-radiation-oncology",
-          title: 'AI + Radiation Oncology',
-          description: "A summary of AI in Radiation Oncology",
+              window.location.href = "/projects/thesis-dose-prediction-for-contour-evaluation/";
+            },},{id: "projects-radiation-oncology-for-developers-and-researchers",
+          title: 'Radiation Oncology for Developers and Researchers',
+          description: "An overview of Radiation Oncology for the AI practitioner",
           section: "Projects",handler: () => {
               window.location.href = "/projects/thesis-review-ai-radiotherapy/";
-            },},{id: "projects-metrics-for-radiotherapy-dose-going-beyond-geometric-measures",
-          title: 'Metrics for Radiotherapy Dose - going beyond geometric measures',
-          description: "how are appropriate dose metrics evaluated?",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/thesis-review-segmentation-metrics/";
             },},{id: "projects-robustness-of-deep-learning-segmentation-models",
           title: 'Robustness of Deep Learning Segmentation Models',
           description: "Measuring the performance of segmentation models under image content variations.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/thesis-robustness-of-image-segmentation-models/";
+            },},{id: "projects-short-course-on-radiation-oncology-with-ai",
+          title: 'Short Course on Radiation Oncology with AI',
+          description: "A work-in-progress course plan for Radiation Oncology and AI",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/thesis-short-course-on-RadOnc-with-AI/";
             },},{
         id: 'social-email',
         title: 'email',
