@@ -8,9 +8,149 @@ category: themes
 related_publications: true
 ---
 
-This is a WIP (Work-In-Progress): this message will be removed once sufficient progress has been made. 
+The not-so-random initial state of this text is courtesy [Ai2 Scholar QA](https://scholarqa.allen.ai/), and it has been reasonably cross-checked and improved by a human. This is a WIP (Work-In-Progress): this message will be removed once sufficient progress has been made.
 
 -------------
+
+## Importance of robustness in Medical Image Segmentation
+
+Medical image segmentation, powered by deep learning techniques, has revolutionized quantitative pathological assessments, diagnostic support systems, and tumor analysis (Zou et al., 2023)(Zeleznik et al., 2021)(Wu et al., 2021). However, as these technologies advance toward clinical implementation, the focus has shifted beyond mere accuracy to include robustness as a critical requirement. Robustness refers to a model's ability to maintain consistent performance despite minor perturbations or changes in input data, which is especially crucial in medical settings where imaging data often contains noise and artifacts (Maleki et al., 2024).
+
+The reliability of deep learning systems depends not only on their accuracy but also on their robustness against adversarial perturbations to input data (Daza et al., 2021). This is particularly important in critical applications like autonomous driving and medical imaging, where model failures could have devastating consequences (Mzoughi et al., 2025)(Rossolini et al., 2022)(Muller et al., 2022). Recent research has revealed that the vulnerability of medical image segmentation models to adversarial attacks may have been underestimated, raising serious concerns about their real-world deployment in healthcare (Daza et al., 2021)(Li et al., 2020).
+
+In clinical contexts, robust medical image segmentation models play a pivotal role in establishing trust and confidence between healthcare professionals and patients, providing efficient pixel-level confidence while delivering reliable results despite variations in human anatomy and imaging modalities (Zou et al., 2023). This is especially relevant for volumetric segmentation models, which have shown significant success in organ and tumor segmentation tasks but remain vulnerable to adversarial attacks (Malik et al., 2024).
+
+Robustness issues in medical image segmentation extend across various dimensions: performance inconsistencies across different imaging modalities, vulnerability to image distortions (such as blur and reflections in surgical images), and susceptibility to adversarial attacks (Shi et al., 2024). These challenges are further complicated by the traditional reliance on large annotated datasets for training robust models, which often comes at the high cost of requiring expert annotations and clinical expertise (You et al., 2023)(Greenspan et al., 2016).
+
+Given these critical considerations, developing medical image segmentation models that are both accurate and robust to perturbations has become increasingly essential (Daza et al., 2021). Best practices for ensuring robust performance include using established quantitative metrics to measure performance changes with input variations, testing models across diverse patient groups and imaging sources, and explicitly documenting assumptions about input data that might impact clinical performance (Maleki et al., 2024). As deep learning continues to advance in medical imaging applications, addressing these robustness challenges remains a key focus for researchers seeking to develop reliable segmentation models suitable for clinical deployment.
+
+## Challenges in Medical Image Segmentation
+
+Medical image segmentation models encounter numerous technical challenges that impact their reliability and clinical utility. One of the most persistent obstacles is intensity inhomogeneity in medical images, where variations in pixel intensity throughout the same tissue type can lead to inaccurate segmentation boundaries (Almasganj et al., 2025)(Zhao, 2024). This problem is compounded by different types of noise (Gaussian, salt-and-pepper, speckle) that frequently appear in medical imaging, further complicating the segmentation process (Almasganj et al., 2025)(Wang et al., 2016).
+
+The presence of weak boundaries between anatomical structures presents another significant challenge, particularly in scenarios characterized by high structural complexity and low contrast (Zhang et al., 2023)(Zhang et al., 2024). These factors make it difficult for models to accurately delineate borders between different tissues or organs, potentially leading to clinically significant errors.
+
+The data-related challenges are equally concerning. Deep learning-based segmentation models typically require massive training data with high-quality annotations to achieve human-level performance. However, such annotations are expensive and time-consuming to collect, especially in the medical domain where expert knowledge is required (Shi et al., 2021). Moreover, existing datasets often contain low-quality annotations with label noise, resulting in suboptimal model performance (Shi et al., 2021).
+
+Domain shift issues present a substantial barrier to generalization. Medical imaging data varies widely across different institutions, scanning protocols, and imaging modalities, creating distribution discrepancies that affect model performance when deployed in new environments (Chen et al., 2024)(Li et al., 2024). The inherent texture and style preference of deep neural networks makes them particularly vulnerable to domain-specific features that may not transfer well across different imaging contexts (Chen et al., 2024).
+
+Recent studies have also highlighted the alarming vulnerability of medical image segmentation models to adversarial attacks. This vulnerability has likely been underestimated in previous research, raising serious concerns about clinical deployment (Daza et al., 2021)(Li et al., 2020). The susceptibility to such attacks is particularly troubling for volumetric segmentation models used in critical applications like organ and tumor segmentation (Daza et al., 2021).
+
+To address these challenges, researchers have explored various approaches. For intensity inhomogeneity and noise, local statistics-based models have shown promise by utilizing information from local image regions rather than global statistics (Zhao, 2024). Uncertainty estimation has emerged as a valuable approach to quantify model confidence and identify potential failure cases, enhancing reliability in segmentation tasks (Zhang et al., 2023)(Zou et al., 2022)(Zhang et al., 2021). Additionally, simulating heterogeneous environments through data augmentation or adversarial training has shown potential for improving robustness against various perturbations (Santhirasekaram et al., 2022).
+
+Addressing these multifaceted challenges requires comprehensive evaluation frameworks and best practices. These include using established quantitative metrics to measure performance changes with input variations, testing across diverse patient groups and imaging sources, and explicit documentation of assumptions about input data that might impact clinical performance (Maleki et al., 2024).
+
+## Types of robustness in medical segmentation models
+
+Medical image segmentation models need multiple types of robustness to function reliably in clinical settings. One of the most critical forms is domain robustness, which refers to a model's ability to maintain performance when encountering images from different sources or domains than those used during training (Hwang et al., 2021). This type of robustness is particularly important in medical imaging where variations across institutions, scanners, and protocols can create significant distribution shifts that impact model performance (Chen et al., 2021). Experimental evidence demonstrates that models specifically designed to learn anatomical structures can exhibit superior performance when tested on datasets from previously unseen domains, indicating enhanced domain robustness (Hwang et al., 2021).
+
+Texture robustness represents another critical dimension, addressing the vulnerability of deep learning models to textural bias. Research has shown that applying specific types of simulated textural noise during training can lead to texture-invariant models with improved robustness when processing scans affected by previously unseen noise types and levels (Chai et al., 2020). This approach is particularly valuable for three-dimensional medical data, where textural variations can significantly impact segmentation accuracy.
+
+Adversarial robustness addresses a model's resilience against intentional manipulations designed to cause incorrect segmentations. This form of robustness has gained increasing attention as research reveals that volumetric segmentation models, despite their success in organ and tumor segmentation tasks, may be more vulnerable to adversarial attacks than previously estimated (Malik et al., 2024). The susceptibility to such attacks raises serious concerns about deploying these models in healthcare settings and underscores the importance of investigating defense mechanisms across different architectures, including Convolutional, Transformer, and Mamba-based models (Malik et al., 2024).
+
+Modality robustness refers to a model's ability to perform consistently across different imaging techniques. This is particularly challenging for foundation models like Segment Anything Model (SAM), which have demonstrated great performance on some medical imaging modalities but fail partially or completely on others (Shi et al., 2024). This inconsistency indicates that even advanced models "cannot stably and accurately implement zero-shot segmentation on multimodal and multi-object medical datasets" (Shi et al., 2024).
+
+Image quality robustness addresses a model's ability to maintain performance despite variations in image quality, such as blur, reflections, or other types of noise that are common in surgical settings (Shi et al., 2024). This type of robustness is essential for applications involving real-time segmentation during procedures, where image quality often differs significantly from the cleaner images used to train foundation models (Shi et al., 2024).
+
+Achieving these various types of robustness often involves specialized approaches. For domain and texture robustness, simulating heterogeneous environments through data augmentation or adversarial training has shown promise (Santhirasekaram et al., 2022). For modality robustness, uncertainty estimation techniques have been proposed to address ambiguous boundaries in medical images, including methods that integrate probabilistic models into segmentation frameworks (Shi et al., 2024).
+
+Recent research suggests that foundation-based models may inherently possess better robustness to domain shifts compared to other architectures after being fine-tuned on the same in-distribution dataset (Nguyen et al., 2023). However, ensuring robust performance across all dimensions requires comprehensive evaluation using established quantitative metrics and testing across diverse patient groups and imaging sources (Maleki et al., 2024). This thorough assessment is particularly important in critical applications like medical imaging, where model failures could have severe consequences (Mzoughi et al., 2025)(Rossolini et al., 2022).
+
+## Model architectures and approaches for robust segmentation
+
+Active Contour and Level Set Models
+
+Robust Statistics Driven Volume-Scalable Active Contour: This approach uses local robust statistics features to extract object boundaries from MR and CT images in 3D. The energy functional incorporates initial seeded labels and fitting functions derived from object local statistics, enabling the model to handle intensity inhomogeneity, noise, and weak boundaries in volumetric medical data. (Wang et al., 2016)
+
+Robust Hybrid Level Set (RHLS): This model addresses noise and intensity inhomogeneity by integrating both global and local information into its energy function using a Signed Pressure Force formulation. The unsupervised approach requires minimal parameter tuning and can handle diverse noise types (Gaussian, salt-and-pepper, speckle) and intensity inhomogeneity conditions common in medical imaging. (Almasganj et al., 2025)
+
+CELBF Model: By combining the Locally Based Fitting (LBF) model with image entropy, this approach improves segmentation speed and noise robustness for inhomogeneous medical images. The introduction of image entropy specifically helps address variations in image gray levels. (Zhang et al., 2017)
+
+Locally Based Fitting (LBF) Derivatives: Several models have been developed that utilize the intensity information from local image regions to handle intensity inhomogeneity. These include the Adaptive Local-Fitting-based Active Contour (ALF), Adaptive Local Variances-Based Level Set Framework, Laplacian of Gaussian model (LoGLSF), and the Additive Bias Correction (ABC) image segmentation model. (Zhao, 2024)
+
+Deep Learning-Based Approaches
+
+Two-Stage Transfer Learning Framework: This approach leverages knowledge from within the same domain to boost model robustness and generalization. The framework includes unsupervised tile-wise autoencoder pretraining to learn local and global knowledge, followed by a downstream segmentation model coupled with an auxiliary reconstruction network. This design encourages the model to capture more general semantic features, enhancing robustness to corruption and improving generalization to unseen datasets. (Chen, 2021)
+
+Latent Dictionary Constraint Model: This approach improves robustness by constraining the latent space to a learned dictionary of base components, exploiting the limited structural variability between patients in medical images. It incorporates a topological prior using persistent homology in dictionary sampling and applies deep topological supervision hierarchically to ensure accurate structural representation under various perturbations. (Santhirasekaram et al., 2023)
+
+Uncertainty-Guided Models: Several frameworks leverage uncertainty estimation to enhance segmentation reliability and robustness:
+
+UR-SAM: An uncertainty rectified SAM framework that estimates segmentation uncertainty and uses it for rectification to improve reliability and accuracy in medical image segmentation. (Zhang et al., 2023)(Zhang et al., 2021)(Zou et al., 2022)
+U-MedSAM: This model combines the MedSAM architecture with an uncertainty-aware learning framework that dynamically adjusts the contribution of multiple loss functions. By employing the SharpMin optimizer, the model is guided toward flat minima in the loss landscape, enhancing its resilience and generalization capabilities. (Wang et al., 2024)
+Latent Diffusion Models: LDSeg demonstrates strong robustness to noise in medical images by conditioning a denoiser on image embeddings (low-dimensional representations of source images) and using an iterative denoising process. Even with high-frequency noise in the source image, this approach maintains accurate segmentation when deterministic models like Res-UNet deteriorate. (Zaman et al., 2024)(Joshi et al., 2024)
+
+SAM-Based Approaches for Medical Imaging
+
+RoBox-SAM: This novel approach ensures Segment Anything Model's (SAM) performance under prompts of varying quality. It features a prompt refinement module that transforms low-quality box prompts into high-quality ones, a prompt enhancement module that automatically generates point prompts to assist box-prompted segmentation, and a self-information extractor that optimizes image embeddings and attention calculation. (Huang et al., 2024)
+
+MedSAM with Bounding Box Adaptive Perturbation: This algorithm dynamically adjusts the perturbation range of bounding boxes based on the geometric features of regions of interest and their relative size to the image. It prevents excessive expansion of the sensory field for small boundary prompts while maintaining high performance under uncertain, shrinking boundary prompts through controlled bi-directional perturbation thresholds. (Li et al., 2025)
+
+Diffusion Models for Structure-Aware Stylization: This approach addresses domain shift caused by different devices and acquisition conditions. It incorporates a Structure-Preserving Network that ensures lesion location and size invariance during style transfer, maintaining robust segmentation performance even when the target domain isn't included in the training set. (Bao et al., 2024)
+
+## Methods to enhance robustness
+
+Medical image segmentation models can be made more robust through several specialized approaches that address different aspects of vulnerability. A particularly effective strategy is training models to learn anatomical structures rather than just image features. Experimental results demonstrate that models trained with this anatomical focus exhibit superior performance when tested on datasets from unseen domains, indicating enhanced robustness to domain shifts (Hwang et al., 2021).
+
+Addressing textural bias has emerged as another important approach for improving segmentation robustness. Extensive empirical investigations have shown that applying specific types of simulated textural noise during training can lead to texture-invariant models with improved performance when processing scans affected by previously unseen noise types and levels. This is particularly valuable for three-dimensional medical data, where textural variations can significantly impact segmentation accuracy (Chai et al., 2020).
+
+Transfer learning approaches have also demonstrated considerable promise for enhancing robustness. Unlike traditional transfer learning that moves knowledge from natural images to medical domains, transferring knowledge within the same domain can further boost model robustness and generalization. A two-stage framework incorporating unsupervised tile-wise autoencoder pretraining followed by a downstream segmentation model with an auxiliary reconstruction network has shown superior robustness to corruption and high generalization performance on unseen datasets, especially with limited training data (Chen, 2021). Similarly, self-supervised learning (SSL) through inpainting-based pretext tasks has been shown to increase model robustness in label-limited scenarios and reduce worst-case errors that typically occur with supervised learning alone (Dominic et al., 2023).
+
+Latent space constraints offer another innovative approach to enhancing robustness. By exploiting the limited structural variability between patients in medical images, constraining the latent space to a learned dictionary of base components can improve segmentation model robustness. This approach incorporates topological priors using persistent homology in dictionary sampling and applies deep topological supervision hierarchically to ensure accurate structural representation under various perturbations (Santhirasekaram et al., 2023).
+
+Foundation models have demonstrated particular promise for robust medical image segmentation. Recent research comparing the generalization performance of various pre-trained models to unseen domains reveals that foundation-based models enjoy better robustness than other architectures after being fine-tuned on the same in-distribution dataset (Nguyen et al., 2023). This suggests that leveraging foundation models may provide inherent advantages for addressing domain shifts in medical imaging.
+
+For models based on the Segment Anything Model (SAM), specialized approaches have been developed to enhance robustness. The RoBox-SAM framework ensures consistent segmentation performance under prompts of varying quality through a prompt refinement module, a prompt enhancement module that automatically generates point prompts to assist box-prompted segmentation, and a self-information extractor to optimize image embeddings and attention calculation (Huang et al., 2024). These features collectively enhance the robustness of SAM-based medical image segmentation.
+
+Diffusion models have shown remarkable robustness to noise in medical images. Latent Diffusion Segmentation (LDSeg) conditions a denoiser on image embeddings (low-dimensional representations of source images) and uses an iterative denoising process that maintains accurate segmentation even with high-frequency noise in the source image. This approach demonstrates strong robustness to added noise even at high variance levels, while deterministic models like Res-UNet show drastically declining accuracy under the same conditions (Zaman et al., 2024).
+
+To address domain shifts caused by different devices and acquisition conditions, Structure-Aware Single-Shot Image Stylization using diffusion models has proven effective. This approach incorporates a Structure-Preserving Network (SPN) that ensures preservation of lesion location and size invariance between original and stylized images during style transfer. Notably, this method maintains robust segmentation performance even when the target domain is not included in the training set (Bao et al., 2024).
+
+Specialized preprocessing pipelines can also significantly enhance robustness. Combining normalization, resizing, histogram equalization, and data augmentation techniques creates a pipeline tailored for medical imaging that contributes to improved model generalization and robustness. This approach addresses common challenges in medical image analysis due to variations in imaging protocols (Avazov et al., 2024).
+
+Despite these advances, it's important to recognize that empirical defenses against adversarial attacks do not guarantee theoretical robustness. While state-of-the-art empirical defenses provide significant protection, stronger attacks can potentially circumvent them, as demonstrated by research into obfuscated gradients that can lead to a false sense of security (Laousy et al., 2023)(Athalye et al., 2018). This underscores the importance of continued research into comprehensive robustness solutions that address multiple vulnerabilities simultaneously.
+
+Several uncertainty estimation methods have been developed to address robustness issues across different image modalities. These approaches are particularly valuable for medical images with ambiguous boundaries, in contrast to the clear boundaries found in most natural images. Techniques that integrate probabilistic models into segmentation frameworks can help build trust through better error identification and provide multiple "plausible" masks for a single input when faced with inherent uncertainty (Shi et al., 2024).
+
+## Evaluation of robustness
+
+Robust evaluation frameworks are essential for assessing the reliability of medical image segmentation models across different operational conditions. One key dimension of evaluation is testing a model's performance under domain shifts, where a segmentation network trained on images from a single source is tested on images from entirely different sources. A model is considered domain-robust if it "exhibits a high performance on datasets from unseen domains," with experimental evidence showing that models trained to learn anatomical structures rather than image features demonstrate "superior performances in terms of both overlap and distance measures" when tested on new domains (Hwang et al., 2021).
+
+The assessment of robustness against noise and artifacts represents another critical evaluation dimension. Testing segmentation models under various noise conditions—with different types and levels of noise—provides valuable insights into a model's operational reliability in real-world medical environments. Visual comparisons of segmentation outcomes between noise-free and noise-affected images, with controlled variance parameters, offer practical demonstrations of model robustness (Joshi et al., 2024). These tests are particularly relevant for medical imaging where noise and artifacts are common, making robustness essential for clinical deployment (Maleki et al., 2024).
+
+Texture robustness evaluation has emerged as an important consideration, especially for three-dimensional medical data. Extensive empirical investigations have demonstrated that applying specific types of simulated textural noise during training can lead to texture-invariant models with improved performance when processing scans corrupted by previously unseen noise types and levels (Chai et al., 2020). Such comprehensive testing—comprising 176 experiments in one study—helps quantify a model's ability to maintain consistent performance despite textural variations.
+
+For adversarial robustness, specialized evaluation frameworks have been developed. These frameworks extend benchmarks like AutoAttack from natural image classification to volumetric multi-channel semantic segmentation, enabling rigorous testing of medical segmentation models against adversarial perturbations (Daza et al., 2021)(Croce et al., 2020). Recent research suggests that "the adversarial vulnerability of methods in the medical domain, while previously evidenced, has most likely been underestimated," highlighting the need for thorough evaluation across different architectures, including Convolutional, Transformer, and Mamba-based models (Malik et al., 2024)(Li et al., 2020).
+
+Several best practices have been established for comprehensive robustness evaluation. Using established quantitative metrics such as the Dice coefficient and Intersection over Union (IoU) is recommended to measure how model performance changes with variations in input images (Maleki et al., 2024). Visual comparisons provide qualitative insights into model predictions across different levels of image perturbation and noise. Testing models using images from various sources and patient groups is essential to ascertain widespread usability, as demonstrated in studies across multiple datasets like ISIC2018, LiTS2017, and BraTS2019 (Zou et al., 2023)(Zeleznik et al., 2021)(Wu et al., 2021).
+
+Sensitivity analysis represents an important component of robust evaluation, assessing the extent to which variations in input data affect model predictions. Given the diversity of human anatomy and variability in medical imaging modalities, understanding which factors most influence model performance offers key insights into potential limitations and areas for improvement (Maleki et al., 2024). Additionally, documenting all assumptions about input data made during analysis is crucial to highlight their potential impact on clinical performance.
+
+The effectiveness of preprocessing pipelines in enhancing model robustness should also be evaluated. Comprehensive pipelines that include normalization, resizing, histogram equalization, and data augmentation techniques can significantly contribute to improved model generalization and robustness. Such tailored preprocessing approaches address common challenges in medical image analysis due to variations in imaging protocols (Avazov et al., 2024).
+
+A balanced evaluation approach should report both successful and unsuccessful outcomes, as understanding model limitations is especially critical in clinical contexts (Maleki et al., 2024). This comprehensive evaluation across multiple dimensions helps establish the reliability needed for clinical deployment, addressing concerns among clinicians regarding the dependability of tools employing segmentation models in healthcare settings (Malik et al., 2024).
+
+## Clinical importance 
+
+Medical image segmentation has become increasingly vital in modern clinical practice, creating a paradigm shift in how healthcare professionals approach diagnosis and treatment. Robust segmentation models have transformed quantitative pathological assessments, diagnostic support systems, and tumor analysis by providing reliable delineation of anatomical structures and abnormalities (Zou et al., 2023). For instance, in cardiovascular care, robust deep learning systems can automatically quantify coronary calcium on both cardiac-gated and non-gated CT scans, serving as accurate predictors of cardiovascular events independent of traditional risk factors (Zou et al., 2023)(Zeleznik et al., 2021). This application demonstrates how robust segmentation directly impacts clinical decision-making and patient outcomes.
+
+In oncology, segmentation robustness is particularly crucial for tumor analysis and treatment planning. Radiomics—the high-throughput extraction of quantitative features from radiological scans—relies on segmentation to identify imaging biomarkers that predict clinical outcomes (Zou et al., 2023)(Wu et al., 2021). Since treatment decisions increasingly depend on these analyses, even minor segmentation inaccuracies could lead to improper treatment plans or missed diagnoses. Furthermore, robust radiological features enable systematic characterization of tumor morphology and spatial heterogeneity across diverse tissues and imaging contrasts, allowing clinicians to identify distinct tumor subtypes with different molecular characteristics and prognoses (Wu et al., 2021).
+
+The importance of robustness becomes particularly evident in surgical applications, where intraoperative imaging presents unique challenges. During surgery, images often contain blur, reflections, or other types of noise that significantly differ from the cleaner images used to train segmentation models (Shi et al., 2024). In these critical settings, segmentation models must maintain performance despite these image quality variations to provide reliable guidance during procedures. Similarly, in autonomous diagnosis systems, reliable segmentation is essential for preventing potentially devastating consequences of misidentification (Mzoughi et al., 2025)(Rossolini et al., 2022).
+
+Beyond technical performance, robust segmentation models play a pivotal role in establishing trust and confidence between healthcare professionals and patients. A reliable segmentation model provides efficient pixel-level confidence among healthcare professionals while delivering consistent results (Zou et al., 2023). This trust factor is essential for widespread clinical adoption, as clinicians must feel confident in the model's output regardless of variations in imaging protocols, patient anatomy, or image quality.
+
+The diversity of medical imaging modalities further emphasizes the need for robust segmentation. Modern healthcare facilities use multiple imaging techniques (CT, MRI, ultrasound, etc.), each with its own characteristics and artifacts. Segmentation models that can perform consistently across these modalities enable standardized analysis and treatment planning, regardless of the imaging equipment available (Shi et al., 2024). However, existing research indicates that even advanced models like SAM "cannot stably and accurately implement zero-shot segmentation on multimodal and multi-object medical datasets," highlighting ongoing challenges in achieving cross-modality robustness (Shi et al., 2024).
+
+For practical clinical deployment, segmentation models must balance robustness with efficiency and accessibility. The traditional supervised learning approach often improves segmentation robustness at the significant cost of requiring expert annotations and clinical expertise (You et al., 2023)(Greenspan et al., 2016). This creates a barrier to adoption in real-world clinical settings where annotation resources are limited. Models that can maintain robustness while requiring fewer labeled examples represent a significant advancement toward practical clinical implementation (You et al., 2023).
+
+Sensitivity analysis also plays an important role in clinical applications by assessing how variations in input data affect model predictions. Given the natural diversity in human anatomy and variability in medical imaging modalities, understanding which factors most influence model performance offers critical insights for clinical use (Maleki et al., 2024). Models should be tested across various sources and patient groups to ensure widespread usability, with explicit documentation of assumptions that might impact clinical performance.
+
+Despite significant progress, concerns about adversarial vulnerabilities remain relevant in clinical contexts. Neural networks can be vulnerable to adversarial attacks—small input perturbations invisible to humans but crafted specifically to cause model errors (Laousy et al., 2023). While current empirical defenses provide significant protection, they don't guarantee theoretical robustness, and stronger attacks potentially could circumvent them (Laousy et al., 2023)(Athalye et al., 2018). This vulnerability underscores the need for ongoing research into comprehensive robustness solutions for clinical applications where model failures could have serious consequences.
+
+In summary, the clinical importance of robust medical image segmentation extends across multiple dimensions of healthcare delivery. As these technologies become increasingly integrated into clinical workflows, ensuring their reliability against variations in imaging data, modalities, and potentially adversarial inputs remains essential for patient safety and treatment efficacy (Li et al., 2024). The ongoing challenge is to develop models that maintain robustness while addressing practical constraints of clinical environments, including limited annotation resources and diverse imaging conditions.
+
+## Our contributions and innovations
 
 Auto-segmentation or generally automating parts of the medical image segmentation process has been a long standing research problem over several decades. With deep learning models in the past decade, the accuracy of such methods have gotten much closer to human expert levels, with many models reporting results within the range of human inter-expert variations. What is a downside unfortunately with such massive performance gains in accuracy is a lack of understanding of how robust such models can be, when considering performance across a spectrum of difficulty levels in imaging data. 
 
@@ -19,49 +159,3 @@ One metric of difficulty (for humans) could be to rank images where the inter-ex
 In this line of thought, what we do in this work involved trying to deconstruct parts of the architecture of well known segmentation models called the U-Net - which includes skip connections, and understanding how architecture changes can impact robustness of results across a variety of noise settings. The goal of this work is to come up with some kind of a recipe to demonstrate that if the distribution of input images contains a certain level of noise, then, a certain architecture of segmentation models is preferable to others (if it exists) {% cite kamath2023skipconnections %}. 
 
 Furthermore, we analyze what happens when such models have a sliding window inference mechanism, where if the foreground to background ratio (smaller foreground pixels indicate that the haystack in which we try to find a needle is larger) varies, how do various architectures behave in such situations. Sliding window inference is now commonplace due to varying image volume sizes and GPU memory constraints in training such large models {% cite kamath2022contextvsfbr %}. 
-
-
-## Image Segmentation Metrics
-
-The 2015 review by Taha and Hanbury [1] segments (pun unintended) image segmentation metrics into six categories: 
-
-1. Overlap: this is based on the four quadrants of True/False Positive/Negative, and are by far the most popular metrics used (especially Dice). Essentially, they measure some ratio of overlap versus the overall set. Unfortunately, in practice - these metrics could be very biased. Specifically, for objects that are larger, the scores are typically not very sensitive to errors, while for smaller objects, the scores become much more sensitive.
-
-Well known varieties: Dice, Jaccard, F1
-
-2. Volume: this too depends on the True/False Positive/Negative quadrants, however, it does not consider the intersection at all. It is defined as: 1 - (|False Negative - False Positive|)/(Sum of GT and Estimate). Interestingly, this metric can be 1 even when the overlap is empty! 
-
-3. Pair counting: This family involves looking at each segmentation as a set, and then defining the score based on the belonging-ness of each element (imagine as a pixel) in each of the two sets (ground truth or estimate, or both). In the context of image segmentation, this could be reframed as (TP + TN) / (TP + TN + FP + FN), and hence in some way, becomes an overlap metric. 
-
-4. Information theoretic:
-
-Mutual Information
-
-5. Probabilistic:
-
-AUC, Cohen's Kappa
-
-6. Spatial distance: 
-
-These include the rather well known Hausdorff, Average, and Mahalanobis distances.
-
-A drawback (which is likely a consequence of how close these metrics are to actual image properties) is that they are not normalized. This makes interpretation and comparison more challenging than otherwise. It could be argued that a 'true' numerical measure helps in interpretation, but it then involves more complications like what the pixel dimensions are, are there discretization effects, and so on. 
-
-## What are the characteristics of an ideal metric?
-
-This is a difficult question to have a generic answer, but here are some high-level expectations:
-
-1. It is invariant to resolution/size changes (something DSC for example is not)
-2. This is not strictly necessary, but a normalized metric is better than one with an undefined range. This is especially important for comparisons across images.
-3. It is consistent from an outcome perspective. Specifically, for a normalized measure, 0.9 should have a well understood meaning outside the image-space, and should provide some guarantees in the outcome.
-
-## Further reading
-
-https://www.kaggle.com/yassinealouini/all-the-segmentation-metrics is a good implementation focused treatment.
-
-https://medium.com/@stefan.herdy/how-to-evaluate-semantic-segmantation-models-cd2539673701  is another good starting point to explore this space. 
-
-
-## References
-
-[1] Taha, A.A., Hanbury, A. Metrics for evaluating 3D medical image segmentation: analysis, selection, and tool. BMC Med Imaging 15, 29 (2015). https://doi.org/10.1186/s12880-015-0068-x
