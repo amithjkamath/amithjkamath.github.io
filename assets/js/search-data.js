@@ -817,7 +817,7 @@ ninja.data = [{
               window.location.href = "/projects/thesis-contour-correction-qualitative-analysis/";
             },},{id: "projects-dose-prediction-for-contour-quality-evalution",
           title: 'Dose Prediction for Contour Quality Evalution',
-          description: "The need for understanding downstream tasks in relation to measuring quality of AI model automation.",
+          description: "bring forward clinical outcome-knowledge into preceding workflow steps.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/thesis-dose-prediction-for-contour-evaluation/";
             },},{id: "projects-radiation-oncology-for-developers-and-researchers",
