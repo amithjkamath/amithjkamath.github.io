@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dose Prediction for Contour Quality Evalution
-description: The need for understanding downstream tasks in relation to measuring quality of AI model automation.
+description: bring forward clinical outcome-knowledge into preceding workflow steps.
 img: assets/img/1.jpg
 importance: 2
 category: themes
@@ -44,7 +44,7 @@ AI dose prediction models offer a transformative approach to contour quality ass
 
 This capability enables clinicians to focus quality assessment efforts on contour regions that would have the greatest impact on treatment outcomes rather than treating all geometric deviations as equally important. Several research groups have developed specialized approaches for contour quality assessment using AI-based methods. Wooten et al. demonstrated that training a random forest model on shape features of contours provides a viable method for contour quality assurance without requiring imaging or radiomic features, making it robust across different imaging platforms [(Wooten et al., 2022)](https://www.worldscientific.com/doi/10.1142/9789811270611_0036). 
 
-For brain tumors specifically, Kamath et al. evaluated a Cascaded 3D UNet for dose prediction that showed good sensitivity to radiation dose changes resulting from contour variations, reporting promising mean dose score and mean Dose Volume Histogram (DVH) scores between predicted and reference dose volumes [(Kamath et al., 2023)](https://ieeexplore.ieee.org/document/10230559).
+For brain tumors specifically, we evaluated a Cascaded 3D UNet for dose prediction that showed good sensitivity to radiation dose changes resulting from contour variations, reporting promising mean dose score and mean Dose Volume Histogram (DVH) scores between predicted and reference dose volumes {% cite kamath2023sensitivitydoseprediction %}. Furthermore, we propose ASTRA: where "atomic" contour changes can be simulated and corresponding dose changes could be visualized as a heatmap on the surface of the structures, to indicate dosimetric impact {% cite kamath2023astra %}.
 
 The Bayesian deep learning approach offers another avenue for contour quality assessment by enabling risk analysis through uncertainty quantification. Chaves-de-Plaza et al. proposed generating an ensemble of possible contours and computing multiple dose-volume histograms (DVHs) to identify "risky uncertain areas" where metrics deviate significantly from planning values [(Chaves-de-Plaza et al., 2022)](https://arxiv.org/abs/2208.04675). This approach helps prioritize contour corrections based on their potential impact on treatment planning.
 
@@ -61,18 +61,6 @@ AI dose prediction systems are increasingly being incorporated into clinical rad
 The clinical implementation of AI dose prediction often involves a multi-step workflow that combines automated contouring with dose prediction. Kerf et al. outline a process where deep learning segmentation (DLS) first generates AI contours that are then reviewed by radiation oncologists. These clinically approved contours serve as input for the deep learning planning (DLP) model, which creates an AI-generated treatment plan. This plan can be further refined by a human planner during a "fine-tune optimization step" to meet specific clinical requirements [(Kerf et al., 2023)](https://pubmed.ncbi.nlm.nih.gov/37809056/). 
 
 This workflow demonstrates how AI dose prediction can be integrated as part of a larger AI-driven treatment planning pipeline while maintaining appropriate human oversight at critical decision points. Beyond plan generation these systems can flag potential issues in the planning process when implemented with uncertainty quantification capabilities, enabling radiation oncologists to focus their attention on areas of concern.
-
-## Our contributions and innovations
-
-The broad idea here is to show that in the radiotherapy process, it is multi-step, which means that the output of the the initial steps can impact cumulative errors for the entire process differently than outputs of later stages. This also means that while estimating the quality of all these individual stages, it makes sense to understand how it impacts the outcome of the subsequent stages. 
-
-For example, if the imaging step is measured for quality purely by standard noise characteristics, one could miss out factors that affect how easily the structures can be segmented even in the presence of noise. A holistic sense of what is quality needs to be measured.
-
-In this line of thought, this post considers what happens between the contouring (or auto-segmentation) and the treatment dose planning steps - where traditionally, the contouring quality has been measured purely geometrically. Specifically, if the segmentation step was done in isolation, with the end goal of the entire process being just the labels at each pixel/voxel, it could be considered feasible to measure accuracy using a suitable geometric measure. Since this is not the case, our thesis is to introduce measures from the subsequent steps of treatment to guide the quality of previous steps - in this case, treatment planning.
-
-Specifically, it is known for example that non-smooth contours around the target volumes are not well handled by dose planning tools due to the physical constraints of the multi-leaf collimators and the speed at which these can move while treating complex shaped tumors through an arc. This means that deliberately smoothing the surface of the tumor segmentation (even if it does not make anatomic sense at times) can help design better plans - thereby meaning that a smoothness constraint for measuring the quality of tumor contours would help make the overall plan better.
-
-In our research, we attempt to incorporate dosimetric measures into the segmentation process - thereby hoping to come up with a better overall outcome rather than optimizing metrics for each sub-stage of the pipeline, which sometimes may not cumulatively lead to the optimal outcome {% cite kamath2023sensitivitydoseprediction %} {% cite kamath2023astra %} {% cite kamath2024radoncvsdldp %}.
 
 ## Challenges
 

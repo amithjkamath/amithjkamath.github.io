@@ -5,7 +5,7 @@ description: An overview of Radiation Oncology for the AI practitioner
 img: assets/img/3.jpg
 importance: 1
 category: others
-related_publications: true
+related_publications: false
 ---
 
 The not-so-random initial state of this text is courtesy [Ai2 Scholar QA](https://scholarqa.allen.ai/), and it has been reasonably cross-checked and improved by a human. This is a WIP (Work-In-Progress): this message will be removed once sufficient progress has been made.
@@ -46,3 +46,27 @@ Despite these advances, it's important to recognize that AI currently excels at 
 
 
 The successful integration of AI into radiation oncology practice will require interdisciplinary collaboration between radiation oncologists and computer scientists. Such partnerships are essential for aligning AI technologies with clinical needs, establishing acceptable performance metrics, and ensuring that developments address meaningful clinical problems [(Lin et al., 2024)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10874185/)[(Lastrucci et al., 2024)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11083654/). As these collaborative efforts progress, they have the potential to automate significant portions of the radiotherapy workflow, transforming this traditionally labor-intensive specialty.
+
+## Open Source Software tools
+
+### Python Packages for Medical Physics:
+
+* [pydicom](https://pydicom.github.io): An open-source Python package specifically designed for reading and writing radiotherapy DICOM files, enabling easy manipulation of medical imaging data
+* [dicompyler](https://www.dicompyler.com): An extensible open-source radiation therapy research platform that provides tools for working with DICOM-RT data.
+
+### Imaging and Visualization Libraries:
+
+* [ITK-Snap](https://www.itksnap.org/pmwiki/pmwiki.php): A software tool for segmentation of three-dimensional medical images.
+* [3D Slicer](https://www.slicer.org) with [SlicerRT](https://slicerrt.github.io) extension: A comprehensive platform for medical image informatics, image processing, and three-dimensional visualization with radiation therapy capabilities.
+* [ImageJ](https://imagej.net/ij/): A widely used open-source image processing program designed for scientific multidimensional images.
+
+Quality Assurance Tools:
+
+* [QATrack+](https://qatrackplus.com): An open-source radiotherapy quality assurance management system built with Python, designed for machine quality control (as opposed to patient specific quality control).
+
+Integration Components:
+
+* [Eclipse Scripting Application Programming Interface](https://docs.developer.varian.com/articles/index.html): While not open-source itself, this API allows integration with the Eclipse treatment planning system and has been used alongside open-source libraries to develop clinical applications.
+* [XiO Python Package](https://www.proquest.com/docview/2576611722?sourcetype=Scholarly%20Journals): An open-source package that adds scripting capability to the Elekta CMS XiO treatment planning system through an external interface, enabling users to script radiotherapy plans.
+* CERR: 
+* MatRAD:

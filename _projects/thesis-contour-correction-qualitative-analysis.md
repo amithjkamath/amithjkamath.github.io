@@ -14,7 +14,7 @@ The not-so-random initial state of this text is courtesy [Ai2 Scholar QA](https:
 
 ## Impact of contour variations 
 
-Contouring variations in radiation therapy have substantial clinical implications that extend beyond mere geometric differences. Studies have shown that variations in contouring of targets and organs at risk (OARs) can significantly impact dose-volume histogram (DVH) calculations, tumor control probability (TCP), and normal tissue complication probability (NTCP), with the magnitude depending on the degree of variation and the plan dose gradient (Zhu et al., 2019). The accuracy of primary gross tumor contouring can positively influence tumor control and patient survival outcomes (Zhu et al., 2019)(Lin et al., 2019).
+Contouring variations in radiation therapy have substantial clinical implications that extend beyond mere geometric differences. Studies have shown that variations in contouring of targets and organs at risk (OARs) can significantly impact dose-volume histogram (DVH) calculations, tumor control probability (TCP), and normal tissue complication probability (NTCP), with the magnitude depending on the degree of variation and the plan dose gradient [(Zhu et al., 2019)](https://www.frontiersin.org/articles/10.3389/fonc.2019.00627/pdf). The accuracy of primary gross tumor contouring can positively influence tumor control and patient survival outcomes [(Lin et al., 2019)](https://pubmed.ncbi.nlm.nih.gov/30912722/).
 
 Inter-observer variability in contouring remains a persistent challenge in radiation oncology despite uniform training and the use of standardized contouring guidelines (Upreti et al., 2020)(Vinod et al., 2016). This variability is not uniform across all structures; research has demonstrated that inter-observer variability is generally low for clearly defined organs like the bladder but increases significantly for structures without well-defined borders, such as the prostate, seminal vesicles, and rectum (Liu et al., 2021). This finding has important implications for quality assurance protocols, suggesting that structures with inherently higher variability may require more rigorous review.
 
@@ -141,3 +141,7 @@ However, dosimetric evaluation of target contours reveals different consideratio
 The accuracy of external body contouring also impacts dosimetric calculations. One study demonstrated that fluctuations in external contour affected calculated volume and thus dose calculations, with errors ranging from -2.8% to +2.5% (Banaee et al., 2024).
 
 Despite the clear clinical relevance of dosimetric evaluation, challenges remain. This approach requires treatment planning data, and there is currently no standard method or agreed threshold for acceptable dosimetric variation (Alzahrani et al., 2024). Additionally, conventional quality assurance procedures in radiation therapy typically rely on point and planar dosimeters, which may not capture the full three-dimensional impact of contouring variations (Ibbott et al., 2019).
+
+## Our contributions
+
+{% cite kamath2024radoncvsdldp %}
