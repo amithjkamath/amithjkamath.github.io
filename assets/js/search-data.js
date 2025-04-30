@@ -419,7 +419,7 @@ ninja.data = [{
           section: "News",},{id: "news-mega-we-organized-bart-the-first-bern-ai-in-radiotherapy-symposium-on-the-14th-of-march-2025-we-had-three-keynote-speakers-two-sponsors-nine-posters-and-100-registrations",
           title: ':mega: We organized BART - the first Bern AI in RadioTherapy symposium on...',
           description: "",
-          section: "News",},{id: "news-mega-a-short-video-on-using-monai-and-matlab-together-is-now-live-on-the-mathworks-youtube-channel-notes-about-it-here",
+          section: "News",},{id: "news-mega-a-short-video-on-using-monai-and-matlab-together-is-now-live-on-the-mathworks-youtube-channel-read-more-here",
           title: ':mega: A short video on using MONAI and MATLAB together is now live...',
           description: "",
           section: "News",},{id: "news-mega-grateful-to-be-named-one-of-five-university-of-bern-venture-fellows-for-2025-26",
