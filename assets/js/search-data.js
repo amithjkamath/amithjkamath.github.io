@@ -51,139 +51,7 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/glossary/";
               },
-            },{id: "post-a-post-with-plotly-js",
-        
-          title: "a post with plotly.js",
-        
-        description: "this is what included plotly.js code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/plotly/";
-          
-        },
-      },{id: "post-a-post-with-image-galleries",
-        
-          title: "a post with image galleries",
-        
-        description: "this is what included image galleries could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/photo-gallery/";
-          
-        },
-      },{id: "post-a-post-with-tabs",
-        
-          title: "a post with tabs",
-        
-        description: "this is what included tabs in a post could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/tabs/";
-          
-        },
-      },{id: "post-a-post-with-typograms",
-        
-          title: "a post with typograms",
-        
-        description: "this is what included typograms code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/typograms/";
-          
-        },
-      },{id: "post-a-post-that-can-be-cited",
-        
-          title: "a post that can be cited",
-        
-        description: "this is what a post that can be cited looks like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/post-citation/";
-          
-        },
-      },{id: "post-a-post-with-pseudo-code",
-        
-          title: "a post with pseudo code",
-        
-        description: "this is what included pseudo code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/pseudocode/";
-          
-        },
-      },{id: "post-a-post-with-code-diff",
-        
-          title: "a post with code diff",
-        
-        description: "this is how you can display code diffs",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/code-diff/";
-          
-        },
-      },{id: "post-a-post-with-advanced-image-components",
-        
-          title: "a post with advanced image components",
-        
-        description: "this is what advanced image components could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/advanced-images/";
-          
-        },
-      },{id: "post-a-post-with-vega-lite",
-        
-          title: "a post with vega lite",
-        
-        description: "this is what included vega lite code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/vega-lite/";
-          
-        },
-      },{id: "post-a-post-with-geojson",
-        
-          title: "a post with geojson",
-        
-        description: "this is what included geojson code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/geojson-map/";
-          
-        },
-      },{id: "post-a-post-with-echarts",
-        
-          title: "a post with echarts",
-        
-        description: "this is what included echarts code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/echarts/";
-          
-        },
-      },{id: "post-a-post-with-chart-js",
-        
-          title: "a post with chart.js",
-        
-        description: "this is what included chart.js code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/chartjs/";
-          
-        },
-      },{id: "post-paper-summary-quality-assurance-for-ai-based-applications-in-radiation-therapy",
+            },{id: "post-paper-summary-quality-assurance-for-ai-based-applications-in-radiation-therapy",
         
           title: "Paper Summary: Quality Assurance for AI-Based Applications in Radiation Therapy",
         
@@ -203,127 +71,6 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2024/deep-learning-in-radiation-therapy/";
-          
-        },
-      },{id: "post-a-post-with-tikzjax",
-        
-          title: "a post with TikZJax",
-        
-        description: "this is what included TikZ code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/tikzjax/";
-          
-        },
-      },{id: "post-a-post-with-bibliography",
-        
-          title: "a post with bibliography",
-        
-        description: "an example of a blog post with bibliography",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/post-bibliography/";
-          
-        },
-      },{id: "post-a-post-with-jupyter-notebook",
-        
-          title: "a post with jupyter notebook",
-        
-        description: "an example of a blog post with jupyter notebook",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/jupyter-notebook/";
-          
-        },
-      },{id: "post-pytorch-with-matlab-calling-a-unet-trained-with-pytorch-monai-in-matlab",
-        
-          title: "PyTorch with MATLAB: calling a UNet trained with PyTorch/MONAI in MATLAB",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/monai-with-matlab/";
-          
-        },
-      },{id: "post-a-post-with-custom-blockquotes",
-        
-          title: "a post with custom blockquotes",
-        
-        description: "an example of a blog post with custom blockquotes",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/custom-blockquotes/";
-          
-        },
-      },{id: "post-a-post-with-table-of-contents-on-a-sidebar",
-        
-          title: "a post with table of contents on a sidebar",
-        
-        description: "an example of a blog post with table of contents on a sidebar",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/sidebar-table-of-contents/";
-          
-        },
-      },{id: "post-a-post-with-audios",
-        
-          title: "a post with audios",
-        
-        description: "this is what included audios could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/audios/";
-          
-        },
-      },{id: "post-a-post-with-videos",
-        
-          title: "a post with videos",
-        
-        description: "this is what included videos could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/videos/";
-          
-        },
-      },{id: "post-displaying-beautiful-tables-with-bootstrap-tables",
-        
-          title: "displaying beautiful tables with Bootstrap Tables",
-        
-        description: "an example of how to use Bootstrap Tables",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/tables/";
-          
-        },
-      },{id: "post-a-post-with-table-of-contents",
-        
-          title: "a post with table of contents",
-        
-        description: "an example of a blog post with table of contents",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/table-of-contents/";
-          
-        },
-      },{id: "post-a-post-with-giscus-comments",
-        
-          title: "a post with giscus comments",
-        
-        description: "an example of a blog post with giscus comments",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2022/giscus-comments/";
           
         },
       },{id: "post-about-us-quot-i-would-like-to-convert-my-research-into-a-useful-tool-for-clinicians-quot-center-for-artificial-intelligence-in-medicine-caim",
@@ -524,17 +271,6 @@ ninja.data = [{
             window.location.href = "/blog/2022/understanding-generalization-unet/";
           
         },
-      },{id: "post-a-post-with-redirect",
-        
-          title: "a post with redirect",
-        
-        description: "you can also redirect to assets like pdf",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/assets/pdf/example_pdf.pdf";
-          
-        },
       },{id: "post-paper-summary-learnable-test-time-augmentation-for-source-free-medical-image-segmentation-under-domain-shift",
         
           title: "Paper Summary: Learnable Test-Time Augmentation for Source-Free Medical Image Segmentation Under Domain Shift...",
@@ -601,17 +337,6 @@ ninja.data = [{
             window.location.href = "/blog/2021/patches-are-all-you-need/";
           
         },
-      },{id: "post-a-post-with-diagrams",
-        
-          title: "a post with diagrams",
-        
-        description: "an example of a blog post with diagrams",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2021/diagrams/";
-          
-        },
       },{id: "post-a-distill-style-blog-post",
         
           title: "a distill-style blog post",
@@ -621,72 +346,6 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2021/distill/";
-          
-        },
-      },{id: "post-a-post-with-twitter",
-        
-          title: "a post with twitter",
-        
-        description: "an example of a blog post with twitter",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2020/twitter/";
-          
-        },
-      },{id: "post-a-post-with-disqus-comments",
-        
-          title: "a post with disqus comments",
-        
-        description: "an example of a blog post with disqus comments",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2015/disqus-comments/";
-          
-        },
-      },{id: "post-a-post-with-math",
-        
-          title: "a post with math",
-        
-        description: "an example of a blog post with some math",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2015/math/";
-          
-        },
-      },{id: "post-a-post-with-code",
-        
-          title: "a post with code",
-        
-        description: "an example of a blog post with some code",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2015/code/";
-          
-        },
-      },{id: "post-a-post-with-images",
-        
-          title: "a post with images",
-        
-        description: "this is what included images could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2015/images/";
-          
-        },
-      },{id: "post-a-post-with-formatting-and-links",
-        
-          title: "a post with formatting and links",
-        
-        description: "march &amp; april, looking forward to summer",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2015/formatting-and-links/";
           
         },
       },{id: "books-the-godfather",
@@ -733,11 +392,11 @@ ninja.data = [{
           section: "News",},{id: "news-mega-delighted-to-be-invited-to-share-my-young-researchers-tales-story-in-the-8x8-event-hosted-at-haus-der-universität-organized-by-the-mvub-see-here-for-more",
           title: ':mega: Delighted to be invited to share my “Young Researchers Tales” story in...',
           description: "",
-          section: "News",},{id: "news-scroll-our-paper-titled-astra-atomic-surface-transformations-for-radiotherapy-quality-assurance-is-accepted-as-an-oral-presentation-at-embc-2023-in-sydney-elated-to-win-the-2nd-place-best-student-paper-award-click-for-more",
+          section: "News",},{id: "news-scroll-our-paper-titled-astra-atomic-surface-transformations-for-radiotherapy-quality-assurance-is-accepted-as-an-oral-presentation-at-embc-2023-in-sydney-elated-to-win-the-2nd-place-best-student-paper-award",
           title: ':scroll: Our paper titled “ASTRA: Atomic Surface Transformations for Radiotherapy quality Assurance” is...',
           description: "",
-          section: "News",},{id: "news-mega-imimic-is-back-at-miccai-23-see-website-for-important-dates-more-details-to-come-stay-tuned",
-          title: ':mega: iMIMIC is back at MICCAI 23: see website for important dates. More...',
+          section: "News",},{id: "news-mega-elated-to-win-the-2nd-place-best-student-paper-award-at-embc-2024",
+          title: ':mega: Elated to win the 2nd place - best student paper award! at...',
           description: "",
           section: "News",},{id: "news-scroll-our-papers-titled-do-we-really-need-that-skip-connection-understanding-its-interplay-with-task-complexity-and-dose-guidance-for-radiotherapy-oriented-deep-learning-segmentation-are-both-early-top-14-accepted-at-miccai-2023-in-vancouver-more-details-soon",
           title: ':scroll: Our papers titled “Do we really need that skip connection? Understanding its...',
@@ -745,27 +404,28 @@ ninja.data = [{
           section: "News",},{id: "news-scroll-two-abstracts-accepted-at-isbi-2024-congratulations-to-zahira-mercado-for-presenting-this-as-part-of-her-master-thesis",
           title: ':scroll: Two abstracts accepted at ISBI 2024! Congratulations to Zahira Mercado for presenting...',
           description: "",
-          section: "News",},{id: "news-mega-our-3-minute-pitch-about-ai-in-radiotherapy-research-happened-to-win-the-falling-walls-fribourg-2024-event-next-stop-berlin-in-november",
-          title: ':mega: Our 3 minute pitch about AI in radiotherapy research happened to win...',
-          description: "",
-          section: "News",},{id: "news-scroll-our-paper-comparing-the-performance-of-radiation-oncologists-versus-a-deep-learning-dose-predictor-is-accepted-as-an-oral-presentation-at-midl-2024-18-acceptance-for-oral-36-217-more-to-come-soon",
+          section: "News",},{id: "news-scroll-our-paper-comparing-the-performance-of-radiation-oncologists-versus-a-deep-learning-dose-predictor-is-accepted-as-an-oral-presentation-at-midl-2024-18-acceptance-for-oral-36-217",
           title: ':scroll: Our paper “Comparing the Performance of Radiation Oncologists versus a Deep Learning...',
           description: "",
-          section: "News",},{id: "news-scroll-our-paper-autodoserank-automated-dosimetry-informed-segmentation-ranking-for-radiotherapy-is-accepted-at-the-caption-miccai-workshop-this-is-special-as-it-is-zahiras-master-advisee-first-first-author-paper-she-also-goes-on-to-win-the-caim-research-award-in-the-translation-category-for-her-contributions-to-contouraid-way-to-go-zahira",
+          section: "News",},{id: "news-scroll-our-paper-autodoserank-automated-dosimetry-informed-segmentation-ranking-for-radiotherapy-is-accepted-at-the-caption-miccai-workshop-this-is-special-as-it-is-zahiras-master-advisee-first-first-author-paper-she-won-the-caim-research-award-in-the-translation-category-for-her-contributions-to-contouraid-way-to-go-zahira",
           title: ':scroll: Our paper “AutoDoseRank: Automated Dosimetry-Informed Segmentation Ranking for Radiotherapy” is accepted at...',
           description: "",
-          section: "News",},{id: "news-mega-our-research-is-one-of-100-lab-pitches-from-researchers-all-over-the-world-60-countries-at-the-35th-anniversary-of-the-fall-of-the-berlin-wall-at-the-falling-walls-science-summit-2024-see-more-here-https-youtu-be-066tajzeopi",
+          section: "News",},{id: "news-mega-our-research-is-one-of-100-lab-pitches-from-researchers-all-over-the-world-60-countries-at-the-35th-anniversary-of-the-fall-of-the-berlin-wall-at-the-falling-walls-science-summit-2024",
           title: ':mega: Our research is one of 100 “lab” pitches from researchers all over...',
           description: "",
-          section: "News",},{id: "news-mega-we-are-organizing-bart-the-first-bern-ai-in-radiotherapy-symposium-on-the-14th-of-march-2025-we-have-three-keynote-speakers-confirmed-sponsors-in-the-works-and-poster-travel-awards-being-prepared-stay-tuned-at-https-ubern-mia-github-io-bart25-for-more",
-          title: ':mega: We are organizing BART - the first Bern AI in RadioTherapy symposium...',
+          section: "News",},{id: "news-mega-zahira-won-the-caim-research-award-in-the-translation-category-for-her-contributions-to-contouraid-way-to-go-zahira",
+          title: ':mega: Zahira won the CAIM Research Award in the Translation category for her...',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-image-registration",
+          section: "News",},{id: "news-mega-we-organized-bart-the-first-bern-ai-in-radiotherapy-symposium-on-the-14th-of-march-2025-we-had-three-keynote-speakers-two-sponsors-nine-posters-and-100-registrations",
+          title: ':mega: We organized BART - the first Bern AI in RadioTherapy symposium on...',
+          description: "",
+          section: "News",},{id: "news-mega-a-short-video-on-using-monai-and-matlab-together-is-now-live-on-the-mathworks-youtube-page",
+          title: ':mega: A short video on using MONAI and MATLAB together is now live...',
+          description: "",
+          section: "News",},{id: "news-mega-grateful-to-be-named-one-of-five-university-of-bern-venture-fellows-for-2025-26",
+          title: ':mega: Grateful to be named one of five University of Bern Venture Fellows...',
+          description: "",
+          section: "News",},{id: "projects-image-registration",
           title: 'Image Registration',
           description: "an interactive overview of affine transformations",
           section: "Projects",handler: () => {
@@ -805,6 +465,11 @@ ninja.data = [{
           description: "More details about our MICCAI &#39;23 work.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2023-miccai-skip-connections/";
+            },},{id: "projects-monai-with-matlab",
+          title: 'MONAI with MATLAB',
+          description: "a getting started guide for using both MONAI and MATLAB",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2024-fa-monai-with-matlab/";
             },},{id: "projects-comparing-the-performance-of-radiation-oncologists-versus-a-deep-learning-dose-predictor",
           title: 'Comparing the Performance of Radiation Oncologists versus a Deep Learning Dose Predictor',
           description: "More details about our MIDL &#39;24 work.",
