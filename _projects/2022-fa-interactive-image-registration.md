@@ -3,7 +3,7 @@ layout: page
 title: Image Registration
 description: an interactive overview of affine transformations
 img: assets/img/image-registration-demo.png
-importance: 1
+importance: 2
 category: teaching
 ---
 

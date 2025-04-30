@@ -3,7 +3,7 @@ layout: page
 title: Template Matching
 description: a simple interactive visual explainer for Template Matching
 img: assets/img/template-matching-demo.png
-importance: 1
+importance: 2
 category: teaching
 ---
 

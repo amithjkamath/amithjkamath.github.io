@@ -3,7 +3,7 @@ layout: page
 title: Monty Hall
 description: an interactive game to understand conditional probability
 img: assets/img/monty-hall-demo.png
-importance: 1
+importance: 2
 category: teaching
 ---
 

@@ -5,8 +5,6 @@ date: 2024-01-01 00:00:00
 categories: paper-summary, computer-vision, mia
 ---
 
-
-
 AI algorithms are typically data-driven, may be continuously evolving, and their behavior has a degree of (acceptable) uncertainty due to inherent noise in training data and the substantial number of parameters that are used in the algorithms.
 
 QA for AI-based systems is an emerging area, which has not been intensively explored and requires interactive collaborations between medical doctors, medical physics experts, and commercial/research AI institutions.

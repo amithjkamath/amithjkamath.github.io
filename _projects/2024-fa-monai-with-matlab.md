@@ -1,21 +1,21 @@
 ---
-layout: post
-title: 'PyTorch with MATLAB: calling a UNet trained with PyTorch/MONAI in MATLAB '
-date: 2023-05-20 00:00:00
-categories: matlab, programming, computer-vision
+layout: page
+title: MONAI with MATLAB
+description: a getting started guide for using both MONAI and MATLAB
+img: assets/img/7.jpg
+importance: 1
+category: teaching
 ---
 
-In this short post, we will attempt to run a UNet model implemented using PyTorch (and MONAI, really) within MATLAB. All the associated code and data is available at https://github.com/amithjkamath/monai-from-matlab 
+In this short post, we will attempt to run a UNet model implemented using PyTorch (and MONAI, really) within MATLAB. Watch the video we published on the [MathWorks YouTube channel here](https://www.youtube.com/watch?v=az51x0bIZ9Q)! All the associated code and data is available on GitHub: [@amithjkamath/monai-from-matlab](https://github.com/amithjkamath/monai-from-matlab).
 
 This is inspired by questions on MATLAB Answers like this:
-
 
 ![How to load PyTorch model into MATLAB](../assets/img/how-to-load-pytorch-matlab.png)
 
 or 
 
 ![How to load .pth file into MATLAB](../assets/img/loading-pth-model-matlab.png)
-
 
 Now one may ask what the use-case for this is, for which I have the following three points:
 
