@@ -11,25 +11,29 @@ In this short post, we will attempt to run a UNet model implemented using PyTorc
 
 This is inspired by questions on MATLAB Answers like this:
 
-![How to load PyTorch model into MATLAB](../assets/img/how-to-load-pytorch-matlab.png)
+<img src="../../assets/img/how-to-load-pytorch-matlab.png" alt="drawing" width="800"/>
+
+How to load PyTorch model into MATLAB
 
 or 
 
-![How to load .pth file into MATLAB](../assets/img/loading-pth-model-matlab.png)
+<img src="../../assets/img/loading-pth-model-matlab.png" alt="drawing" width="800"/>
 
-Now one may ask what the use-case for this is, for which I have the following three points:
+How to load .pth file into MATLAB
 
-* You already have some pre-processing/post-processing code in MATLAB that you don't want to re-implement with python.
-* You are primarily a MATLAB user, and have been handed off a fancy deep learning model from a colleague who doesn't care enough to help you use it somehow.
-* You need to do some interactive labeling (something this post doesn't delve into) and don't want to re-invent the wheel and instead want to use the Labeler Apps in MATLAB.
+Now you might be wondering: why would anyone want to use MONAI, a Python-based deep learning framework—inside MATLAB? Here are a few scenarios where this kind of interoperability becomes not just useful, but essential:
 
-If you fall into these three (or potentially another unknown) categories, read on.
+1. You already have a mature pipeline in MATLAB, for image pre-processing, statistical analysis, or visualization, and re-writing all of that in Python just to run a deep learning model feels like reinventing the wheel.
+2. You work primarily in MATLAB, but a collaborator (or a paper) provides you with a powerful MONAI-based deep learning model. Rather than spend hours navigating PyTorch code and virtual environments, you’d prefer to drop it into your existing MATLAB workflow and get back to your research.
+3. You want to leverage MATLAB’s built-in apps, especially for tasks like interactive labeling or image registration—while still taking advantage of the latest medical imaging AI tools MONAI offers.
+
+If any of these situations sound familiar, or if you're just curious how these two powerful ecosystems can work together—then read on.
 
 ----------
 
 ## Setting up the MATLAB + Python interface
 
-This is a pre-requisite for the rest of the steps, and even though could be rather involved, it is a one-time setup, and hence not so difficult. Here's how I did this on my MacOS 13.3 running MATLAB R2022b:
+Establishing the MATLAB–Python interface is a prerequisite for the remaining steps. While the initial setup may seem involved, it is a one-time configuration and not overly complex. The following is how I did this on a computer running macOS 13.3 and MATLAB R2022b. It could also work for newer versions as well.
 
 ### 1. Create a new MATLAB conda environment
 
@@ -59,7 +63,7 @@ Next, install pytorch/monai (or whatever dependencies your python code while run
 
 If required, also consider installing monai using
 
-    %pip install monai
+    % pip install monai
 
 (If pip isn’t available, you need to set it up, using %conda install pip)
 
