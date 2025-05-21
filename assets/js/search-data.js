@@ -475,6 +475,11 @@ ninja.data = [{
           description: "More details about our MIDL &#39;24 work.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2024-midl-radonc-vs-dldp/";
+            },},{id: "projects-short-course-on-radiation-oncology-with-ai",
+          title: 'Short Course on Radiation Oncology with AI',
+          description: "A work-in-progress course plan for Radiation Oncology and AI",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2025-fa-radonc-with-AI/";
             },},{id: "projects-dosimetric-awareness-of-radiation-oncology-professionals",
           title: 'Dosimetric Awareness of Radiation Oncology Professionals',
           description: "Understanding what human-experts think about the impact of contour evaluations.",
