@@ -2,7 +2,7 @@
 layout: page
 title: MONAI with MATLAB
 description: a getting started guide for using both MONAI and MATLAB
-img: assets/img/7.jpg
+img: assets/img/monai-matlab.png
 importance: 1
 category: teaching
 ---

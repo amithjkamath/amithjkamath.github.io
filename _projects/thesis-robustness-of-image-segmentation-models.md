@@ -2,7 +2,7 @@
 layout: page
 title: Robustness of Deep Learning Segmentation Models
 description: Measuring the performance of segmentation models under image content variations.
-img: assets/img/4.jpg
+img: assets/img/skip-connections.png
 importance: 3
 category: themes
 related_publications: true

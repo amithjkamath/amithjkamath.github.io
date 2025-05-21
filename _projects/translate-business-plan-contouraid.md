@@ -2,7 +2,7 @@
 layout: page
 title: Literature review for a business plan on automated contouring
 description: Broad overview of components of a business plan for automated contouring
-img: assets/img/5.jpg
+img: assets/img/unmet-clinical-need.png
 importance: 3
 category: others
 related_publications: true

@@ -149,11 +149,11 @@
   ],
   "awards": [
     {
-      "title": "Young Researcher Promotion Grant to organize BART '25",
-      "date": "2024-07-01",
-      "awarder": "Uni Bern MVUB",
-      "url": "https://www.unibe.ch/research/funding_and_prizes/unibe_funding_schemes/promotion_fund/index_eng.html",
-      "summary": "Funding to organize a one-day symposium on AI and Radiation Oncology"
+      "title": "University of Bern Venture Fellowship 2025",
+      "date": "2025-05-01",
+      "awarder": "University of Bern Innovation Office",
+      "url": "https://www.unibe.ch/research/funding_and_prizes/unibe_funding_schemes/venture_fellowship/index_eng.html",
+      "summary": "One year fellowship to support the development of a startup project in the field of AI and radiation oncology."
     },
     {
       "title": "Falling Walls Lab Winner, Western Switzerland",
@@ -170,25 +170,11 @@
       "summary": "Awarded for our work on ASTRA - radiotherapy quality assurance using dose predictions"
     },
     {
-      "title": "BME Club Travel Grant Award",
-      "date": "2023-05-01",
-      "awarder": "University of Bern Biomedical Engineering Club",
-      "url": "https://www.bmeclub.ch/general-information/",
-      "summary": "Travel support to attend MICCAI 2023, for an early-accepted paper presentation"
-    },
-    {
-      "title": "Center for AI in Medicine Research Award - Translation Category",
-      "date": "2022-12-01",
-      "awarder": "CAIM, University of Bern",
-      "url": "https://www.caim.unibe.ch/research/research_awards/index_eng.html",
-      "summary": ""
-    },
-    {
       "title": "MICCAI Hackathon Winner - Annotator/Data Uncertainty",
       "date": "2022-10-01",
-      "awarder": "MICCAI",
+      "awarder": "MICCAI 2022",
       "url": "http://2022.miccai-hackathon.com",
-      "summary": ""
+      "summary": "Won the hackathon while developing methods for estimating annotation uncertainty in medical images."
     }
   ],
   "certificates": [],

@@ -2,7 +2,7 @@
 layout: page
 title: Dose Prediction for Contour Quality Evalution
 description: bring forward clinical outcome-knowledge into preceding workflow steps.
-img: assets/img/1.jpg
+img: assets/img/dose-prediction.png
 importance: 2
 category: themes
 related_publications: true

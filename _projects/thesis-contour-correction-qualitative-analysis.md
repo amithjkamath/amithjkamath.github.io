@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Qualitative analysis of Radiation Oncology Contour Corrections
-description: Understanding what human-experts think about the impact of contour evaluations
-img: assets/img/7.jpg
+title: Dosimetric Awareness of Radiation Oncology Professionals
+description: Understanding what human-experts think about the impact of contour evaluations.
+img: assets/img/dose-awareness.png
 importance: 1
 category: themes
 related_publications: true

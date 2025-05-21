@@ -2,7 +2,7 @@
 layout: page
 title: Radiation Oncology for Developers and Researchers
 description: An overview of Radiation Oncology for the AI practitioner
-img: assets/img/3.jpg
+img: assets/img/overview-rt.png
 importance: 1
 category: others
 related_publications: false
