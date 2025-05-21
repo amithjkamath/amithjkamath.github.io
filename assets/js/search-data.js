@@ -475,9 +475,9 @@ ninja.data = [{
           description: "More details about our MIDL &#39;24 work.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2024-midl-radonc-vs-dldp/";
-            },},{id: "projects-qualitative-analysis-of-radiation-oncology-contour-corrections",
-          title: 'Qualitative analysis of Radiation Oncology Contour Corrections',
-          description: "Understanding what human-experts think about the impact of contour evaluations",
+            },},{id: "projects-dosimetric-awareness-of-radiation-oncology-professionals",
+          title: 'Dosimetric Awareness of Radiation Oncology Professionals',
+          description: "Understanding what human-experts think about the impact of contour evaluations.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/thesis-contour-correction-qualitative-analysis/";
             },},{id: "projects-dose-prediction-for-contour-quality-evalution",
@@ -495,11 +495,6 @@ ninja.data = [{
           description: "Measuring the performance of segmentation models under image content variations.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/thesis-robustness-of-image-segmentation-models/";
-            },},{id: "projects-short-course-on-radiation-oncology-with-ai",
-          title: 'Short Course on Radiation Oncology with AI',
-          description: "A work-in-progress course plan for Radiation Oncology and AI",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/thesis-short-course-on-RadOnc-with-AI/";
             },},{id: "projects-literature-review-for-a-business-plan-on-automated-contouring",
           title: 'Literature review for a business plan on automated contouring',
           description: "Broad overview of components of a business plan for automated contouring",
