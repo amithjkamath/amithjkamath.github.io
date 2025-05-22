@@ -51,7 +51,29 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/glossary/";
               },
-            },{id: "post-tairo-medical-imaging-in-radiation-oncology",
+            },{id: "post-tairo-ai-for-treatment-planning",
+        
+          title: "TaiRO: AI for Treatment Planning",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/07-TaiRO-Treatment-Planning/";
+          
+        },
+      },{id: "post-tairo-ai-for-contouring",
+        
+          title: "TaiRO: AI for Contouring",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/04-TaiRO-Contouring/";
+          
+        },
+      },{id: "post-tairo-medical-imaging-in-radiation-oncology",
         
           title: "TaiRO: Medical Imaging in Radiation Oncology",
         
@@ -62,9 +84,9 @@ ninja.data = [{
             window.location.href = "/blog/2025/03-TaiRO-Imaging/";
           
         },
-      },{id: "post-tairo-fundamentals-of-machine-learning-and-deep-learning",
+      },{id: "post-tairo-fundamentals-of-deep-learning",
         
-          title: "TaiRO: Fundamentals of Machine Learning and Deep Learning",
+          title: "TaiRO: Fundamentals of Deep Learning",
         
         description: "",
         section: "Posts",
