@@ -79,7 +79,7 @@ Organizer for [Bern Interpretable AI (BIAS) Symposium]((https://amithjkamath.git
 
 ---
 
-[AI in Radiotherapy]({% link _projects/2025-fa-radonc-with-AI.md %})
+[AI in Radiotherapy]({% link _projects/2025-TaiRO.md %})
 <details>
   <summary>More details</summary>
   This is designed for someone with a computer science background, who would like to familiarize themselves with radiation oncology topics so as to build useful tools in this application area.

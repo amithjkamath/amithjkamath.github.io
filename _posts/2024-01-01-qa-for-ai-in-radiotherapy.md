@@ -3,6 +3,7 @@ layout: post
 title: 'Paper Summary: Quality Assurance for AI-Based Applications in Radiation Therapy'
 date: 2024-01-01 00:00:00
 categories: paper-summary, computer-vision, mia
+featured: false
 ---
 
 AI algorithms are typically data-driven, may be continuously evolving, and their behavior has a degree of (acceptable) uncertainty due to inherent noise in training data and the substantial number of parameters that are used in the algorithms.
