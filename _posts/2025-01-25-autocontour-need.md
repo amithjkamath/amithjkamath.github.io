@@ -1,11 +1,9 @@
 ---
-layout: page
-title: Literature review for a business plan on automated contouring
-description: Broad overview of components of a business plan for automated contouring
-img: assets/img/unmet-clinical-need.png
-importance: 3
-category: others
-related_publications: true
+layout: post
+title: 'Market need for Auto-Contouring Solutions'
+date: 2025-01-15 00:00:00
+categories: tairo, radiation-oncology, artificial-intelligence
+featured: true
 ---
 
 The not-so-random initial state of this text is courtesy [Ai2 Scholar QA](https://scholarqa.allen.ai/), and it has been reasonably cross-checked and improved by a human. This is a WIP (Work-In-Progress): this message will be removed once sufficient progress has been made.

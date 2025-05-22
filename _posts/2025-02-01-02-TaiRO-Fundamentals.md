@@ -8,6 +8,74 @@ featured: true
 
 # 2: Fundamentals of Artificial Intelligence through Deep Learning
 
+## Key Machine Learning Algorithms
+
+Before diving into deep learning, it's essential to understand the traditional machine learning algorithms that form the foundation of the field. These algorithms continue to be valuable tools, especially when data is limited or interpretability is crucial.
+
+### Linear and Logistic Regression
+
+Linear regression, one of the simplest machine learning algorithms, models the relationship between input features and a continuous output variable as a linear function. Despite its simplicity, linear regression provides a foundation for understanding more complex models and can be surprisingly effective for certain problems.
+
+Logistic regression extends this concept to classification problems by applying a sigmoid function to the linear output, transforming it into a probability between 0 and 1. This algorithm has been used in radiation oncology for predicting binary outcomes like tumor control or the development of specific toxicities.
+
+Both linear and logistic regression offer high interpretability, as the contribution of each feature to the prediction is explicitly represented by its coefficient. This transparency is valuable in clinical settings where understanding the basis for predictions is essential.
+
+### Decision Trees and Random Forests
+
+Decision trees partition the feature space through a series of binary splits, creating a tree-like structure where each leaf node represents a prediction. These models are intuitive and can capture non-linear relationships, but individual trees are prone to overfitting.
+
+Random forests address this limitation by combining many decision trees trained on different subsets of the data and features. The ensemble prediction is typically more robust and accurate than any individual tree. In radiation oncology, random forests have been used for tasks like predicting patient outcomes based on clinical factors, dosimetric parameters, and imaging features.
+
+Tree-based methods offer several advantages for medical applications, including handling mixed data types, robustness to outliers, and the ability to capture complex interactions between features. They also provide measures of feature importance, helping identify the most relevant factors for a given prediction task.
+
+### Support Vector Machines
+
+Support Vector Machines (SVMs) find the optimal hyperplane that separates different classes in the feature space, maximizing the margin between the closest points (support vectors) from each class. Through the use of kernel functions, SVMs can efficiently handle non-linear decision boundaries.
+
+SVMs have been applied in radiation oncology for tasks like classifying treatment outcomes based on dosimetric and clinical features. Their ability to work well with relatively small datasets makes them suitable for many medical applications where data may be limited.
+
+### K-means Clustering
+
+K-means clustering, an unsupervised learning algorithm, partitions data into K clusters by iteratively assigning points to the nearest cluster center and then updating those centers. This algorithm can identify natural groupings in patient data, potentially revealing subpopulations with distinct characteristics or treatment responses.
+
+In radiation oncology, k-means clustering has been used to identify patient subgroups based on anatomical features, dose distributions, or treatment outcomes. These insights can inform personalized treatment approaches and help identify patients who might benefit from alternative strategies.
+
+## Feature Engineering and Selection
+
+Feature engineering—the process of creating, transforming, and selecting relevant features from raw data—plays a crucial role in the success of traditional machine learning algorithms. While deep learning can automatically learn useful representations from raw data, feature engineering remains important for many applications, especially when working with structured data or when interpretability is a priority.
+
+Common feature engineering techniques include:
+
+1. **Normalization and standardization**: Scaling features to a common range or distribution to prevent certain features from dominating the learning process due to their magnitude.
+
+2. **Polynomial features**: Creating interaction terms between existing features to capture non-linear relationships.
+
+3. **Discretization**: Converting continuous variables into categorical ones, which can sometimes reveal patterns not apparent in the continuous representation.
+
+4. **Text and image processing**: Extracting meaningful features from unstructured data like medical reports or images.
+
+Feature selection helps identify the most informative features while reducing dimensionality, which can improve model performance, reduce overfitting, and enhance interpretability. Methods include filter approaches (selecting features based on statistical measures), wrapper methods (evaluating feature subsets based on model performance), and embedded methods (incorporating feature selection into the model training process).
+
+In radiation oncology, domain knowledge plays a vital role in feature engineering. Clinically relevant features might include dosimetric parameters (like V20 for lung or mean heart dose), anatomical measurements, or derived metrics that capture aspects of the dose distribution known to correlate with outcomes.
+
+## Limitations of Traditional Machine Learning
+
+While traditional machine learning algorithms have proven valuable in many applications, they have several limitations that deep learning addresses:
+
+1. **Feature engineering dependency**: Traditional algorithms rely heavily on manual feature engineering, which requires domain expertise and can miss complex patterns that aren't explicitly encoded.
+
+2. **Difficulty with unstructured data**: Images, text, and other unstructured data types are challenging for traditional algorithms without extensive preprocessing.
+
+3. **Limited representation capacity**: Many traditional algorithms struggle to capture complex, hierarchical patterns in data.
+
+4. **Fixed model complexity**: The complexity of traditional models is often fixed or limited by design, constraining their ability to scale with data size.
+
+5. **Separate learning stages**: Traditional pipelines often involve separate stages for feature extraction and model training, preventing end-to-end optimization.
+
+Deep learning addresses these limitations through its ability to automatically learn hierarchical representations from raw data, scale with data and computational resources, and enable end-to-end training. However, traditional methods retain advantages in scenarios with limited data, when interpretability is crucial, or when computational resources are constrained.
+
+Understanding these traditional approaches provides important context for appreciating the innovations and capabilities of deep learning, which we'll explore in subsequent modules. It also helps identify situations where simpler models might be more appropriate than complex deep learning architectures.
+
 ## The Perceptron Model
 
 The perceptron represents the fundamental building block of neural networks and serves as an excellent starting point for understanding how these complex systems function. Developed in the late 1950s by Frank Rosenblatt, the perceptron was one of the earliest models of artificial neurons, inspired by the biological neurons in the human brain.
