@@ -16,7 +16,7 @@ TaiRO (also inspired by Tyro, which means beginner or learner) is a heavily borr
 * Relevance to Radiation Oncology: The role and potential of AI in enhancing radiation therapy workflows.​
 * Current Landscape: Review of existing AI applications in medical imaging and radiation therapy.​
 
-### [2: Fundamentals of Machine Learning and Deep Learning]({% link _posts/2025-02-01-02-TaiRO-Fundamentals.md %})
+### [2: Fundamentals of Artificial Intelligence through Deep Learning]({% link _posts/2025-02-01-02-TaiRO-Fundamentals.md %})
 
 * Machine Learning Basics: Supervised vs. unsupervised learning, key algorithms, and model evaluation metrics.​
 * Deep Learning Introduction: Neural networks, convolutional neural networks (CNNs), and their relevance to image analysis.​
@@ -28,10 +28,10 @@ TaiRO (also inspired by Tyro, which means beginner or learner) is a heavily borr
 * Image Acquisition and Reconstruction: Understanding the technical aspects and challenges.​
 * Image Preprocessing Techniques: Noise reduction, normalization, and enhancement methods.​
 
-## 4: AI for Image Segmentation
+### [4: AI for Contouring]({% link _posts/2025-04-01-04-TaiRO-Contouring.md %})
 
-* Segmentation Techniques: Traditional methods vs. AI-driven approaches.​
-* Deep Learning for Segmentation: Application of CNNs and U-Net architectures.​
+* Contouring Techniques: Traditional methods vs. AI-driven approaches.​
+* Deep Learning for Contouring: Application of CNNs and U-Net architectures.​
 * Case Studies: Automated tumor and organ-at-risk delineation.​
 
 ## 5: AI in Image Registration and Fusion
@@ -46,7 +46,7 @@ TaiRO (also inspired by Tyro, which means beginner or learner) is a heavily borr
 * Feature Extraction and Selection: Techniques for identifying relevant imaging biomarkers.​
 * Predictive Modeling: Using radiomic features for outcome prediction and personalized therapy.​
 
-## 7: AI in Treatment Planning
+### [7: AI for Treatment Planning]({% link _posts/2025-07-01-07-TaiRO-Treatment-Planning.md %})
 
 * Automated Treatment Planning: Leveraging AI for plan optimization and dose calculation.​
   * [IMRT](/glossary/#IMRT), [VMAT](/glossary/#VMAT) and others.
