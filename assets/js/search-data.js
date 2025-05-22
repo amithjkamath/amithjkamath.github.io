@@ -51,7 +51,40 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/glossary/";
               },
-            },{id: "post-paper-summary-quality-assurance-for-ai-based-applications-in-radiation-therapy",
+            },{id: "post-tairo-medical-imaging-in-radiation-oncology",
+        
+          title: "TaiRO: Medical Imaging in Radiation Oncology",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/03-TaiRO-Imaging/";
+          
+        },
+      },{id: "post-tairo-fundamentals-of-machine-learning-and-deep-learning",
+        
+          title: "TaiRO: Fundamentals of Machine Learning and Deep Learning",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/02-TaiRO-Fundamentals/";
+          
+        },
+      },{id: "post-tairo-introduction",
+        
+          title: "TaiRO: Introduction",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/01-TaiRO-Intro/";
+          
+        },
+      },{id: "post-paper-summary-quality-assurance-for-ai-based-applications-in-radiation-therapy",
         
           title: "Paper Summary: Quality Assurance for AI-Based Applications in Radiation Therapy",
         
@@ -337,17 +370,6 @@ ninja.data = [{
             window.location.href = "/blog/2021/patches-are-all-you-need/";
           
         },
-      },{id: "post-a-distill-style-blog-post",
-        
-          title: "a distill-style blog post",
-        
-        description: "an example of a distill-style blog post and main elements",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2021/distill/";
-          
-        },
       },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
@@ -475,11 +497,11 @@ ninja.data = [{
           description: "More details about our MIDL &#39;24 work.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2024-midl-radonc-vs-dldp/";
-            },},{id: "projects-short-course-on-radiation-oncology-with-ai",
-          title: 'Short Course on Radiation Oncology with AI',
-          description: "A work-in-progress course plan for Radiation Oncology and AI",
+            },},{id: "projects-tairo-training-in-ai-for-radiation-oncology",
+          title: 'TaiRO - Training in AI for Radiation Oncology',
+          description: "A work-in-progress set of content tailored for this niche field.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2025-fa-radonc-with-AI/";
+              window.location.href = "/projects/2025-TaiRO/";
             },},{id: "projects-dosimetric-awareness-of-radiation-oncology-professionals",
           title: 'Dosimetric Awareness of Radiation Oncology Professionals',
           description: "Understanding what human-experts think about the impact of contour evaluations.",
