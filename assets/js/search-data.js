@@ -95,6 +95,17 @@ ninja.data = [{
             window.location.href = "/blog/2025/02-TaiRO-Fundamentals/";
           
         },
+      },{id: "post-market-need-for-auto-contouring-solutions",
+        
+          title: "Market need for Auto-Contouring Solutions",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/autocontour-need/";
+          
+        },
       },{id: "post-tairo-introduction",
         
           title: "TaiRO: Introduction",
@@ -534,21 +545,11 @@ ninja.data = [{
           description: "bring forward clinical outcome-knowledge into preceding workflow steps.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/thesis-dose-prediction-for-contour-evaluation/";
-            },},{id: "projects-radiation-oncology-for-developers-and-researchers",
-          title: 'Radiation Oncology for Developers and Researchers',
-          description: "An overview of Radiation Oncology for the AI practitioner",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/thesis-review-ai-radiotherapy/";
             },},{id: "projects-robustness-of-deep-learning-segmentation-models",
           title: 'Robustness of Deep Learning Segmentation Models',
           description: "Measuring the performance of segmentation models under image content variations.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/thesis-robustness-of-image-segmentation-models/";
-            },},{id: "projects-literature-review-for-a-business-plan-on-automated-contouring",
-          title: 'Literature review for a business plan on automated contouring',
-          description: "Broad overview of components of a business plan for automated contouring",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/translate-business-plan-contouraid/";
             },},{
         id: 'social-email',
         title: 'email',
