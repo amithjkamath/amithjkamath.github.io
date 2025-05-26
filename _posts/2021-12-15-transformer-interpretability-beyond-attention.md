@@ -7,7 +7,6 @@ categories: paper-summary, computer-vision, transformers, explainability
 
 This paper proposes a novel way to compute relevancy (for interpretation) for Transformer networks in the vision classification context. 
 
-
 Major Learning Points
 ======
 Given the recent interest in transformer architectures for vision tasks (like classification), there is a need to build tools to visualize their decision process - for debugging and verification. This paper includes a novel method - based on the Deep Taylor Decomposition principle. They maintain 'total relevancy' across layers - which is an improvement over existing methods.
