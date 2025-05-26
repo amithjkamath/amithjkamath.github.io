@@ -2,7 +2,7 @@
 layout: post
 title: 'Paper Summary: Transformer Interpretability beyond Attention Visualization'
 date: 2021-12-15 00:00:00
-categories: paper-summary, computer-vision, transformer, explainability
+categories: paper-summary, computer-vision, transformers, explainability
 ---
 
 This paper proposes a novel way to compute relevancy (for interpretation) for Transformer networks in the vision classification context. 
