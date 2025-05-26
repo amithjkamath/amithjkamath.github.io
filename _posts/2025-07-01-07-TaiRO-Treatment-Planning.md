@@ -10,6 +10,26 @@ featured: true
 
 # 7: AI for Treatment Planning
 
+- [7: AI for Treatment Planning](#7-ai-for-treatment-planning)
+  - [Dose Prediction Models](#dose-prediction-models)
+    - [DVH Estimation](#dvh-estimation)
+    - [Dose Distribution Prediction](#dose-distribution-prediction)
+  - [Plan Quality Assessment](#plan-quality-assessment)
+    - [Automated Plan Evaluation](#automated-plan-evaluation)
+    - [Knowledge-based Planning](#knowledge-based-planning)
+  - [Automated Treatment Planning](#automated-treatment-planning)
+    - [Knowledge-based Planning](#knowledge-based-planning-1)
+    - [Reinforcement Learning Approaches](#reinforcement-learning-approaches)
+  - [Multi-criteria Optimization](#multi-criteria-optimization)
+    - [Traditional MCO Approaches](#traditional-mco-approaches)
+    - [Balancing Clinical Priorities](#balancing-clinical-priorities)
+  - [Current Research in Treatment Planning Prediction](#current-research-in-treatment-planning-prediction)
+    - [Plan Parameter Optimization](#plan-parameter-optimization)
+    - [Beam Angle Selection](#beam-angle-selection)
+    - [Adaptive Planning](#adaptive-planning)
+    - [Integration with Outcome Prediction](#integration-with-outcome-prediction)
+
+
 Treatment planning is a complex, iterative process that aims to deliver an optimal radiation dose to the target volume while minimizing dose to surrounding healthy tissues. This process traditionally requires significant expertise and time from medical physicists and dosimetrists. Deep learning approaches offer the potential to automate aspects of treatment planning, predict optimal dose distributions, and potentially improve plan quality and consistency while reducing planning time.
 
 ## Dose Prediction Models

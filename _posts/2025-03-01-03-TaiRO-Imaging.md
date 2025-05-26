@@ -14,6 +14,33 @@ featured: true
 
 This guide is designed for clinicians, researchers, and students interested in understanding the various imaging modalities used in radiation oncology and the file formats used to store these images. Each section provides detailed information on a specific imaging modality, including its clinical applications, strengths, and limitations. The final section covers the various file formats and storage systems used in medical imaging. Use this guide as a reference for understanding the technical aspects of medical imaging in radiation oncology practice.
 
+- [Medical Imaging Modalities and Storage File Types in Radiation Oncology](#medical-imaging-modalities-and-storage-file-types-in-radiation-oncology)
+  - [How to Use This Guide](#how-to-use-this-guide)
+  - [X-ray Imaging](#x-ray-imaging)
+    - [Clinical Uses in Radiation Oncology](#clinical-uses-in-radiation-oncology)
+    - [Strengths and Limitations](#strengths-and-limitations)
+  - [Computed Tomography (CT)](#computed-tomography-ct)
+    - [Clinical Uses in Radiation Oncology](#clinical-uses-in-radiation-oncology-1)
+    - [Strengths and Limitations](#strengths-and-limitations-1)
+  - [Magnetic Resonance Imaging (MRI)](#magnetic-resonance-imaging-mri)
+    - [Clinical Uses in Radiation Oncology](#clinical-uses-in-radiation-oncology-2)
+    - [Strengths and Limitations](#strengths-and-limitations-2)
+  - [Ultrasound Imaging](#ultrasound-imaging)
+    - [Clinical Uses in Radiation Oncology](#clinical-uses-in-radiation-oncology-3)
+    - [Strengths and Limitations](#strengths-and-limitations-3)
+  - [Positron Emission Tomography (PET)](#positron-emission-tomography-pet)
+    - [Clinical Uses in Radiation Oncology](#clinical-uses-in-radiation-oncology-4)
+    - [Strengths and Limitations](#strengths-and-limitations-4)
+  - [Nuclear Medicine](#nuclear-medicine)
+    - [Clinical Uses in Radiation Oncology](#clinical-uses-in-radiation-oncology-5)
+    - [Strengths and Limitations](#strengths-and-limitations-5)
+  - [Medical Imaging Storage File Types](#medical-imaging-storage-file-types)
+    - [Common Medical Image File Formats](#common-medical-image-file-formats)
+    - [Storage and Management Systems](#storage-and-management-systems)
+  - [Recap](#recap)
+  - [References](#references)
+
+
 | Modality     | Typical Uses                                                                 | Duration             | Pros                                                                 | Cons                                                                   |
 |--------------|-------------------------------------------------------------------------------|----------------------|----------------------------------------------------------------------|------------------------------------------------------------------------|
 | X-ray        | Fracture diagnosis; Lung infection detection; Dental evaluation              | 10–15 minutes        | Quick and accessible; Relatively low cost; Effective for detecting fractures and lung conditions | Limited soft tissue detail; Exposure to ionizing radiation             |

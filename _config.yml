@@ -23,25 +23,15 @@ last_updated: true
 impressum_path:
 back_to_top: true
 
-# Modern Features
-enable_tooltips: true
-enable_navbar_social: true
-enable_math: true
-enable_medium_zoom: true
-enable_progressbar: true
-enable_masonry: true
-enable_video_embedding: true
-
 # SEO Improvements
 serve_og_meta: true
 serve_schema_org: true
-og_image: /assets/img/og-image.png # You'll need to create this image
+og_image: /assets/img/profile.png # You'll need to create this image
 
 # Performance
 jekyll-minifier:
   compress_javascript: true
   exclude: ["robots.txt", "assets/js/search/*.js"]
-lazy_loading_images: true
 
 # -----------------------------------------------------------------------------
 # Theme

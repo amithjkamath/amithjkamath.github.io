@@ -10,7 +10,30 @@ featured: true
 
 # 4: AI for Image Contouring
 
-{% toc %}
+- [4: AI for Image Contouring](#4-ai-for-image-contouring)
+  - [Contouring Fundamentals](#contouring-fundamentals)
+    - [Binary vs. Multi-class Segmentation](#binary-vs-multi-class-segmentation)
+    - [Semantic vs. Instance Segmentation](#semantic-vs-instance-segmentation)
+  - [Segmentation Architectures](#segmentation-architectures)
+    - [U-Net and Variants](#u-net-and-variants)
+    - [V-Net for 3D Segmentation](#v-net-for-3d-segmentation)
+    - [Attention-based Segmentation](#attention-based-segmentation)
+  - [Loss Functions for Segmentation](#loss-functions-for-segmentation)
+    - [Dice Loss](#dice-loss)
+    - [Focal Loss](#focal-loss)
+    - [Boundary-aware Losses](#boundary-aware-losses)
+    - [Combined Losses](#combined-losses)
+  - [Evaluation Metrics for Contouring](#evaluation-metrics-for-contouring)
+    - [Geometric Metrics](#geometric-metrics)
+    - [Clinical Acceptability Measures](#clinical-acceptability-measures)
+    - [Inter-observer Variability](#inter-observer-variability)
+  - [Current Research in Auto-contouring](#current-research-in-auto-contouring)
+    - [Organ-at-Risk (OAR) Contouring](#organ-at-risk-oar-contouring)
+    - [Tumor Volume Delineation](#tumor-volume-delineation)
+    - [Adaptive Contouring](#adaptive-contouring)
+    - [Quality Assurance and Clinical Integration](#quality-assurance-and-clinical-integration)
+  - [Summary and References](#summary-and-references)
+
 
 Accurate delineation of target volumes and organs at risk (OARs) is a critical and often time-consuming step in radiation therapy planning. Manual contouring is subject to inter-observer variability and can be a significant bottleneck in the clinical workflow. Deep learning, particularly convolutional neural networks (CNNs), has shown remarkable success in automating this process, offering the potential for increased efficiency, consistency, and accuracy.
 
