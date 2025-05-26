@@ -3,7 +3,6 @@ layout: post
 title: 'TaiRO: AI for Treatment Planning'
 date: 2025-05-01 00:00:00
 categories: tairo, radiation-oncology, artificial-intelligence
-tags: [treatment-planning, dose-prediction, dvh, plan-quality, knowledge-based-planning, reinforcement-learning, multi-criteria-optimization, ai-in-healthcare]
 summary: "Deep learning and AI approaches for radiation therapy treatment planning, including dose prediction, plan quality assessment, knowledge-based planning, automation, and current research directions."
 featured: true
 ---

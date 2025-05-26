@@ -3,7 +3,6 @@ layout: post
 title: 'Medical Imaging Modalities and Storage File Types in Radiation Oncology'
 date: 2025-03-01 00:00:00
 categories: radiation-oncology, medical-imaging, file-formats
-tags: [x-ray, ct, mri, ultrasound, pet, nuclear-medicine, dicom, pacs, radiation-oncology]
 summary: "An overview of medical imaging modalities in radiation oncology, including X-ray, CT, MRI, ultrasound, PET, and nuclear medicine, with their clinical uses, strengths, limitations, and storage file types."
 featured: true
 ---

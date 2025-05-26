@@ -3,7 +3,6 @@ layout: post
 title: 'TaiRO: AI for Contouring'
 date: 2025-04-01 00:00:00
 categories: tairo, radiation-oncology, artificial-intelligence
-tags: [deep-learning, segmentation, medical-imaging, ai-in-healthcare]
 summary: "A review of Auto-contouring with AI in radiation oncology, covering segmentation architectures, loss functions, and clinical integration."
 featured: true
 ---

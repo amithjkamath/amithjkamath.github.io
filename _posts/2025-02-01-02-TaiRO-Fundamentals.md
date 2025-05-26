@@ -3,7 +3,6 @@ layout: post
 title: 'TaiRO: Fundamentals of Deep Learning'
 date: 2025-02-01 00:00:00
 categories: tairo, radiation-oncology, artificial-intelligence
-tags: [deep-learning, neural-networks, cnn, rnn, transformers, segmentation, ai-in-healthcare, medical-imaging]
 summary: "Fundamentals of deep learning for radiation oncology, covering neural network basics, architectures, loss functions, and clinical applications."
 featured: true
 ---

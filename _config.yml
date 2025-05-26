@@ -257,8 +257,8 @@ jekyll-archives:
   books:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
-display_tags: ["machine-learning", "medical-imaging", "radiation-therapy", "deep-learning", "ai-in-healthcare", "research", "tutorials"]
-display_categories: ["TaiRO", "Paper-Reviews", "Tutorials", "Research"]
+display_tags: ["ai-in-healthcare", "radiation-therapy", "medical-imaging", "computer-vision", "machine-learning", "deep-learning", "tutorials"]
+display_categories: ["paper-summary", "computer-vision", "medical-imaging", "radiation-therapy", "machine-learning", "deep-learning", "ai-in-healthcare", "tutorials", "interpretability", "explainability", "transformers", "tairo", "radiation-oncology", "artificial-intelligence", "file-formats"]
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
