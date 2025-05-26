@@ -3,78 +3,18 @@ layout: post
 title: 'TaiRO: Fundamentals of Deep Learning'
 date: 2025-02-01 00:00:00
 categories: tairo, radiation-oncology, artificial-intelligence
+tags: [deep-learning, neural-networks, cnn, rnn, transformers, segmentation, ai-in-healthcare, medical-imaging]
+summary: "Fundamentals of deep learning for radiation oncology, covering neural network basics, architectures, loss functions, and clinical applications."
 featured: true
 ---
 
 # 2: Fundamentals of Artificial Intelligence through Deep Learning
 
-## Key Machine Learning Algorithms
+## How to Use This Guide
 
-Before diving into deep learning, it's essential to understand the traditional machine learning algorithms that form the foundation of the field. These algorithms continue to be valuable tools, especially when data is limited or interpretability is crucial.
+This guide is designed for clinicians, researchers, and students interested in the fundamentals of deep learning, with a focus on applications in radiation oncology. Each section builds on the previous, starting from traditional machine learning and progressing to advanced deep learning architectures. Use the glossary at the end for quick reference to key terms.
 
-### Linear and Logistic Regression
-
-Linear regression, one of the simplest machine learning algorithms, models the relationship between input features and a continuous output variable as a linear function. Despite its simplicity, linear regression provides a foundation for understanding more complex models and can be surprisingly effective for certain problems.
-
-Logistic regression extends this concept to classification problems by applying a sigmoid function to the linear output, transforming it into a probability between 0 and 1. This algorithm has been used in radiation oncology for predicting binary outcomes like tumor control or the development of specific toxicities.
-
-Both linear and logistic regression offer high interpretability, as the contribution of each feature to the prediction is explicitly represented by its coefficient. This transparency is valuable in clinical settings where understanding the basis for predictions is essential.
-
-### Decision Trees and Random Forests
-
-Decision trees partition the feature space through a series of binary splits, creating a tree-like structure where each leaf node represents a prediction. These models are intuitive and can capture non-linear relationships, but individual trees are prone to overfitting.
-
-Random forests address this limitation by combining many decision trees trained on different subsets of the data and features. The ensemble prediction is typically more robust and accurate than any individual tree. In radiation oncology, random forests have been used for tasks like predicting patient outcomes based on clinical factors, dosimetric parameters, and imaging features.
-
-Tree-based methods offer several advantages for medical applications, including handling mixed data types, robustness to outliers, and the ability to capture complex interactions between features. They also provide measures of feature importance, helping identify the most relevant factors for a given prediction task.
-
-### Support Vector Machines
-
-Support Vector Machines (SVMs) find the optimal hyperplane that separates different classes in the feature space, maximizing the margin between the closest points (support vectors) from each class. Through the use of kernel functions, SVMs can efficiently handle non-linear decision boundaries.
-
-SVMs have been applied in radiation oncology for tasks like classifying treatment outcomes based on dosimetric and clinical features. Their ability to work well with relatively small datasets makes them suitable for many medical applications where data may be limited.
-
-### K-means Clustering
-
-K-means clustering, an unsupervised learning algorithm, partitions data into K clusters by iteratively assigning points to the nearest cluster center and then updating those centers. This algorithm can identify natural groupings in patient data, potentially revealing subpopulations with distinct characteristics or treatment responses.
-
-In radiation oncology, k-means clustering has been used to identify patient subgroups based on anatomical features, dose distributions, or treatment outcomes. These insights can inform personalized treatment approaches and help identify patients who might benefit from alternative strategies.
-
-## Feature Engineering and Selection
-
-Feature engineering—the process of creating, transforming, and selecting relevant features from raw data—plays a crucial role in the success of traditional machine learning algorithms. While deep learning can automatically learn useful representations from raw data, feature engineering remains important for many applications, especially when working with structured data or when interpretability is a priority.
-
-Common feature engineering techniques include:
-
-1. **Normalization and standardization**: Scaling features to a common range or distribution to prevent certain features from dominating the learning process due to their magnitude.
-
-2. **Polynomial features**: Creating interaction terms between existing features to capture non-linear relationships.
-
-3. **Discretization**: Converting continuous variables into categorical ones, which can sometimes reveal patterns not apparent in the continuous representation.
-
-4. **Text and image processing**: Extracting meaningful features from unstructured data like medical reports or images.
-
-Feature selection helps identify the most informative features while reducing dimensionality, which can improve model performance, reduce overfitting, and enhance interpretability. Methods include filter approaches (selecting features based on statistical measures), wrapper methods (evaluating feature subsets based on model performance), and embedded methods (incorporating feature selection into the model training process).
-
-In radiation oncology, domain knowledge plays a vital role in feature engineering. Clinically relevant features might include dosimetric parameters (like V20 for lung or mean heart dose), anatomical measurements, or derived metrics that capture aspects of the dose distribution known to correlate with outcomes.
-
-## Limitations of Traditional Machine Learning
-
-While traditional machine learning algorithms have proven valuable in many applications, they have several limitations that deep learning addresses:
-
-1. **Feature engineering dependency**: Traditional algorithms rely heavily on manual feature engineering, which requires domain expertise and can miss complex patterns that aren't explicitly encoded.
-
-2. **Difficulty with unstructured data**: Images, text, and other unstructured data types are challenging for traditional algorithms without extensive preprocessing.
-
-3. **Limited representation capacity**: Many traditional algorithms struggle to capture complex, hierarchical patterns in data.
-
-4. **Fixed model complexity**: The complexity of traditional models is often fixed or limited by design, constraining their ability to scale with data size.
-
-5. **Separate learning stages**: Traditional pipelines often involve separate stages for feature extraction and model training, preventing end-to-end optimization.
-
-Deep learning addresses these limitations through its ability to automatically learn hierarchical representations from raw data, scale with data and computational resources, and enable end-to-end training. However, traditional methods retain advantages in scenarios with limited data, when interpretability is crucial, or when computational resources are constrained.
-
-Understanding these traditional approaches provides important context for appreciating the innovations and capabilities of deep learning, which we'll explore in subsequent modules. It also helps identify situations where simpler models might be more appropriate than complex deep learning architectures.
+---
 
 ## The Perceptron Model
 
@@ -98,9 +38,45 @@ These limitations led to the development of multi-layer perceptrons (MLPs) or fe
 
 Understanding the perceptron model provides a foundation for grasping more complex neural network architectures used in modern radiation oncology applications, from contouring organs at risk to predicting treatment outcomes based on multidimensional data.
 
+---
+
+## Feature Engineering and Selection
+
+Feature engineering—the process of creating, transforming, and selecting relevant features from raw data—plays a crucial role in the success of traditional machine learning algorithms. While deep learning can automatically learn useful representations from raw data, feature engineering remains important for many applications, especially when working with structured data or when interpretability is a priority.
+
+Common feature engineering techniques include:
+
+1. **Normalization and standardization**: Scaling features to a common range or distribution to prevent certain features from dominating the learning process due to their magnitude.
+
+2. **Polynomial features**: Creating interaction terms between existing features to capture non-linear relationships.
+
+3. **Discretization**: Converting continuous variables into categorical ones, which can sometimes reveal patterns not apparent in the continuous representation.
+
+4. **Text and image processing**: Extracting meaningful features from unstructured data like medical reports or images.
+
+Feature selection helps identify the most informative features while reducing dimensionality, which can improve model performance, reduce overfitting, and enhance interpretability. Methods include filter approaches (selecting features based on statistical measures), wrapper methods (evaluating feature subsets based on model performance), and embedded methods (incorporating feature selection into the model training process).
+
+In radiation oncology, domain knowledge plays a vital role in feature engineering. Clinically relevant features might include dosimetric parameters (like V20 for lung or mean heart dose), anatomical measurements, or derived metrics that capture aspects of the dose distribution known to correlate with outcomes.
+
+> **Figure suggestion:** Add a simple diagram of a perceptron showing inputs, weights, bias, activation function, and output.
+
+---
+
 ## Activation Functions
 
 Activation functions introduce non-linearity into neural networks, enabling them to learn complex patterns and relationships in data. Without activation functions, even a multi-layer neural network would behave like a single-layer linear model, regardless of its depth. This non-linearity is crucial for modeling the complex relationships present in medical data, such as the non-linear dose-response curves observed in radiation oncology.
+
+### Comparison of Common Activation Functions
+
+| Function      | Formula                | Output Range | Pros                        | Cons                        | Typical Use Cases           |
+|---------------|------------------------|--------------|-----------------------------|-----------------------------|-----------------------------|
+| Sigmoid       | 1/(1+e^-x)             | (0, 1)       | Probabilistic output        | Vanishing gradients         | Binary classification       |
+| Tanh          | (e^x-e^-x)/(e^x+e^-x)  | (-1, 1)      | Zero-centered, smooth       | Vanishing gradients         | Hidden layers (legacy)      |
+| ReLU          | max(0, x)              | [0, ∞)       | Fast, less vanishing grad.  | Dying ReLU                  | Most hidden layers          |
+| Leaky ReLU    | x if x>0 else αx       | (-∞, ∞)      | Prevents dying ReLU         | Adds a parameter            | Hidden layers               |
+| PReLU         | x if x>0 else αx (learned) | (-∞, ∞)   | Learns negative slope       | Slightly more complex       | Hidden layers               |
+| ELU           | x if x>0 else α(e^x-1) | (-α, ∞)      | Smooth, less bias shift     | More computation            | Hidden layers               |
+| Swish         | x * sigmoid(x)         | (-∞, ∞)      | Sometimes better than ReLU  | More computation            | Deep networks               |
 
 ### Sigmoid, Tanh, ReLU and Variants
 
@@ -142,6 +118,8 @@ Linear (no activation) for regression tasks (e.g., dose prediction)
 ReLU or similar for outputs that must be non-negative (e.g., dose-volume histograms)
 
 Understanding the properties of different activation functions helps in designing effective neural network architectures for specific radiation oncology applications and in diagnosing issues that may arise during training.
+
+---
 
 ## Feedforward Neural Networks
 
@@ -188,9 +166,22 @@ Where α is the learning rate and ∂L/∂W^(l) and ∂L/∂b^(l) are the gradie
 
 In radiation oncology applications, efficient and accurate backpropagation is crucial for training models that can reliably predict treatment outcomes or generate accurate contours. The complexity of the data and the critical nature of the predictions make proper training essential.
 
+---
+
 ## Loss Functions
 
 Loss functions quantify the difference between a model's predictions and the ground truth, providing a signal for how to adjust the model parameters during training. The choice of loss function significantly impacts what the model learns and how it performs on different types of errors.
+
+### Summary Table: Loss Functions
+
+| Name                | Formula (see text)         | Typical Use Case                | Notes                                  |
+|---------------------|---------------------------|----------------------------------|----------------------------------------|
+| Mean Squared Error  | MSE = (1/n) Σ(y-ŷ)^2      | Regression (e.g., dose prediction) | Sensitive to outliers                  |
+| Cross-Entropy       | See text                  | Classification                   | Penalizes confident wrong predictions  |
+| Focal Loss          | See text                  | Imbalanced classification/segmentation | Down-weights easy examples        |
+| Dice Loss           | See text                  | Segmentation                     | Directly optimizes overlap             |
+| Hausdorff Loss      | See text                  | Segmentation (boundaries)         | Focuses on boundary accuracy           |
+| Combined Losses     | Weighted sum              | Complex tasks                    | E.g., Cross-Entropy + Dice             |
 
 ### Mean Squared Error
 
@@ -246,6 +237,8 @@ Combined losses often yield the best results for complex tasks. For instance, a 
 
 In radiation oncology applications, the choice of loss function should be guided by clinical considerations. For example, in treatment planning, certain types of errors (like underdosing the tumor or overdosing critical structures) may have more severe consequences than others, suggesting the need for asymmetric loss functions that penalize these errors more heavily.
 
+---
+
 ## Gradient-based Learning
 
 Gradient-based learning forms the core of how neural networks are trained. By computing the gradient of the loss function with respect to the model parameters, these methods determine how to adjust the parameters to minimize the error.
@@ -293,7 +286,20 @@ In complex models for radiation oncology applications, computational graphs can 
 
 Understanding computational graphs also helps in diagnosing and addressing training issues, as it provides insight into how gradients flow through the network and where problems like vanishing or exploding gradients might occur.
 
+---
+
 ## Initialization Strategies
+
+### Summary Table: Initialization Methods
+
+| Method         | Formula/Approach                | Best For                | Notes                                 |
+|----------------|---------------------------------|-------------------------|---------------------------------------|
+| Random         | Uniform/Normal                  | Shallow nets            | Can cause vanishing/exploding gradients|
+| Xavier/Glorot  | Var(W)=2/(n_in+n_out)           | Tanh/Sigmoid activations| Balances variance across layers       |
+| He             | Var(W)=2/n_in                   | ReLU activations        | Prevents vanishing gradients          |
+| Orthogonal     | Orthogonal matrix               | Deep/recurrent nets     | Preserves gradient magnitude          |
+| Identity       | Close to identity matrix        | Residual nets           | Preserves input features              |
+| Pretrained     | From other tasks/datasets       | Transfer learning       | Leverages external data               |
 
 The initial values of neural network parameters significantly impact training dynamics and final performance. Poor initialization can lead to slow convergence, getting stuck in poor local minima, or even failure to train due to vanishing or exploding gradients.
 
@@ -326,6 +332,8 @@ Identity initialization, where weight matrices start close to the identity matri
 Pretrained initialization uses weights from models trained on related tasks or larger datasets. This transfer learning approach is especially valuable in medical imaging, where labeled data may be limited. For example, a segmentation model for radiation therapy planning might initialize with weights from a network pretrained on general medical image segmentation tasks.
 
 In radiation oncology applications, the choice of initialization strategy should consider the network architecture, activation functions, and the specific characteristics of the data. Proper initialization can help models converge to better solutions, particularly when working with the limited datasets often available in medical applications.
+
+---
 
 ## Batch Normalization
 
@@ -372,6 +380,8 @@ Domain shift: When applying models to data from different institutions or scanne
 Inference consistency: In clinical applications where reproducibility is crucial, the stochasticity introduced by BatchNorm during training needs to be carefully managed to ensure consistent inference results.
 
 Despite these considerations, BatchNorm or its variants are commonly used in deep learning models for radiation oncology applications, contributing to more stable and efficient training of complex architectures for tasks like organ segmentation and dose prediction.
+
+---
 
 ## Convolutional Neural Networks (CNNs)
 
@@ -460,6 +470,10 @@ The architecture of the pretrained model
 
 When properly applied, transfer learning can significantly reduce the amount of labeled data needed for training, accelerate convergence, and improve final performance—all crucial advantages in the data-limited domain of radiation oncology.
 
+**Clinical vignette:** In a recent study, a CNN-based model was used to automatically segment organs at risk in pelvic CT scans, reducing contouring time by 70% and improving consistency between clinicians.
+
+---
+
 ## Recurrent Neural Networks (RNNs)
 
 While CNNs excel at processing spatial data like images, Recurrent Neural Networks (RNNs) are designed for sequential data, where the order of elements matters. In radiation oncology, RNNs can be valuable for analyzing temporal data such as treatment response over time, patient monitoring during treatment courses, or even the sequential processing of 3D volumes slice by slice.
@@ -535,6 +549,10 @@ Gated Recurrent Units (GRUs) are a simplified variant of LSTMs with fewer parame
 In radiation oncology applications, LSTMs and GRUs can model complex temporal patterns in treatment response, capture long-term dependencies in patient monitoring data, or process 3D volumes slice by slice while maintaining spatial context across slices. For example, an LSTM might analyze a sequence of tumor measurements during treatment to predict the final response or to identify patients who might benefit from treatment adaptation.
 
 The choice between LSTM and GRU often depends on the specific application, with GRUs being more efficient but LSTMs potentially offering more modeling capacity for complex sequences. In practice, both architectures significantly outperform basic RNNs for most tasks involving long-range dependencies.
+
+**Clinical vignette:** An RNN was used to analyze weekly tumor volume measurements during radiotherapy, predicting which patients were likely to benefit from adaptive treatment plans.
+
+---
 
 ## Autoencoders
 
@@ -617,6 +635,8 @@ Disentangled representation learning, where different dimensions of the latent s
 
 The probabilistic nature of VAEs makes them particularly suitable for medical applications where quantifying uncertainty is important. By generating multiple reconstructions or predictions through repeated sampling from the latent distribution, VAEs can provide a measure of confidence or variability in their outputs.
 
+---
+
 ## Generative Adversarial Networks (GANs)
 
 Generative Adversarial Networks (GANs) represent a powerful framework for generative modeling, capable of producing remarkably realistic synthetic data. Introduced by Ian Goodfellow in 2014, GANs consist of two neural networks—a generator and a discriminator—trained in an adversarial process that drives both to improve.
@@ -682,6 +702,10 @@ Evaluation metrics that capture clinically relevant aspects of image quality
 
 While GANs show tremendous promise for medical image synthesis, their deployment in clinical settings requires careful validation to ensure the generated images preserve the clinically relevant features of the original data and don't introduce artifacts that could affect diagnosis or treatment planning.
 
+**Ethical note:** When using GAN-generated synthetic data in clinical research, it is important to validate that the synthetic images do not introduce artifacts or biases that could affect patient care.
+
+---
+
 ## Transformers and Attention Mechanisms
 
 Transformers have revolutionized natural language processing and are increasingly being applied to computer vision and medical image analysis. Unlike CNNs and RNNs, which process data sequentially or locally, transformers process all elements of the input simultaneously through self-attention mechanisms, capturing long-range dependencies more effectively.
@@ -745,6 +769,8 @@ Swin Transformer uses shifted windows to efficiently compute self-attention loca
 
 These transformer-based architectures have shown promising results in radiation oncology applications, including organ segmentation, tumor detection, and treatment response prediction. Their ability to capture long-range dependencies complements the local pattern recognition strengths of CNNs, leading to hybrid approaches that combine the best of both worlds.
 
+---
+
 ## U-Net and Segmentation Architectures
 
 Segmentation—the task of assigning a class label to each pixel or voxel in an image—is fundamental in radiation oncology for delineating tumors, organs at risk, and other anatomical structures. U-Net and its variants have become the dominant architectural paradigm for medical image segmentation due to their effectiveness in preserving both local and global context.
@@ -799,6 +825,44 @@ Automatic contouring for routine structures, reducing the clinical workload
 
 The choice of architecture depends on factors like the specific segmentation task, available computational resources, dataset characteristics, and required inference speed for clinical workflow integration.
 
-### Further Reading
+---
 
-[Hello World: Deep Learning in Medical Imaging](https://pmc.ncbi.nlm.nih.gov/articles/PMC5959832) is a dated but useful starting point for medical image classification using a standard off-the-shelf deep neural network architecture.
+## Key Takeaways
+
+- Traditional ML is valuable for small datasets and interpretability, but deep learning is essential for complex, high-dimensional, and unstructured data.
+- Deep learning models (CNNs, RNNs, transformers, etc.) have revolutionized medical image analysis and prediction tasks in radiation oncology.
+- The choice of architecture, loss function, and training strategy should be guided by the clinical problem, data characteristics, and available resources.
+- Understanding the fundamentals enables better model design, troubleshooting, and critical evaluation of AI tools in clinical practice.
+
+---
+
+## Glossary
+
+- **Activation Function:** A mathematical function applied to a neuron's output to introduce non-linearity.
+- **Backpropagation:** The algorithm for computing gradients in neural networks.
+- **Batch Normalization:** A technique to stabilize and accelerate training by normalizing layer inputs.
+- **Convolutional Neural Network (CNN):** A neural network architecture specialized for grid-like data such as images.
+- **Dice Loss:** A loss function for segmentation tasks based on the Dice similarity coefficient.
+- **Epoch:** One complete pass through the training dataset.
+- **Feature Engineering:** The process of creating and selecting input features for a model.
+- **Gradient Descent:** An optimization algorithm for minimizing loss functions.
+- **Initialization:** The method for setting initial model weights.
+- **Learning Rate:** A hyperparameter controlling the step size in gradient descent.
+- **Overfitting:** When a model learns noise in the training data, reducing generalization.
+- **Pooling:** A downsampling operation in CNNs to reduce spatial dimensions.
+- **Recurrent Neural Network (RNN):** A neural network architecture for sequential data.
+- **Skip Connection:** A direct connection between non-adjacent layers, used in architectures like ResNet and U-Net.
+- **Transfer Learning:** Using a model pretrained on one task as a starting point for another.
+- **Transformer:** A neural network architecture based on self-attention, effective for sequence and image data.
+- **U-Net:** A popular encoder-decoder architecture for medical image segmentation.
+
+---
+
+## Further Reading
+
+- [Hello World: Deep Learning in Medical Imaging](https://pmc.ncbi.nlm.nih.gov/articles/PMC5959832)
+- [A Survey on Deep Learning in Medical Image Analysis (2017)](https://www.sciencedirect.com/science/article/pii/S1361841517301130)
+- [nnU-Net: Self-adapting Framework for U-Net-based Medical Image Segmentation (2021)](https://www.nature.com/articles/s41592-020-01008-z)
+- [Attention Is All You Need (Transformer paper)](https://arxiv.org/abs/1706.03762)
+- [Recent Advances in Deep Learning for Medical Image Analysis (2022)](https://www.nature.com/articles/s42256-021-00406-0)
+- [Ethics of AI in Medical Imaging](https://www.nature.com/articles/s41591-019-0447-1)

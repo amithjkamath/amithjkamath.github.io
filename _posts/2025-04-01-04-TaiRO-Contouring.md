@@ -3,10 +3,14 @@ layout: post
 title: 'TaiRO: AI for Contouring'
 date: 2025-04-01 00:00:00
 categories: tairo, radiation-oncology, artificial-intelligence
+tags: [deep-learning, segmentation, medical-imaging, ai-in-healthcare]
+summary: "A review of Auto-contouring with AI in radiation oncology, covering segmentation architectures, loss functions, and clinical integration."
 featured: true
 ---
 
 # 4: AI for Image Contouring
+
+{% toc %}
 
 Accurate delineation of target volumes and organs at risk (OARs) is a critical and often time-consuming step in radiation therapy planning. Manual contouring is subject to inter-observer variability and can be a significant bottleneck in the clinical workflow. Deep learning, particularly convolutional neural networks (CNNs), has shown remarkable success in automating this process, offering the potential for increased efficiency, consistency, and accuracy.
 
@@ -35,6 +39,11 @@ While most contouring tasks in radiation oncology currently rely on semantic seg
 Several deep learning architectures have proven particularly effective for medical image segmentation, building upon the foundational concepts of CNNs and attention mechanisms discussed in Module 4.
 
 ### U-Net and Variants
+
+- U-Net
+- Residual U-Net
+- Attention U-Net
+- U-Net++
 
 The U-Net architecture, specifically designed for biomedical image segmentation, remains the cornerstone of many contouring applications. Its encoder-decoder structure with skip connections effectively combines multi-scale feature extraction with precise spatial localization.
 
@@ -81,6 +90,11 @@ Attention mechanisms can help models better understand the global context of an 
 ## Loss Functions for Segmentation
 
 The choice of loss function significantly impacts how a segmentation model learns and the quality of the resulting contours. Standard classification losses like cross-entropy can be suboptimal for segmentation, especially with imbalanced data.
+
+- Dice Loss
+- Focal Loss
+- Boundary-aware Losses
+- Combined Losses
 
 ### Dice Loss
 
@@ -223,3 +237,11 @@ Designing optimal workflows that combine automated contouring with efficient hum
 Establishing best practices for commissioning, validating, and monitoring auto-contouring systems in clinical practice.
 
 As deep learning models for auto-contouring continue to improve in accuracy and robustness, their integration into clinical workflows holds the potential to significantly enhance the efficiency and consistency of radiation therapy planning.
+
+## Summary and References
+
+This article provides an overview of the application of deep learning, particularly convolutional neural networks and attention-based models, for automating the contouring process in radiation therapy planning. It explains the fundamentals of medical image segmentation, discusses key architectures like U-Net, V-Net, and transformer-based models, and reviews various loss functions and evaluation metrics relevant to clinical practice. The article also highlights current research directions, including organ-at-risk and tumor volume segmentation, adaptive contouring, and quality assurance, emphasizing the challenges and advancements in integrating AI-driven auto-contouring into clinical workflows to improve efficiency, consistency, and accuracy in radiation oncology.
+
+- [U-Net Paper](https://arxiv.org/abs/1505.04597)
+- [V-Net Paper](https://arxiv.org/abs/1606.04797)
+- ...

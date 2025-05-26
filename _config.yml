@@ -2,27 +2,46 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: Amith J. Kamath # your name will be used if blank
 first_name: Amith
 middle_name: J.
 last_name: Kamath
 contact_note: >
-  The best way to reach me is via email, using the button above.
+  Feel free to reach out to me via email for professional inquiries, collaborations, or interesting discussions about technology and research.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Personal website of Amith J. Kamath - Research, Technology, and Thoughts
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
-lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+  © 2024 Amith J. Kamath. All rights reserved.
+keywords: machine learning, research, technology, programming, personal website
+lang: en
+icon: 🔬 # or your personal brand emoji
 
-url: https://amithjkamath.github.io # the base hostname & protocol for your site
-baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
-last_updated: true # set to true if you want to display last updated in the footer
-impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
-back_to_top: true # set to false to disable the back to top button
+url: https://amithjkamath.github.io
+baseurl:
+last_updated: true
+impressum_path:
+back_to_top: true
+
+# Modern Features
+enable_tooltips: true
+enable_navbar_social: true
+enable_math: true
+enable_medium_zoom: true
+enable_progressbar: true
+enable_masonry: true
+enable_video_embedding: true
+
+# SEO Improvements
+serve_og_meta: true
+serve_schema_org: true
+og_image: /assets/img/og-image.png # You'll need to create this image
+
+# Performance
+jekyll-minifier:
+  compress_javascript: true
+  exclude: ["robots.txt", "assets/js/search/*.js"]
+lazy_loading_images: true
 
 # -----------------------------------------------------------------------------
 # Theme
@@ -65,9 +84,6 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -88,8 +104,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Notes # blog_name will be displayed in your blog page
-blog_description: Barely organized explorations
+blog_name: Research & Insights
+blog_description: Exploring machine learning, medical imaging, and radiation therapy
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -151,6 +167,8 @@ collections:
     output: true
   projects:
     output: true
+  series:
+    output: true
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -166,7 +184,7 @@ kramdown:
     span:
       line_numbers: false
     block:
-      line_numbers: false
+      line_numbers: true
       start_line: 1
 
 # Includes & excludes
@@ -226,14 +244,6 @@ sass:
   style: compressed
 
 # -----------------------------------------------------------------------------
-# Jekyll Minifier
-# -----------------------------------------------------------------------------
-
-jekyll-minifier:
-  compress_javascript: false # set to false since we are using terser as the js minifier
-  exclude: ["robots.txt", "assets/js/search/*.js"]
-
-# -----------------------------------------------------------------------------
 # Terser
 # -----------------------------------------------------------------------------
 
@@ -255,8 +265,8 @@ jekyll-archives:
   books:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
-display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
-display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+display_tags: ["machine-learning", "medical-imaging", "radiation-therapy", "deep-learning", "ai-in-healthcare", "research", "tutorials"]
+display_categories: ["TaiRO", "Paper-Reviews", "Tutorials", "Research"]
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -383,13 +393,13 @@ enable_google_verification: false # enables google site verification
 enable_bing_verification: false # enables bing site verification
 enable_masonry: true # enables automatic project cards arrangement
 enable_math: true # enables math typesetting (uses MathJax)
-enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
+enable_tooltips: true # enables automatic tooltip links generated for each section titles on pages and posts
 enable_darkmode: true # enables switching between light/dark modes
-enable_navbar_social: false # enables displaying social links in the navbar on the about page
+enable_navbar_social: true # enables displaying social links in the navbar on the about page
 enable_project_categories: true # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
 enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
-enable_video_embedding: false # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.
+enable_video_embedding: true # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.
 
 # -----------------------------------------------------------------------------
 # Library versions
@@ -641,3 +651,9 @@ jsonresume:
   - languages
   - interests
   - references
+
+# Table of contents
+toc:
+  enabled: true
+  h_min: 1
+  h_max: 3

@@ -3,6 +3,8 @@ layout: post
 title: 'TaiRO: AI for Treatment Planning'
 date: 2025-05-01 00:00:00
 categories: tairo, radiation-oncology, artificial-intelligence
+tags: [treatment-planning, dose-prediction, dvh, plan-quality, knowledge-based-planning, reinforcement-learning, multi-criteria-optimization, ai-in-healthcare]
+summary: "Deep learning and AI approaches for radiation therapy treatment planning, including dose prediction, plan quality assessment, knowledge-based planning, automation, and current research directions."
 featured: true
 ---
 
@@ -57,11 +59,8 @@ Attention-based architectures that learn to focus on the most relevant anatomica
 Dose prediction models face several challenges:
 
 Handling the high dynamic range of dose values, which can span several orders of magnitude.
-
 Accurately predicting dose in regions with complex tissue heterogeneity or at interfaces between different tissues.
-
 Capturing the impact of different beam arrangements, which may not be explicitly provided as input.
-
 Ensuring that predicted dose distributions satisfy physical constraints (e.g., dose cannot increase with depth beyond the build-up region for a single beam).
 
 Despite these challenges, dose prediction models have shown promising results, with many achieving mean absolute errors of less than 5% of the prescription dose in most regions. These models can serve as rapid approximations for plan evaluation, as starting points for optimization, or as components in fully automated planning systems.
@@ -75,17 +74,13 @@ Evaluating the quality of radiation treatment plans is traditionally a manual pr
 Automated plan evaluation models assess whether a treatment plan meets clinical goals and how it compares to historically "good" plans for similar cases. These models can:
 
 Classify plans as acceptable or requiring improvement based on dosimetric and geometric features.
-
 Score plans on a continuous scale, potentially highlighting specific aspects that could be improved.
-
 Compare a plan against a database of previous plans for similar patients to identify potential outliers or areas for improvement.
 
 Deep learning approaches to plan evaluation include:
 
 Supervised classification or regression models trained on expert-labeled plans.
-
 Anomaly detection models that identify unusual dose distributions or DVH characteristics.
-
 Reinforcement learning frameworks that learn to evaluate plans based on clinical outcomes or expert preferences.
 
 The features used for plan evaluation typically include:
@@ -112,9 +107,7 @@ Deep learning-based KBP models typically:
 Architectures for KBP include:
 
 CNNs that process anatomical features to predict achievable dose metrics.
-
 Recurrent neural networks (RNNs) that model the sequential nature of DVH curves.
-
 Attention mechanisms that focus on the most relevant historical plans or anatomical features for a new patient.
 
 KBP approaches have shown the ability to reduce planning time and improve plan quality, particularly for less experienced planners or centers. They can also help identify suboptimal plans by comparing achieved dose metrics against predicted achievable values.
