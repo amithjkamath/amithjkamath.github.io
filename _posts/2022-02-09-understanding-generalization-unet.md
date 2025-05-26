@@ -2,7 +2,7 @@
 layout: post
 title: 'Paper Summary: Understanding and Visualizing Generalization in UNets'
 date: 2022-02-09 00:00:00
-categories: paper-summary, computer-vision, mia
+categories: paper-summary, computer-vision
 ---
 
 This paper proposes techniques for understanding and visualizing generalization performance of UNets w.r.t. dataset shift.

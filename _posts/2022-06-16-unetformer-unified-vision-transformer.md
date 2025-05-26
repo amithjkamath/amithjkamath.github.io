@@ -2,7 +2,7 @@
 layout: post
 title: 'Paper Summary: UNetFormer: A Unified Vision Transformer Model and Pre-Training Framework for 3D Medical Image Segmentation'
 date: 2022-06-16 00:00:00
-categories: paper-summary, computer-vision, mia
+categories: paper-summary, computer-vision
 ---
 
 This paper introduces a unified framework consisting of two architectures: a 3D Swin (Sliding Window) Transformer based encoder, and a CNN (or, a Transformer) based decoder. Vision Transformers (ViT) learn more uniform representations and can better model long-range dependencies (as compared to CNNs). Swin transformers solve some drawbacks the original ViT: by relaxing requirements of fixed token resolution and better inductive bias. This architecture uses a 3D Swin transformer for the encoder, and a choice of either a CNN (called UNetFormer) or a Swin transformer (called UNetFormer+, not sure what the '+' nomenclature indicates) decoder, both of which are capable of being pre-trained, and also trained with deep-supervision (loss terms not just at the output, but at intermediate stages). The pre-training framework helps with a common medical image analysis condition of very small sample size and expensive annotations. 

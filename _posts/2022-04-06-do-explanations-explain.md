@@ -2,7 +2,7 @@
 layout: post
 title: 'Paper Summary: Do Explanations Explain? Model Knows Best'
 date: 2022-04-06 00:00:00
-categories: paper-summary, computer-vision, mia, interpretability
+categories: paper-summary, computer-vision, interpretability
 ---
 
 This paper attempts to tackle the feature attribution problem - which input features contribute to a neural networks' output? The answer they emphatically claim is best known to the model/network itself. They propose an empirical framework for axiomatic evalution of explanation (or saliency) methods and compare with several well known methods including GradCAM and IBA.

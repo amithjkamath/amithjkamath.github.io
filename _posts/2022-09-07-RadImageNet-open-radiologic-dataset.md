@@ -2,7 +2,7 @@
 layout: post
 title: 'Paper Summary: RadImageNet: An open radiologic deep learning research dataset for effective transfer learning'
 date: 2022-09-07 00:00:00
-categories: paper-summary, computer-vision, mia
+categories: paper-summary, computer-vision
 ---
 
 This paper introduces a large scale dataset which demonstrates the value of pretraining with millions of radiologic images (within, or at least closer to the domain the eventual model is being trained on) compared with ImageNet photographic images (which could be quite a large semantic jump) on downstream medical applications when using transfer learning. They show that RadImageNet pretrained models could be an effective starting point for transfer learning in radiologic imaging artificial intelligence applications (where all the images are grayscale, for example).

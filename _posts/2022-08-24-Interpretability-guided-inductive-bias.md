@@ -2,7 +2,7 @@
 layout: post
 title: 'Paper Summary: Interpretability-guided inductive bias for deep learning based medical image'
 date: 2022-08-24 00:00:00
-categories: paper-summary, computer-vision, mia
+categories: paper-summary, computer-vision
 ---
 
 This paper proposes an interpretability-guided inductive bias approach (called SIBnet: salient inductive bias network) enforcing that learned features yield more distinctive and spatially consistent saliency maps for different class labels of trained models, leading to improved model performance. It is essential that trained models extract clinically relevant features for downstream tasks as, otherwise, shortcut learning and generalization issues can occur. In the medical field, trustability and transparency of current deep learning systems is a much desired property. These objectives are achieved by incorporating a class-distinctiveness loss and a spatial-consistency regularization loss term.

@@ -2,7 +2,7 @@
 layout: post
 title: 'Paper Summary: Volumetric memory network for interactive medical image segmentation'
 date: 2022-11-03 00:00:00
-categories: paper-summary, computer-vision, mia
+categories: paper-summary, computer-vision
 ---
 
 This paper ...

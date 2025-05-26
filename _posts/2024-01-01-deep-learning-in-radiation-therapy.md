@@ -2,7 +2,7 @@
 layout: post
 title: 'Paper Summary: Deep learning in medical imaging and radiation therapy'
 date: 2024-01-01 00:00:00
-categories: paper-summary, computer-vision, mia
+categories: paper-summary, computer-vision
 featured: false
 ---
 

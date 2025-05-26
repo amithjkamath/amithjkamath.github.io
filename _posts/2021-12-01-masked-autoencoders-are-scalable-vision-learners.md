@@ -2,7 +2,7 @@
 layout: post
 title: 'Paper Summary: Masked Autoencoders are Scalable Vision Learners'
 date: 2021-12-01 00:00:00
-categories: paper-summary, computer-vision, transformers, mia
+categories: paper-summary, computer-vision, transformers
 ---
 
 This landmark paper presents Masked Auto-Encoders (MAE), which are self-supervised learners for vision tasks. 

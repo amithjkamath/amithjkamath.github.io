@@ -2,7 +2,7 @@
 layout: post
 title: 'Paper Summary: AMINN: Autoencoder-Based Multiple Instance Neural Network Improves Outcome Prediction in Multifocal Liver Metastases'
 date: 2022-06-29 00:00:00
-categories: paper-summary, computer-vision, mia
+categories: paper-summary, computer-vision
 ---
 
 This paper introduces an end-to-end autoencoder-based multiple instance neural network (AMINN) for the prediction of survival outcomes in multifocal colorectal cancer liver metastases (CRLM) patients using radiomic features extracted from contrast-enhanced MRIs. Colorectal cancer is the fourth most common non-skin cancer and the second leading cause of cancer deaths in the United States. 50–70% of patients eventually develop liver metastases, which then becomes the predominant cause of death. 

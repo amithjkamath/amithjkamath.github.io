@@ -2,7 +2,7 @@
 layout: post
 title: 'Paper Summary: Quality Assurance for AI-Based Applications in Radiation Therapy'
 date: 2024-01-01 00:00:00
-categories: paper-summary, computer-vision, mia
+categories: paper-summary, computer-vision
 featured: false
 ---
 

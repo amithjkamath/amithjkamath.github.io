@@ -12,13 +12,19 @@ The not-so-random initial state of this text is courtesy [Ai2 Scholar QA](https:
 
 -------------
 
-# Table of contents
-1. [Importance of robustness in Medical Image Segmentation](#section1)
-2. [Challenges in Medical Image Segmentation](#section2)
-3. [Types of robustness in medical segmentation models](#section3)
+- [Importance of robustness in Medical Image Segmentation](#importance-of-robustness-in-medical-image-segmentation)
+- [Challenges in Medical Image Segmentation](#challenges-in-medical-image-segmentation)
+- [Types of robustness in medical segmentation models](#types-of-robustness-in-medical-segmentation-models)
+- [Model architectures and approaches for robust segmentation](#model-architectures-and-approaches-for-robust-segmentation)
+  - [Active Contour and Level Set Models](#active-contour-and-level-set-models)
+  - [Deep Learning-Based Approaches](#deep-learning-based-approaches)
+  - [SAM-Based Approaches for Medical Imaging](#sam-based-approaches-for-medical-imaging)
+- [Methods to enhance robustness](#methods-to-enhance-robustness)
+- [Evaluation of robustness](#evaluation-of-robustness)
+- [Clinical importance](#clinical-importance)
+- [Our contributions and innovations](#our-contributions-and-innovations)
 
 ## Importance of robustness in Medical Image Segmentation
-<a name="section1"></a>
 
 Medical image segmentation, powered by deep learning techniques, has revolutionized quantitative pathological assessments, diagnostic support systems, and tumor analysis [(Zeleznik et al., 2021)](https://www.nature.com/articles/s41467-021-20966-2)[(Wu et al., 2021)](https://www.nature.com/articles/s42256-021-00377-0). However, as these technologies advance toward clinical implementation, the focus has shifted beyond mere accuracy to include robustness as a critical requirement. Robustness refers to a model's ability to maintain consistent performance despite minor perturbations or changes in input data, which is especially crucial in medical settings where imaging data often contains noise and artifacts [(Maleki et al., 2024)](https://arxiv.org/abs/2401.08847).
 
@@ -31,7 +37,6 @@ Robustness issues in medical image segmentation extend across various dimensions
 Given these critical considerations, developing medical image segmentation models that are both accurate and robust to perturbations has become increasingly essential [(Daza et al., 2021)](https://link.springer.com/chapter/10.1007/978-3-030-87199-4_1). Best practices for ensuring robust performance include using established quantitative metrics to measure performance changes with input variations, testing models across diverse patient groups and imaging sources, and explicitly documenting assumptions about input data that might impact clinical performance [(Maleki et al., 2024)](https://arxiv.org/abs/2401.08847).
 
 ## Challenges in Medical Image Segmentation
-<a name="section2"></a>
 
 Medical image segmentation models encounter numerous technical challenges that impact their reliability and clinical utility. One of the most persistent obstacles is intensity inhomogeneity in medical images, where variations in pixel intensity throughout the same tissue type can lead to inaccurate segmentation boundaries [(Almasganj et al., 2025)](https://ieeexplore.ieee.org/document/10813349). This problem is compounded by different types of noise (Gaussian, salt-and-pepper, speckle) that frequently appear in medical imaging, further complicating the segmentation process [(Wang et al., 2016)](https://biomedical-engineering-online.biomedcentral.com/articles/10.1186/s12938-016-0153-6).
 
@@ -48,7 +53,6 @@ To address these challenges, researchers have explored various approaches. For i
 Addressing these multifaceted challenges requires comprehensive evaluation frameworks and best practices. These include using established quantitative metrics to measure performance changes with input variations, testing across diverse patient groups and imaging sources, and explicit documentation of assumptions about input data that might impact clinical performance [(Maleki et al., 2024)](https://arxiv.org/abs/2401.08847).
 
 ## Types of robustness in medical segmentation models
-<a name="section3"></a>
 
 Medical image segmentation models need multiple types of robustness to function reliably in clinical settings. One of the most critical forms is domain robustness, which refers to a model's ability to maintain performance when encountering images from different sources or domains than those used during training (Hwang et al., 2021). This type of robustness is particularly important in medical imaging where variations across institutions, scanners, and protocols can create significant distribution shifts that impact model performance (Chen et al., 2021). Experimental evidence demonstrates that models specifically designed to learn anatomical structures can exhibit superior performance when tested on datasets from previously unseen domains, indicating enhanced domain robustness (Hwang et al., 2021).
 

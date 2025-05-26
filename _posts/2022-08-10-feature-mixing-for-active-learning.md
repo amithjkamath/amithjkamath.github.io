@@ -2,7 +2,7 @@
 layout: post
 title: 'Paper Summary: Active learning by Feature mixing'
 date: 2022-08-10 00:00:00
-categories: paper-summary, computer-vision, mia
+categories: paper-summary, computer-vision
 ---
 
 This paper introduces a novel method for batch Active Learning (AL) called ALFA-Mix. It is used to identify unlabelled instances with sufficiently-distinct features by seeking inconsistencies in predictions resulting from interventions on their representations. It proposes to  do this by forming linear combinations (i.e. interpolations or mixing) of the features of an unlabelled instance and of labelled ones (presumably from two separate categories). The interpolated features are passed through the current classifier. Inconsistencies in the predicted labels appear to indicate that the unlabelled instance may have novel features to learn from.

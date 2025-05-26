@@ -2,7 +2,7 @@
 layout: post
 title: 'Paper Summary: Realistic Image Normalization for Multi-domain Segmentation'
 date: 2021-11-17 00:00:00
-categories: paper-summary, computer-vision, mia
+categories: paper-summary, computer-vision
 ---
 
 The major idea here is to build a Deep Learning based normalization method that generalizes to multiple data sets, rather than using classical fixed techniques that don't.

@@ -2,7 +2,7 @@
 layout: post
 title: 'Paper Summary: Which Explanation Should I Choose? A Function Approximation Perspective to Characterizing Post hoc Explanations'
 date: 2022-11-16 00:00:00
-categories: paper-summary, computer-vision, mia
+categories: paper-summary, computer-vision
 ---
 
 This paper ...

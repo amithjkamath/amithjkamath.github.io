@@ -2,7 +2,7 @@
 layout: post
 title: 'Paper Summary: Diffusion models beat GANs on Image Synthesis'
 date: 2022-10-05 00:00:00
-categories: paper-summary, computer-vision, mia
+categories: paper-summary, computer-vision
 ---
 
 This paper shows that diffusion models can achieve image sample quality superior to the current state-of-the-art generative models. This is achieved in unconditional image synthesis by finding a better architecture through a series of ablations. For conditional image synthesis, sample quality is improved with classifier guidance: compute-efficient method for trading off diversity for fidelity using gradients from a classifier (which is one of the advantages of GANs). 

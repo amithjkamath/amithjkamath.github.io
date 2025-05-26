@@ -2,7 +2,7 @@
 layout: post
 title: 'Paper Summary: Label fusion and training methods for reliable representation of inter-rater uncertainty'
 date: 2022-04-20 00:00:00
-categories: paper-summary, computer-vision, mia, variability
+categories: paper-summary, computer-vision, variability
 ---
 
 This paper attempts to address the inter-rater variability problem for segmentation by finding the best way to fuse a variety of ground truths. They run a good set of comparisons using conventional training (segmentation as categorical classification per pixel) and another new method called 'softseg': which treats segmentation as a regression problem. Fusion methods include STAPLE (Simultaneous Truth and Performance Level Estimation), average rating (for soft-labels), and random sampling during training (use individual segmentations randomly while training so that the uncertainty is encoded that way).

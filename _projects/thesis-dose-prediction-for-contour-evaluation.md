@@ -12,6 +12,14 @@ The not-so-random initial state of this text is courtesy [Ai2 Scholar QA](https:
 
 -------------
 
+- [Introduction](#introduction)
+- [Automated contour quality assurance](#automated-contour-quality-assurance)
+- [Contour quality assessment using dose predictions](#contour-quality-assessment-using-dose-predictions)
+- [Clinical applications and workflow integration](#clinical-applications-and-workflow-integration)
+- [Challenges](#challenges)
+- [Future directions](#future-directions)
+
+
 ## Introduction
 
 Contouring quality in radiation oncology represents a critical aspect of treatment planning that directly influences treatment outcomes. Variations in how radiation oncologists delineate target volumes and organs at risk (OARs) can significantly impact dosimetric calculations, potentially affecting both tumor control probability (TCP) and normal tissue complication probability (NTCP) [(Zhu et al., 2019)](https://www.frontiersin.org/articles/10.3389/fonc.2019.00627/pdf). Research has demonstrated that accurate primary gross tumor contouring can positively influence tumor control and patient survival outcomes [(Lin et al., 2019)](https://pubmed.ncbi.nlm.nih.gov/30912722/). This is particularly important because contouring variations directly affect radiation treatment planning quality, especially regarding dose distribution to OARs.

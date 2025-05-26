@@ -2,7 +2,7 @@
 layout: post
 title: 'Paper Summary: Embracing the disharmony in medical imaging: A Simple and effective framework for domain adaptation'
 date: 2022-03-02 00:00:00
-categories: paper-summary, computer-vision, mia
+categories: paper-summary, computer-vision
 ---
 
 This paper proposes a novel method to address domain shift by building a pre-trained classifier on source data, and adapting/fine-tuning this to new target data for better classification accuracy using auxiliary training tasks.

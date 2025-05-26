@@ -2,7 +2,7 @@
 layout: post
 title: 'Paper Summary: Calibrating Segmentation Networks with Margin Based Label Smoothing'
 date: 2022-10-19 00:00:00
-categories: paper-summary, computer-vision, mia
+categories: paper-summary, computer-vision
 ---
 
 This paper tackles the problem of models that are poorly calibrated, which result in over-confident predictions. The problem with cross entropy based loss functions is that it promotes the predicted softmax probabilities to match the one-hot label assignments, which means that the correct label activation should be significantly larger than the remaining activations. 

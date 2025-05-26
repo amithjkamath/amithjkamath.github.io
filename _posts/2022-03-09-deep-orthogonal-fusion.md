@@ -2,7 +2,7 @@
 layout: post
 title: 'Paper Summary: Deep Orthogonal Fusion: Multimodal Prognostic Biomarker Discovery Integrating Radiology, Pathology, Genomic, and Clinical Data'
 date: 2022-03-09 00:00:00
-categories: paper-summary, computer-vision, mia
+categories: paper-summary, computer-vision
 ---
 
 This paper proposes a new method called 'Deep Orthogonal Fusion' - a deep learning framework that generates a multimodal risk score using - radiology scans (MRI exams), molecular profiles, histopathology slides and other clinical factors - to predict overall survival of glioma patients. Most prior studies focused on fusion of biopsy-based modalities; others have focused on late-stage fusion, relying on hand-crafted features and simple multimodal classifiers - not benefiting from efficiently combining all of them.

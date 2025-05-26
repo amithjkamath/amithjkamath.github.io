@@ -2,7 +2,7 @@
 layout: post
 title: 'Paper Summary: Patches are all you need'
 date: 2021-11-03 00:00:00
-categories: paper-summary, computer-vision, transformers, mia
+categories: paper-summary, computer-vision, transformers
 ---
 
 The general claim here is that re-casting inputs into patches can inherently improve network performance.

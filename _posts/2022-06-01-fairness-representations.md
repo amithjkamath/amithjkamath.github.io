@@ -2,7 +2,7 @@
 layout: post
 title: 'Paper Summary: On the Fairness of Disentangled Representations'
 date: 2022-06-01 00:00:00
-categories: paper-summary, computer-vision, mia
+categories: paper-summary, computer-vision
 ---
 
 This paper explores the relationship between fairness of downstream prediction tasks and disentangling representations of distributions of data. The hypothesis - which is empirically supported by extensive experimentation - is that disentangled (where high dimensional observations include both dependence on the target variable, as well as unobserved sensitive variables) versions of representations that do not differentiate between unobserved sensitive variables encourage building fairer models, although they may not necessarily be the ones with the highest accuracy.

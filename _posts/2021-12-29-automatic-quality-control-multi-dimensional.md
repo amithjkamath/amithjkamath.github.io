@@ -2,7 +2,7 @@
 layout: post
 title: 'Paper Summary: Medical image segmentation automatic quality control: a multi-dimensional approach'
 date: 2021-12-29 00:00:00
-categories: paper-summary, computer-vision, mia, quality-assurance
+categories: paper-summary, computer-vision, quality-assurance
 ---
 
 This paper describes a multi-level QC for image segmentation quality in 2D and 3D, and reports results on the UK BioBank data.

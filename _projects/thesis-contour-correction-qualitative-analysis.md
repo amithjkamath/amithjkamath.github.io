@@ -12,6 +12,15 @@ The not-so-random initial state of this text is courtesy [Ai2 Scholar QA](https:
 
 -------------
 
+- [Impact of contour variations](#impact-of-contour-variations)
+- [Acceptability criteria for contours](#acceptability-criteria-for-contours)
+- [Geometric evaluation metrics](#geometric-evaluation-metrics)
+- [Limitations of geometric evaluation methods](#limitations-of-geometric-evaluation-methods)
+  - [What are the characteristics of an ideal metric?](#what-are-the-characteristics-of-an-ideal-metric)
+- [Dosimetric evaluation methods](#dosimetric-evaluation-methods)
+- [Our contributions](#our-contributions)
+
+
 ## Impact of contour variations 
 
 Contouring variations in radiation therapy have substantial clinical implications that extend beyond mere geometric differences. Studies have shown that variations in contouring of targets and organs at risk (OARs) can significantly impact dose-volume histogram (DVH) calculations, tumor control probability (TCP), and normal tissue complication probability (NTCP), with the magnitude depending on the degree of variation and the plan dose gradient [(Zhu et al., 2019)](https://www.frontiersin.org/articles/10.3389/fonc.2019.00627/pdf). The accuracy of primary gross tumor contouring can positively influence tumor control and patient survival outcomes [(Lin et al., 2019)](https://pubmed.ncbi.nlm.nih.gov/30912722/).

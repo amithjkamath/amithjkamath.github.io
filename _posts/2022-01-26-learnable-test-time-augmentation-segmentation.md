@@ -2,7 +2,7 @@
 layout: post
 title: 'Paper Summary: Learnable Test-Time Augmentation for Source-Free Medical Image Segmentation Under Domain Shift'
 date: 2022-01-26 00:00:00
-categories: paper-summary, computer-vision, mia
+categories: paper-summary, computer-vision
 ---
 
 This paper describes a multi-level QC for image segmentation quality in 2D and 3D, and reports results on the UK BioBank data.

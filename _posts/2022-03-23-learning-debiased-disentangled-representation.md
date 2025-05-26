@@ -2,7 +2,7 @@
 layout: post
 title: 'Paper Summary: Learning Debiased and Disentangled Representations for Semantic Segmentation'
 date: 2022-03-23 00:00:00
-categories: paper-summary, computer-vision, mia
+categories: paper-summary, computer-vision
 ---
 
 This paper attempts to tackle biased and entangled feature representations in semantic segmentation - specifically in cases where teh class-imbalance is severe - by extracting class-specific information. This is achieved by randomly sampling a class, suppressing its' features - hence reducing feature dependence on classes. 

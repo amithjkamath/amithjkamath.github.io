@@ -2,7 +2,7 @@
 layout: post
 title: 'Paper Summary: Robust and generalizable visual representation learning via random convolutions'
 date: 2022-05-18 00:00:00
-categories: paper-summary, computer-vision, mia
+categories: paper-summary, computer-vision
 ---
 
 This paper attempts to address the problem of improving robustness in visual representation learning from a single domain of data: and adds inductive bias towards global shape information rather than local textures using a simple idea: the first layer of a DNN is a random convolution, simulating domain shifts and minor perturbations. 
