@@ -28,14 +28,6 @@ serve_og_meta: true
 serve_schema_org: true
 og_image: /assets/img/profile.png # You'll need to create this image
 
-# Performance
-jekyll-minifier:
-  enable: true
-  compress_javascript: true
-  uglifier:
-    harmony: true # enables ES6 support
-  exclude: ["robots.txt", "assets/js/search/*.js"]
-
 # -----------------------------------------------------------------------------
 # Theme
 # -----------------------------------------------------------------------------
