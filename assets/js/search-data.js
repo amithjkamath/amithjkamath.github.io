@@ -51,51 +51,7 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/glossary/";
               },
-            },{id: "post-tairo-ai-for-treatment-planning",
-        
-          title: "TaiRO: AI for Treatment Planning",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/07-TaiRO-Treatment-Planning/";
-          
-        },
-      },{id: "post-tairo-ai-for-contouring",
-        
-          title: "TaiRO: AI for Contouring",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/04-TaiRO-Contouring/";
-          
-        },
-      },{id: "post-medical-imaging-modalities-and-storage-file-types-in-radiation-oncology",
-        
-          title: "Medical Imaging Modalities and Storage File Types in Radiation Oncology",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/03-TaiRO-Imaging/";
-          
-        },
-      },{id: "post-tairo-fundamentals-of-deep-learning",
-        
-          title: "TaiRO: Fundamentals of Deep Learning",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/02-TaiRO-Fundamentals/";
-          
-        },
-      },{id: "post-market-need-for-auto-contouring-solutions",
+            },{id: "post-market-need-for-auto-contouring-solutions",
         
           title: "Market need for Auto-Contouring Solutions",
         
@@ -104,17 +60,6 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2025/autocontour-need/";
-          
-        },
-      },{id: "post-tairo-introduction",
-        
-          title: "TaiRO: Introduction",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/01-TaiRO-Intro/";
           
         },
       },{id: "post-paper-summary-quality-assurance-for-ai-based-applications-in-radiation-therapy",
@@ -530,11 +475,6 @@ ninja.data = [{
           description: "More details about our MIDL &#39;24 work.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2024-midl-radonc-vs-dldp/";
-            },},{id: "projects-tairo-training-in-ai-for-radiation-oncology",
-          title: 'TaiRO - Training in AI for Radiation Oncology',
-          description: "A work-in-progress set of content tailored for this niche field.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2025-TaiRO/";
             },},{id: "projects-dosimetric-awareness-of-radiation-oncology-professionals",
           title: 'Dosimetric Awareness of Radiation Oncology Professionals',
           description: "Understanding what human-experts think about the impact of contour evaluations.",
