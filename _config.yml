@@ -7,16 +7,14 @@ first_name: Amith
 middle_name: J.
 last_name: Kamath
 contact_note: >
-  The best way to reach me is via email, using the button above.
+  Feel free to reach out to me via email for professional inquiries, collaborations, or interesting discussions about technology and research.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+  © 2024 Amith J. Kamath. All rights reserved.
+keywords: machine learning, research, technology, programming, personal website
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🔬 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://amithjkamath.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -88,8 +86,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Notes # blog_name will be displayed in your blog page
-blog_description: Barely organized explorations
+blog_name: Research & Insights
+blog_description: Exploring machine learning, medical imaging, and radiation therapy
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -263,8 +261,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Kamath]
+  first_name: [Amith, J.]
 
   style: apa
   locale: en
