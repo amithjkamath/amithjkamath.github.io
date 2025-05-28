@@ -73,9 +73,9 @@ ninja.data = [{
             window.location.href = "/blog/2025/04-TaiRO-Contouring/";
           
         },
-      },{id: "post-tairo-medical-imaging-in-radiation-oncology",
+      },{id: "post-medical-imaging-modalities-and-storage-file-types-in-radiation-oncology",
         
-          title: "TaiRO: Medical Imaging in Radiation Oncology",
+          title: "Medical Imaging Modalities and Storage File Types in Radiation Oncology",
         
         description: "",
         section: "Posts",

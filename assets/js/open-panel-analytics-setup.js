@@ -1,8 +1,7 @@
-window.op =
-  window.op ||
-  function (...args) {
-    (window.op.q = window.op.q || []).push(args);
-  };
+window.op = window.op || function () {
+  var args = Array.prototype.slice.call(arguments);
+  (window.op.q = window.op.q || []).push(args);
+};
 window.op("init", {
   clientId: "",
   trackScreenViews: true,
