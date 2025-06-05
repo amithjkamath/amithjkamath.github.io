@@ -445,9 +445,9 @@ ninja.data = [{
           description: "More details about our MICCAI &#39;23 work.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2023-miccai-skip-connections/";
-            },},{id: "projects-",
-          title: '',
-          description: "",
+            },},{id: "projects-autodoserank-dosimetry-informed-segmentation-ranking",
+          title: 'AutoDoseRank - Dosimetry-informed Segmentation Ranking',
+          description: "More details about our CaPTion at MICCAI &#39;24 workshop paper.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2024-miccaiw-autodoserank/";
             },},{id: "projects-comparing-the-performance-of-radiation-oncologists-versus-a-deep-learning-dose-predictor",
