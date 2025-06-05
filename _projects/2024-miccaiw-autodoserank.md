@@ -1,6 +1,6 @@
 ---
 layout: page
-title: AutoDoseRank: Dosimetry-informed Segmentation Ranking
+title: AutoDoseRank - Dosimetry-informed Segmentation Ranking
 description: More details about our CaPTion at MICCAI '24 workshop paper.
 img: assets/img/miccaiw-autodoserank.png
 importance: 2
