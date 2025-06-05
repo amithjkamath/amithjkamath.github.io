@@ -425,31 +425,11 @@ ninja.data = [{
           section: "News",},{id: "news-mega-grateful-to-be-named-one-of-five-university-of-bern-venture-fellows-for-2025-26",
           title: ':mega: Grateful to be named one of five University of Bern Venture Fellows...',
           description: "",
-          section: "News",},{id: "projects-image-registration",
-          title: 'Image Registration',
-          description: "an interactive overview of affine transformations",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2022-fa-interactive-image-registration/";
-            },},{id: "projects-template-matching",
-          title: 'Template Matching',
-          description: "a simple interactive visual explainer for Template Matching",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2022-fa-interactive-template-matching/";
-            },},{id: "projects-context-versus-foreground-to-background-ratio",
+          section: "News",},{id: "projects-context-versus-foreground-to-background-ratio",
           title: 'Context versus Foreground-to-Background Ratio',
           description: "More details about our MedNeurIPS &#39;22 abstract.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2022-medneurips-contextvsfbr-tradeoff/";
-            },},{id: "projects-segmentation-evaluator",
-          title: 'Segmentation Evaluator',
-          description: "an interactive exploration of segmentation metrics",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2022-sp-interactive-segmentation-evaluation/";
-            },},{id: "projects-monty-hall",
-          title: 'Monty Hall',
-          description: "an interactive game to understand conditional probability",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2022-sp-understanding-monty-hall/";
             },},{id: "projects-astra-for-radiotherapy-quality-assurance",
           title: 'ASTRA - for Radiotherapy quality Assurance',
           description: "More details about our EMBC &#39;23 poster.",
@@ -465,16 +445,41 @@ ninja.data = [{
           description: "More details about our MICCAI &#39;23 work.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2023-miccai-skip-connections/";
-            },},{id: "projects-monai-with-matlab",
-          title: 'MONAI with MATLAB',
-          description: "a getting started guide for using both MONAI and MATLAB",
+            },},{id: "projects-",
+          title: '',
+          description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2024-fa-monai-with-matlab/";
+              window.location.href = "/projects/2024-miccaiw-autodoserank/";
             },},{id: "projects-comparing-the-performance-of-radiation-oncologists-versus-a-deep-learning-dose-predictor",
           title: 'Comparing the Performance of Radiation Oncologists versus a Deep Learning Dose Predictor',
           description: "More details about our MIDL &#39;24 work.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2024-midl-radonc-vs-dldp/";
+            },},{id: "projects-image-registration",
+          title: 'Image Registration',
+          description: "an interactive overview of affine transformations",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/teach-2022-interactive-image-registration/";
+            },},{id: "projects-segmentation-evaluator",
+          title: 'Segmentation Evaluator',
+          description: "an interactive exploration of segmentation metrics",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/teach-2022-interactive-segmentation-evaluation/";
+            },},{id: "projects-template-matching",
+          title: 'Template Matching',
+          description: "a simple interactive visual explainer for Template Matching",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/teach-2023-interactive-template-matching/";
+            },},{id: "projects-monty-hall",
+          title: 'Monty Hall',
+          description: "an interactive game to understand conditional probability",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/teach-2023-understanding-monty-hall/";
+            },},{id: "projects-monai-with-matlab",
+          title: 'MONAI with MATLAB',
+          description: "a getting started guide for using both MONAI and MATLAB",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/teach-2024-monai-with-matlab/";
             },},{id: "projects-dosimetric-awareness-of-radiation-oncology-professionals",
           title: 'Dosimetric Awareness of Radiation Oncology Professionals',
           description: "Understanding what human-experts think about the impact of contour evaluations.",
