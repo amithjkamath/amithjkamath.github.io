@@ -1,15 +1,15 @@
 ---
 layout: page
 title: AutoDoseRank: Dosimetry-informed Segmentation Ranking
-description: More details about our CaPTion@MICCAI '24 workshop paper.
+description: More details about our CaPTion at MICCAI '24 workshop paper.
 img: assets/img/miccaiw-autodoserank.png
-importance: 1
+importance: 2
 category: papers
 ---
 
 This is a WIP (Work-In-Progress): this message will be removed once sufficient progress has been made. 
 
-This page includes additional details around our CaPTion@MICCAI '24 paper: *"AutoDoseRank: Automated Dosimetry-informed Segmentation Ranking for Radiotherapy"*.
+This page includes additional details around our CaPTion at MICCAI '24 paper: "AutoDoseRank: Automated Dosimetry-informed Segmentation Ranking for Radiotherapy".
 
 Segmentation is a critical step in radiotherapy (RT) for glioblastoma, an aggressive brain tumor. With increasing reliance on automated segmentation tools, clinical focus is shifting from manual contouring to verifying the quality of segmentation proposals. However, traditional metrics such as Dice score fail to capture the true clinical consequences of contouring errors, particularly in how they affect dose distributions across organs-at-risk (OARs).
 
@@ -24,7 +24,7 @@ Our results show that **AutoDoseRank outperforms three out of four experts**, an
 
 These findings support the use of AutoDoseRank as a clinically relevant quality assurance tool for automated segmentation systems in RT workflows, helping reduce clinician workload and enhance safety.
 
-#See [the project repository](https://github.com/amithjkamath/autodoserank) to reproduce these results.
+See [the project repository](https://github.com/amithjkamath/autodoserank) to reproduce these results.
 
 Citation
 ------
