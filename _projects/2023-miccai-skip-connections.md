@@ -11,8 +11,7 @@ This is a WIP (Work-In-Progress): this message will be removed once sufficient p
 
 This page includes some additional details around the paper: "Do we really need that skip connection? Understanding its' interplay with task complexity", as presented at the International Conference on Medical Image Computing and Computer-Assisted Intervention, 2023 {% cite kamath2023skipconnections %}.
 
-#add a video link here
-#[![2 minute video abstract](https://img.youtube.com/vi/YreG6vC64aw/0.jpg)](https://www.youtube.com/watch?v=YreG6vC64aw)
+[![2 minute video abstract](https://img.youtube.com/vi/YreG6vC64aw/0.jpg)](https://www.youtube.com/watch?v=YreG6vC64aw)
 
 The UNet architecture has become the preferred model used for medical image segmentation tasks. 
 Since its inception, several variants have been proposed. 

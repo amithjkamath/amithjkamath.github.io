@@ -11,7 +11,6 @@ This is a WIP (Work-In-Progress): this message will be removed once sufficient p
 
 This post covers some additional details around the paper: "ASTRA: Atomic Surface Transformations for Radiotherapy quality Assurance", as presented at the IEEE Engineering in Medicine and Biology Conference, 2023 {% cite kamath2023astra %}.
 
-add a video link here
 [![2 minute video abstract](https://img.youtube.com/vi/vghlJh8ACOY/0.jpg)](https://www.youtube.com/watch?v=vghlJh8ACOY)
 
 Treatment for glioblastoma, an aggressive brain tumour usually relies on radiotherapy. This involves planning how to achieve the desired radiation dose distribution, which is known as treatment planning. Treatment planning is impacted by human errors, inter-expert variability in segmenting (or outlining) the tumor target and organs-at-risk, and differences in segmentation protocols. Erroneous segmentations translate to erroneous dose distributions, and hence sub-optimal clinical outcomes. Reviewing segmentations is time-intensive, significantly reduces the efficiency of radiation oncology teams, and hence restricts timely radiotherapy interventions to limit tumor growth. Moreover, to date, radiation oncologists review and correct segmentations without information on how potential corrections might affect radiation dose distributions, leading to an ineffective and suboptimal segmentation correction workflow. 
