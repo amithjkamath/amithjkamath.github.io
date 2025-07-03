@@ -420,7 +420,7 @@ ninja.data = [{
           section: "News",},{id: "news-mega-grateful-to-be-named-one-of-five-university-of-bern-venture-fellows-for-2025-26",
           title: ':mega: Grateful to be named one of five University of Bern Venture Fellows...',
           description: "",
-          section: "News",},{id: "news-scroll-our-manuscript-on-predicting-the-impact-of-target-volume-contouring-variations-on-the-organ-at-risk-dose-results-of-a-qualitative-survey-is-accepted-to-radiotherapy-an-oncology",
+          section: "News",},{id: "news-scroll-our-manuscript-on-predicting-the-impact-of-target-volume-contouring-variations-on-the-organ-at-risk-dose-results-of-a-qualitative-survey-is-accepted-to-radiotherapy-and-oncology",
           title: ':scroll: Our manuscript on “Predicting the impact of target volume contouring variations on...',
           description: "",
           section: "News",},{id: "projects-context-versus-foreground-to-background-ratio",
