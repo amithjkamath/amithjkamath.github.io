@@ -348,12 +348,7 @@ ninja.data = [{
             window.location.href = "/blog/2021/patches-are-all-you-need/";
           
         },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-got-out-of-omscs-with-3-7-4-0",
+      },{id: "news-got-out-of-omscs-with-3-7-4-0",
           title: 'Got out of OMSCS with 3.7/4.0!',
           description: "",
           section: "News",},{id: "news-sparkles-back-to-school-this-time-in-biomedical-engineering-at-uni-bern",
