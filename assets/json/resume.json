@@ -45,6 +45,15 @@
   "work": [
     {
       "name": "The MathWorks",
+      "position": "Uni Bern Student Ambassador",
+      "url": "https://www.mathworks.com",
+      "startDate": "2023-03-01",
+      "endDate": "2025-03-31",
+      "summary": "Supported MathWorks' outreach to the University of Bern, including organizing workshops and events for students and faculty. Engaged with the academic community to promote MATLAB and Simulink.",
+      "highlights": []
+    },
+    {
+      "name": "The MathWorks",
       "position": "Product Manager - AI in Academia (Asia Pacific)",
       "url": "https://www.mathworks.com",
       "startDate": "2019-07-01",
