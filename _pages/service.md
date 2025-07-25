@@ -1,15 +1,49 @@
 ---
 layout: page
-permalink: /teaching/
-title: Teaching
-description: Materials for courses and pedagogic events.
+permalink: /service/
+title: Academic Service
+description: Research events organized and courses taught.
 nav: false
-nav_order: 2
+nav_order: 5
 ---
 
 ---
 
-## Graduate Courses
+## Symposia and Talks
+
+---
+
+Lead Organizer for [Bern AI in Radiotherapy (BART) Symposium](https://amithjkamath.github.io/bart25) in March 2025.
+
+<details>
+  <summary>More details</summary>
+  Robert and I were co-organizers of BART, a one-day symposium for AI in Radiotherapy. We had three keynote speakers across radiation oncology, medical physics and engineering/AI. 100 registrants attended from 5 countries, with 11 posters and three flash talks.
+</details>
+
+Lead Organizer for [Bern Interpretable AI (BIAS) Symposium]((https://amithjkamath.github.io/bias23)) in March 2023.
+
+<details>
+  <summary>More details</summary>
+  Yannick and I were co-organizers of BIAS, a one-day symposium for Interpretable AI, hosted at the Cupola room at the Uni Bern main building. We had an attendance of 140 researchers (70 online) and posters from 5 countries.
+</details> 
+
+Tutorial at [IEEE TenCon 2019]((https://www.tencon2019.org/tutorial.html)) in 2019.
+
+<details>
+  <summary>More details</summary>
+  I ran a 3 hour tutorial on Deep Learning with MATLAB, including a refresher for Deep Learning, designing and visualizing deep networks, challenges and analysis of training deep networks, and finally deployment to GPUs. This was very interactive and by far the highest attended (> 50 attendees) parallel tutorial session with several questions from the audience.
+</details> 
+
+Pre-conference Workshop at [IEEE DISCOVER 2019]((https://2019.ieee-discover.org/?q=article/pre-conference-tutorialsworkshops)) in 2019.
+
+<details>
+  <summary>More details</summary>
+  I ran a full day workshop on Demystifying Deep Learning using MATLAB, including an introduction to deep learning, pre-trained networks, transfer learning, followed by training networks from scratch, deployment to GPUs, and assorted computer vision related demonstrations. This was attended by about 30 people.
+</details> 
+
+---
+
+## Educational Content
 
 ---
 
@@ -61,43 +95,7 @@ nav_order: 2
 
 ---
 
-## Symposia and Community Events
-
----
-
-Lead Organizer for [Bern AI in Radiotherapy (BART) Symposium](https://amithjkamath.github.io/bart25) in March 2025.
-
-<details>
-  <summary>More details</summary>
-  Robert and I are co-organizers of BART, a one-day symposium for AI in Radiotherapy. We have three keynote speakers across radiation oncology, medical physics and engineering/AI. 100 registrants attended from 5 countries, with 11 posters and three flash talks. We are applying for funding to run this again next year.
-</details>
-
-Lead Organizer for [Bern Interpretable AI (BIAS) Symposium]((https://amithjkamath.github.io/bias23)) in March 2023.
-
-<details>
-  <summary>More details</summary>
-  Yannick and I are co-organizers of BIAS, a one-day symposium for Interpretable AI, hosted at the Cupola room at the Uni Bern main building. We have an attendance of 140 researchers (70 online) and posters from 5 countries.
-</details> 
-
-Tutorial at [IEEE TenCon 2019]((https://www.tencon2019.org/tutorial.html)) in 2019.
-
-<details>
-  <summary>More details</summary>
-  I ran a 3 hour tutorial on Deep Learning with MATLAB, including a refresher for Deep Learning, designing and visualizing deep networks, challenges and analysis of training deep networks, and finally deployment to GPUs. This was very interactive and by far the highest attended parallel tutorial session with several questions from the audience.
-</details> 
-
-Pre-conference Workshop at [IEEE DISCOVER 2019]((https://2019.ieee-discover.org/?q=article/pre-conference-tutorialsworkshops)) in 2019.
-
-<details>
-  <summary>More details</summary>
-  I ran a full day workshop on Demystifying Deep Learning using MATLAB, including an introduction to deep learning, pre-trained networks, transfer learning, followed by training networks from scratch, deployment to GPUs, and assorted computer vision related demonstrations. This was attended by about 30 people.
-</details> 
-
----
-
-## Educational Content
-
----
+### Independent Educational Content
 
 [AI in Radiotherapy](https://github.com/amithjkamath/tara)
 
@@ -111,6 +109,6 @@ Pre-conference Workshop at [IEEE DISCOVER 2019]((https://2019.ieee-discover.org/
 <details>
   <summary>More details</summary>
   This is a series of fun educational videos to learn nuances of Deep Learning as applied to Medical Imaging. We have also created a [GitHub Repo](https://github.com/ubern-mia/bender) which includes supporting material, including code and references. I play the role of a new graduate student who learns the ropes.
-</details> 
+</details>
 
 ---

@@ -26,10 +26,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-My name is [Amith](https://en.wikipedia.org/wiki/Amit) (meaning 'infinite' in Sanskrit) and I enjoy investigating problems in image analysis and building tools to solve them. I like mathematics as applied to gain a better understanding of what we see (naturally, or otherwise).
+My name is [Amith](https://en.wikipedia.org/wiki/Amit) (meaning 'infinite' in Sanskrit) and I am a doctoral student under Prof. Mauricio Reyes at the [ARTORG Center](https://www.artorg.unibe.ch) Medical Image Analysis lab, specializing in pixel-level segmentation using deep learning for radiotherapy planning. My research focuses on enhancing model robustness in clinical settings. I hold a master’s degree in vision and robotics from at [Georgia Tech](https://omscs.gatech.edu) and completed a dissertation at [Minnesota](https://github.com/amithjkamath/CSAODFcode), optimizing MRI acquisition for accurate white matter fiber orientation measurement.
 
-I am currently a doctoral student with Prof. Mauricio Reyes in the Medical Image Analysis lab, at the [ARTORG Center](https://www.artorg.unibe.ch), learning more about pixel-level segmentation using Deep Learning models and its' robustness in clinical settings as applied to radiotherapy planning. Earlier, I learnt vision and robotics [at Georgia Tech remotely](https://omscs.gatech.edu), and wrote a [masters' dissertation at Minnesota,](https://github.com/amithjkamath/CSAODFcode) focusing on reducing MRI acquisition times while maintaining accurate orientation measurement of white matter fibers in our brains.
+Previously, I developed image and vision processing tools at [MathWorks](https://www.mathworks.com/products/computer-vision.html), created technical content for undergraduate courses, and conducted [workshops/seminars across India](https://youtube.com/playlist?list=PLo8azKzU7Iq8IHJ5PW8DAk-yaO8i4lBP_) in computer science, biomedical engineering, and mathematics.
 
-Along the way, I wrote code [for image/vision at the MathWorks](https://www.mathworks.com/products/computer-vision.html), built technical content for [undergraduate courses](https://github.com/MathWorks-Teaching-Resources), ran interactive [workshops/seminars across India](https://youtube.com/playlist?list=PLo8azKzU7Iq8IHJ5PW8DAk-yaO8i4lBP_), all in the broad areas of computer science, biomedical engineering, and mathematics. 
-
-[Here](../assets/pdf/amithjkamath_cv.pdf) is a more detailed CV. I am grateful to call Bern, Bengaluru, Boston, Minneapolis, and Mangalore as home at various points in time.
+[Here](../assets/pdf/amithjkamath_cv.pdf) is my CV. I am grateful to call Bern, Bengaluru, Boston, Minneapolis, and Mangalore as home.

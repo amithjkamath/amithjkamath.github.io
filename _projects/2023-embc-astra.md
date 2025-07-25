@@ -3,7 +3,7 @@ layout: page
 title: ASTRA - for Radiotherapy quality Assurance
 description: More details about our EMBC '23 poster.
 img: assets/img/embc-astra-idea.png
-importance: 1
+importance: 2
 category: papers
 ---
 

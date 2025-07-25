@@ -3,7 +3,7 @@ layout: page
 title: Segmentation Evaluator
 description: an interactive exploration of segmentation metrics
 img: assets/img/segmentation_evaluator.jpg
-importance: 1
+importance: 2
 category: teaching
 ---
 

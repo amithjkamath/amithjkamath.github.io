@@ -9,7 +9,9 @@ category: papers
 
 This is a WIP (Work-In-Progress): this message will be removed once sufficient progress has been made. 
 
-This page includes additional details around our CaPTion at MICCAI '24 paper: "AutoDoseRank: Automated Dosimetry-informed Segmentation Ranking for Radiotherapy".
+See [the project repository](https://github.com/amithjkamath/autodoserank) to reproduce these results.
+
+This page includes additional details for our [CaPTion at MICCAI '24 paper](https://link.springer.com/chapter/10.1007/978-3-031-73376-5_21): "AutoDoseRank: Automated Dosimetry-informed Segmentation Ranking for Radiotherapy" {% cite Mercado2024AutoDoseRank %}.
 
 Segmentation is a critical step in radiotherapy (RT) for glioblastoma, an aggressive brain tumor. With increasing reliance on automated segmentation tools, clinical focus is shifting from manual contouring to verifying the quality of segmentation proposals. However, traditional metrics such as Dice score fail to capture the true clinical consequences of contouring errors, particularly in how they affect dose distributions across organs-at-risk (OARs).
 
@@ -24,18 +26,17 @@ Our results show that **AutoDoseRank outperforms three out of four experts**, an
 
 These findings support the use of AutoDoseRank as a clinically relevant quality assurance tool for automated segmentation systems in RT workflows, helping reduce clinician workload and enhance safety.
 
-See [the project repository](https://github.com/amithjkamath/autodoserank) to reproduce these results.
-
 Citation
 ------
 
 If you find this work useful, please cite it as:
 
-    @inproceedings{mercado2024autodoserank,
-        title={AutoDoseRank: Automated Dosimetry-Informed Segmentation Ranking for Radiotherapy},
-        author={Mercado, Zahira and Kamath, Amith and Poel, Robert and Willmann, Jonas and Ermis, Ekin and Riggenbach, Elena and Mose, Lucas and Andratschke, Nicolaus and Reyes, Mauricio},
-        booktitle={MICCAI Workshop on Cancer Prevention through Early Detection},
-        pages={221--230},
-        year={2024},
-        organization={Springer}
+    @inproceedings{Mercado2024AutoDoseRank,
+    title        = {AutoDoseRank: Automated Dosimetry-Informed Segmentation Ranking for Radiotherapy},
+    author       = {Mercado, Zahira and Kamath, Amith and Poel, Robert and Willmann, Jonas and Ermi{\c{s}}, Ekin and Riggenbach, Elena and Mose, Lucas and Andratschke, Nicolaus and Reyes, Mauricio},
+    booktitle    = {MICCAI Workshop on Cancer Prevention through Early Detection},
+    pages        = {221--230},
+    year         = {2024},
+    organization = {Springer},
+    howpublished = {\url{https://link.springer.com/chapter/10.1007/978-3-031-73376-5_21}}
     }
