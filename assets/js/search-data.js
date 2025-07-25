@@ -16,13 +16,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-notes",
-          title: "Notes",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/blog/";
-          },
         },{id: "nav-cv",
           title: "CV",
           description: "Curriculum Vitae and other details.",
@@ -37,12 +30,12 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/publications/";
               },
-            },{id: "dropdown-teaching",
-              title: "Teaching",
+            },{id: "dropdown-service",
+              title: "Service",
               description: "",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "/teaching/";
+                window.location.href = "/service/";
               },
             },{id: "dropdown-glossary",
               title: "Glossary",
@@ -433,9 +426,9 @@ ninja.data = [{
           description: "More details about our EMBC &#39;23 poster.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2023-embc-astra/";
-            },},{id: "projects-deep-dose-predictor-sensitivity",
-          title: 'Deep Dose Predictor Sensitivity',
-          description: "More details about our ISBI &#39;23 poster.",
+            },},{id: "projects-sensitivity-of-dose-prediction-models-to-contour-variability",
+          title: 'Sensitivity of dose prediction models to contour variability',
+          description: "More details about our ISBI &#39;23 poster and Cancers &#39;23 manuscript.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2023-isbi-deepdosesens/";
             },},{id: "projects-do-we-really-need-that-skip-connection",
@@ -448,9 +441,9 @@ ninja.data = [{
           description: "More details about our CaPTion at MICCAI &#39;24 workshop paper.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2024-miccaiw-autodoserank/";
-            },},{id: "projects-comparing-the-performance-of-radiation-oncologists-versus-a-deep-learning-dose-predictor",
-          title: 'Comparing the Performance of Radiation Oncologists versus a Deep Learning Dose Predictor',
-          description: "More details about our MIDL &#39;24 work.",
+            },},{id: "projects-qualitative-survey-predicting-dosimetric-impact-and-comparing-with-dose-prediction-models",
+          title: 'Qualitative survey predicting dosimetric impact and comparing with dose prediction models',
+          description: "More details about our MIDL &#39;24 paper and Green Journal &#39;25 journal.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2024-midl-radonc-vs-dldp/";
             },},{id: "projects-image-registration",
