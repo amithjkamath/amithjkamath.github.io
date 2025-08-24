@@ -9,14 +9,7 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-projects",
-          title: "Projects",
-          description: "An ever-work-in-progress list of things that are documentation-worthy.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
-        },{id: "nav-news-amp-updates",
+  },{id: "nav-news-amp-updates",
           title: "News &amp; Updates",
           description: "Latest research publications, awards, conference organization, and professional milestones.",
           section: "Navigation",
@@ -32,12 +25,26 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Curriculum Vitae and other details.",
+          description: "Curriculum Vitae.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "dropdown-publications",
+        },{id: "nav-projects",
+          title: "Projects",
+          description: "An ever-work-in-progress list of things that are documentation-worthy.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "dropdown-projects",
+              title: "Projects",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/projects/";
+              },
+            },{id: "dropdown-publications",
               title: "Publications",
               description: "",
               section: "Dropdown",
@@ -51,7 +58,14 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/glossary/";
               },
-            },{id: "post-market-need-for-auto-contouring-solutions",
+            },{id: "nav-glossary",
+          title: "Glossary",
+          description: "List of terms that comes up frequently in my work.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/glossary/";
+          },
+        },{id: "post-market-need-for-auto-contouring-solutions",
         
           title: "Market need for Auto-Contouring Solutions",
         
@@ -375,8 +389,8 @@ ninja.data = [{
           section: "News",},{id: "news-event-organization-leading-bias-2023-bern-interpretable-ai-symposium-featuring-distinguished-keynote-speakers-research-posters-and-industry-collaboration-140-attendees-from-5-countries-event-highlights",
           title: '🎯 Event Organization: Leading BIAS 2023 - Bern Interpretable AI Symposium featuring distinguished...',
           description: "",
-          section: "News",},{id: "news-mega-pleased-to-attend-the-ieee-embs-sps-summer-school-on-biomedical-imaging-co-organized-with-isbi-2023-see-here-for-more",
-          title: ':mega: Pleased to attend the IEEE EMBS-SPS Summer School on Biomedical Imaging co-organized...',
+          section: "News",},{id: "news-international-experience-delighted-to-attend-the-ieee-embs-sps-summer-school-on-biomedical-imaging-co-organized-with-isbi-2023-in-sunny-cartagena-read-more",
+          title: '🌍 International Experience: Delighted to attend the IEEE EMBS-SPS Summer School on Biomedical...',
           description: "",
           section: "News",},{id: "news-research-publication-how-sensitive-are-deep-learning-based-radiotherapy-dose-prediction-models-to-variability-in-organs-at-risk-segmentation-accepted-at-ieee-isbi-2023-in-cartagena-learn-more",
           title: '📄 Research Publication: “How sensitive are deep learning based radiotherapy dose prediction models...',
