@@ -3,7 +3,7 @@ layout: page
 title: Glossary
 permalink: /glossary/
 description: List of terms that comes up frequently in my work.
-nav: true
+nav: false
 nav_order: 5
 ---
 

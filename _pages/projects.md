@@ -3,8 +3,8 @@ layout: page
 title: Projects
 permalink: /projects/
 description: An ever-work-in-progress list of things that are documentation-worthy.
-nav: true
-nav_order: 4
+nav: false
+nav_order: 5
 display_categories: [themes, papers, teaching, others]
 horizontal: false
 ---
