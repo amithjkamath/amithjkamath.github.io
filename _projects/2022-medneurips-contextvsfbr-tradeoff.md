@@ -46,5 +46,3 @@ This work investigates a fundamental trade-off in 3D medical image segmentation:
     howpublished={\url{http://www.cse.cuhk.edu.hk/~qdou/public/medneurips2022/72.pdf}}
 }
 ```
-    year={2022}
-    }

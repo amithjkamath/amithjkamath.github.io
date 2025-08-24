@@ -1,11 +1,11 @@
 ---
 layout: cv
-permalink: /cv/
 title: CV
+permalink: /cv/
 nav: true
-nav_order: 4
-cv_pdf: amithjkamath_cv.pdf # you can also use external links here
-description: Curriculum Vitae and other details.
+nav_order: 3
+cv_pdf: amithjkamath_cv.pdf
+description: Curriculum Vitae.
 toc:
   sidebar: left
 ---
