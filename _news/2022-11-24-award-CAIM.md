@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:mega: Our research wins the [2022 CAIM Research Award](https://www.caim.unibe.ch/research/research_awards/index_eng.html) in the "Translational" category. Many thanks to [Be-Advanced](https://be-advanced.ch)!
+🏆 **Research Recognition:** Awarded the [2022 CAIM Research Award](https://www.caim.unibe.ch/research/research_awards/index_eng.html) in the "Translational" category for outstanding contributions to medical AI research. Grateful for support from [Be-Advanced](https://be-advanced.ch)!

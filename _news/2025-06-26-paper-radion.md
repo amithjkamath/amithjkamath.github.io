@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:scroll: Our manuscript on "Predicting the impact of target volume contouring variations on the organ at risk dose: results of a qualitative survey" is accepted to [Radiotherapy and Oncology](https://www.sciencedirect.com/science/article/pii/S0167814025045037)!
+🏆 **Journal Publication:** "Predicting the impact of target volume contouring variations on the organ at risk dose: results of a qualitative survey" accepted in [**Radiotherapy and Oncology**](https://www.sciencedirect.com/science/article/pii/S0167814025045037) (Green Journal)! <a href="{% link _projects/2024-midl-radonc-vs-dldp.md %}">Read more</a>.

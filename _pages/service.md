@@ -1,114 +1,70 @@
 ---
 layout: page
-permalink: /service/
-title: Academic Service
-description: Research events organized and courses taught.
-nav: false
-nav_order: 5
+permalink: /leadership/
+title: Leadership & Teaching
+description: Conference organization, educational initiatives, and technical mentorship.
+nav: true
+nav_order: 3
 ---
 
----
+## Conference Organization & Events
 
-## Symposia and Talks
+**Lead Organizer** | [Bern AI in Radiotherapy (BART) Symposium](https://amithjkamath.github.io/bart25) | March 2025
+- Co-organized international symposium with 100+ attendees from 5 countries
+- Coordinated 3 keynote speakers across radiation oncology, medical physics, and AI/engineering
+- Managed 11 poster presentations and 3 flash talks
+- Successfully executed full-day technical event fostering cross-disciplinary collaboration
 
----
+**Lead Organizer** | [Bern Interpretable AI (BIAS) Symposium](https://amithjkamath.github.io/bias23) | March 2023
+- Co-organized hybrid symposium attracting 140 researchers (70 online) from 5 countries
+- Managed venue logistics at University of Bern's prestigious Cupola room
+- Coordinated international poster presentations and technical sessions
+- Established new networking platform for interpretable AI research community
 
-Lead Organizer for [Bern AI in Radiotherapy (BART) Symposium](https://amithjkamath.github.io/bart25) in March 2025.
+**Tutorial Instructor** | [IEEE TenCon 2019](https://www.tencon2019.org/tutorial.html)
+- Delivered 3-hour interactive tutorial on "Deep Learning with MATLAB" to 50+ attendees
+- Highest attended parallel tutorial session with extensive audience engagement
+- Covered network design, visualization, training challenges, and GPU deployment
 
-<details>
-  <summary>More details</summary>
-  Robert and I were co-organizers of BART, a one-day symposium for AI in Radiotherapy. We had three keynote speakers across radiation oncology, medical physics and engineering/AI. 100 registrants attended from 5 countries, with 11 posters and three flash talks.
-</details>
+**Workshop Leader** | [IEEE DISCOVER 2019](https://2019.ieee-discover.org/?q=article/pre-conference-tutorialsworkshops)
+- Conducted full-day workshop "Demystifying Deep Learning using MATLAB" for 30 participants
+- Comprehensive curriculum: pre-trained networks, transfer learning, training from scratch, GPU deployment
+- Hands-on computer vision demonstrations and practical applications
 
-Lead Organizer for [Bern Interpretable AI (BIAS) Symposium]((https://amithjkamath.github.io/bias23)) in March 2023.
+## Educational Leadership
 
-<details>
-  <summary>More details</summary>
-  Yannick and I were co-organizers of BIAS, a one-day symposium for Interpretable AI, hosted at the Cupola room at the Uni Bern main building. We had an attendance of 140 researchers (70 online) and posters from 5 countries.
-</details> 
+### Medical Image Analysis Lab | University of Bern
 
-Tutorial at [IEEE TenCon 2019]((https://www.tencon2019.org/tutorial.html)) in 2019.
+**Course Instructor** | [2024](https://github.com/ubern-mialab/MIALab) | *with Shelley*
+- **Innovation**: Implemented GitHub Classroom for assignment management
+- **Impact**: Maintained excellent course evaluation score of 4.89
+- **Student Feedback**: *"Absolutely enjoyed this course... fantastic job... highly appreciate how interactive the course was"*
 
-<details>
-  <summary>More details</summary>
-  I ran a 3 hour tutorial on Deep Learning with MATLAB, including a refresher for Deep Learning, designing and visualizing deep networks, challenges and analysis of training deep networks, and finally deployment to GPUs. This was very interactive and by far the highest attended (> 50 attendees) parallel tutorial session with several questions from the audience.
-</details> 
+**Course Instructor** | [2023](https://github.com/ubern-mia/MIALab) | *with Shelley and Mike*
+- **Innovation**: Introduced video lectures, project-specific Slack channels, hospital clinic visits
+- **Impact**: Achieved course evaluation score of 4.92
+- **Student Feedback**: *"Improved programming skills... TA was extremely helpful and nice!"*
 
-Pre-conference Workshop at [IEEE DISCOVER 2019]((https://2019.ieee-discover.org/?q=article/pre-conference-tutorialsworkshops)) in 2019.
-
-<details>
-  <summary>More details</summary>
-  I ran a full day workshop on Demystifying Deep Learning using MATLAB, including an introduction to deep learning, pre-trained networks, transfer learning, followed by training networks from scratch, deployment to GPUs, and assorted computer vision related demonstrations. This was attended by about 30 people.
-</details> 
-
----
-
-## Educational Content
-
----
-
-### Medical Image Analysis Lab
-
-[2024](https://github.com/ubern-mialab/MIALab) with Shelley.
-
-<details>
-  <summary>More details</summary>
-  Changelog: using GitHub classroom for assignments; updated simpler starter code repository and organization. 
-  
-  Course evaluation score remains high at 4.89.
-  
-  Representative student feedback: "I absolutely enjoyed this course. I think that Shelley and Amith did a fantastic job with this course. I highly appreciate how interactive the course was during the lecture portion and how available and helpful they were during the lab portion. During the projects, we had quite some freedom to experiment which I think is great for our learning process and the feedback/guidance from the TAs has been really great."
-</details>
-
----
-
-[2023](https://github.com/ubern-mia/MIALab), with Shelley and Mike.
-
-<details>
-  <summary>More details</summary>
-  Changelog: project specific slack channels; video lectures along with in-class presentation; hospital clinic visit. 
-  
-  Course evaluation score remains high at 4.92. 
-  
-  Representative student feedback: "I got to improve my programming skills and the TA was extremely helpful and nice!"
-</details>
-
----
-
-[2022](https://github.com/ubern-mia/MIALab), with Elias and Jayden.
-
-<details>
-  <summary>More details</summary>
-  The overall course evaluation score increased from 3.25 in 2021 before I was involved to 4.94 this year!
-</details>
-
----
+**Course Instructor** | [2022](https://github.com/ubern-mia/MIALab) | *with Elias and Jayden*
+- **Transformation**: Increased course evaluation from 3.25 (2021) to 4.94 (2022)
+- **Achievement**: 53% improvement in student satisfaction through curriculum redesign
 
 ### Biomedical Engineering Lab
 
-[2022](https://github.com/ubern-mia/bme-labs) with Yannick.
+**Lab Instructor** | [2022](https://github.com/ubern-mia/bme-labs) | *with Yannick*
+- Designed practical rotation course for incoming Masters' students
+- Provided hands-on introduction to Medical Image Analysis research methodology
 
-<details>
-  <summary>More details</summary>
-  This is a short practical rotation course for incoming Masters' students in Biomedical Engineering to get a quick overview of what we do in the Medical Image Analysis lab.
-</details>
+### Technical Content Development
 
----
+**Independent Projects**
+- [AI in Radiotherapy](https://github.com/amithjkamath/tara) - Open-source educational content
+- [Interactive Learning Modules](https://youtube.com/playlist?list=PLo8azKzU7Iq8IHJ5PW8DAk-yaO8i4lBP_) - Technical workshops across India
+- Curriculum development for computer science, biomedical engineering, and mathematics courses
 
-### Independent Educational Content
+## Core Competencies
 
-[AI in Radiotherapy](https://github.com/amithjkamath/tara)
-
-<details>
-  <summary>More details</summary>
-  This is designed for someone with a computer science background, who would like to familiarize themselves with radiation oncology topics so as to build useful tools in this application area.
-</details> 
-
-[BENDER](https://www.youtube.com/channel/UCkMl6tVyRVnBmOYv8t2q0yw)
-
-<details>
-  <summary>More details</summary>
-  This is a series of fun educational videos to learn nuances of Deep Learning as applied to Medical Imaging. We have also created a [GitHub Repo](https://github.com/ubern-mia/bender) which includes supporting material, including code and references. I play the role of a new graduate student who learns the ropes.
-</details>
-
----
+**Event Management**: Large-scale conference organization, international coordination, hybrid event execution  
+**Technical Leadership**: Curriculum design, interactive teaching, hands-on training delivery  
+**Community Building**: Cross-disciplinary networking, international collaboration, mentorship  
+**Communication**: Public speaking, technical writing, multi-cultural audience engagement

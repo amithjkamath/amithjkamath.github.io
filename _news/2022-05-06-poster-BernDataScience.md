@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-At the [Bern Data Science Day](https://www.dsl.unibe.ch/lab/bdsd_archive/bdsd2022/). See [here](../assets/pdf/kamath_bern_data_science_day_2022.pdf) for our poster.
+📊 **Conference Presentation:** Poster presentation at [Bern Data Science Day 2022](https://www.dsl.unibe.ch/lab/bdsd_archive/bdsd2022/). [View poster](../assets/pdf/kamath_bern_data_science_day_2022.pdf).

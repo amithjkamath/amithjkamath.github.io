@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:mega: At the [Bern Data Science Day](https://www.dsl.unibe.ch/events/bdsd2023/), presenting again our work on dose prediction model sensitivity. See [here](https://twitter.com/amithjkamath/status/1654577900933246977?s=20) for more.
+📊 **Conference Presentation:** Presented dose prediction model sensitivity research at [Bern Data Science Day 2023](https://www.dsl.unibe.ch/events/bdsd2023/), advancing clinical AI validation methodologies. [Event highlights](https://twitter.com/amithjkamath/status/1654577900933246977?s=20).

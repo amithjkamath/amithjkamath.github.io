@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:scroll: Our paper ["AutoDoseRank: Automated Dosimetry-Informed Segmentation Ranking for Radiotherapy"](https://link.springer.com/content/pdf/10.1007/978-3-031-73376-5_21.pdf?pdf=inline+link) is accepted at the [CaPTion@MICCAI Workshop](https://caption-workshop.github.io).
+📄 **Workshop Paper:** ["AutoDoseRank: Automated Dosimetry-Informed Segmentation Ranking for Radiotherapy"](https://link.springer.com/content/pdf/10.1007/978-3-031-73376-5_21.pdf?pdf=inline+link) accepted at [CaPTion@MICCAI Workshop](https://caption-workshop.github.io). <a href="{% link _projects/2024-miccaiw-autodoserank.md %}">Learn more</a>.

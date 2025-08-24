@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:mega: A [short video on using MONAI and MATLAB](https://www.youtube.com/watch?v=az51x0bIZ9Q) together is now live on the MathWorks YouTube channel! <a href="{% link _projects/teach-2024-monai-with-matlab.md %}">Read more here</a>.
+📺 **Educational Content:** New video tutorial on [integrating MONAI and MATLAB](https://www.youtube.com/watch?v=az51x0bIZ9Q) published on the MathWorks YouTube channel, demonstrating cross-platform deep learning workflows. <a href="{% link _projects/teach-2024-monai-with-matlab.md %}">Full tutorial</a>.

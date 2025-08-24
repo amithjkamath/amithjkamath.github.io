@@ -2,11 +2,11 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Amith J. Kamath
     - name: Date of Birth
-      value: 14th March 1879
+      value: # Private
     - name: Languages
-      value: English, German
+      value: English, Hindi, Tulu, Kannada
 
 - title: Education
   type: time_table
@@ -64,9 +64,9 @@
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: <a href="https://github.com/amithjkamath/amithjkamath.github.io">Professional Website</a>
+      year: 2020-now
+      description: Personal academic and professional portfolio showcasing research, teaching, and industry experience.
 
 - title: Honors and Awards
   type: time_table

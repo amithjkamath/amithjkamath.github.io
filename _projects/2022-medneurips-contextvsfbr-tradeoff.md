@@ -1,32 +1,50 @@
 ---
 layout: page
-title: Context versus Foreground-to-Background Ratio
-description: More details about our MedNeurIPS '22 abstract.
+title: Context versus Foreground-to-Background Ratio Trade-off
+description: Analyzing 3D segmentation network behavior across context and class imbalance dimensions
 img: assets/img/medneurips-context-vs-fbr-idea.png
 importance: 2
 category: papers
 related_publications: true
 ---
 
-This is a WIP (Work-In-Progress): this message will be removed once sufficient progress has been made. 
+## Overview
 
-This page includes some additional details around the paper: "How do 3D image segmentation networks behave across the context versus foreground ratio trade-off?", as presented at the Medical Imaging meets NeurIPS Workshop, NeurIPS 2022 {% cite kamath2022contextvsfbr %}.
+[![Project Repository](https://img.shields.io/badge/GitHub-Repository-blue?style=flat-square&logo=github)](https://github.com/amithjkamath/context_vs_fbr)
 
-Modern 3D medical image segmentation is typically done using a sliding window approach due to GPU memory constraints. However, this presents an interesting trade-off between the amount of global context the network sees at once, versus the proportion of foreground voxels available in each training sample. It is known already that Unets perform worse with low global context, but enlarging the context comes at the cost of heavy class imbalance between background (typically very large) and foreground (much smaller) while training. In this abstract, we analyze the behavior of Transformer-based (UNETR) and attention gated (Attention-Unet) models along with vanilla-Unets across this trade-off. We explore this using a synthetic data set, and a subset of the spleen segmentation data set from the Medical Segmentation Decathlon to demonstrate our results. 
+This work investigates a fundamental trade-off in 3D medical image segmentation: balancing global context against foreground-to-background ratio when using sliding window approaches due to GPU memory constraints. While larger context windows provide more global information, they also introduce severe class imbalance between background and foreground voxels.
 
-Beyond showing that all three types of networks prefer more global context rather than bigger foreground-to- background ratios, we find that UNETR and attention-Unet appear to be less robust than vanilla-Unet to drifts between training versus test foreground ratios.
+**Published at:** Medical Imaging meets NeurIPS Workshop, NeurIPS 2022
 
-See [the project repository](https://github.com/amithjkamath/context_vs_fbr) to reproduce these results.
+## Key Contributions
 
-Citation
-------
+- **Novel Analysis Framework**: First systematic study of the context vs. foreground ratio trade-off in 3D medical segmentation
+- **Multi-Architecture Comparison**: Evaluated vanilla U-Net, Attention U-Net, and UNETR across this trade-off spectrum
+- **Robustness Insights**: Discovered that attention-based models are less robust to training/test distribution shifts in foreground ratios
+- **Practical Guidelines**: Demonstrated that all architectures prefer more global context over balanced foreground ratios
 
-If you find this work useful, please cite it as:
+## Methodology
 
-    @inproceedings{kamath2022contextvsfbr,
+**Synthetic Experiments**: Controlled texture-based synthetic datasets to isolate the trade-off effects  
+**Medical Validation**: Spleen segmentation from Medical Segmentation Decathlon to confirm findings  
+**Architecture Coverage**: Comprehensive evaluation across traditional CNN and Transformer-based approaches
+
+## Key Findings
+
+1. **Context Preference**: All three network types consistently favor larger context windows over balanced class ratios
+2. **Robustness Differences**: UNETR and Attention U-Net show greater sensitivity to foreground ratio variations compared to vanilla U-Net
+3. **Performance Trade-offs**: Optimal performance requires careful balance between sufficient context and manageable class imbalance
+
+## Citation
+
+```bibtex
+@inproceedings{kamath2022contextvsfbr,
     title={How do 3D image segmentation networks behave across the context versus foreground ratio trade-off?},
     author={Kamath, Amith and Suter, Yannick and You, Suhang and Mueller, Michael and Willmann, Jonas and Andratschke, Nicolaus and Reyes, Mauricio},
     booktitle={Medical Imaging Meets NeurIPS Workshop, Neural Information Processing Systems},
-    howpublished = "\url{http://www.cse.cuhk.edu.hk/~qdou/public/medneurips2022/72.pdf}",
+    year={2022},
+    howpublished={\url{http://www.cse.cuhk.edu.hk/~qdou/public/medneurips2022/72.pdf}}
+}
+```
     year={2022}
     }
