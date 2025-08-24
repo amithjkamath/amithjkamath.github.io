@@ -30,13 +30,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-projects",
-          title: "Projects",
-          description: "An ever-work-in-progress list of things that are documentation-worthy.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
         },{id: "dropdown-projects",
               title: "Projects",
               description: "",
@@ -58,14 +51,7 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/glossary/";
               },
-            },{id: "nav-glossary",
-          title: "Glossary",
-          description: "List of terms that comes up frequently in my work.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/glossary/";
-          },
-        },{id: "post-market-need-for-auto-contouring-solutions",
+            },{id: "post-market-need-for-auto-contouring-solutions",
         
           title: "Market need for Auto-Contouring Solutions",
         
