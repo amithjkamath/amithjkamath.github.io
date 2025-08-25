@@ -17,32 +17,18 @@ An interactive MATLAB application that teaches template matching concepts throug
 
 ## Educational Motivation
 
-Template matching is a fundamental computer vision technique, but students often struggle with:
-
-- **Abstract Correlation Concepts**: Mathematical correlation functions can seem disconnected from visual results
-- **Sliding Window Understanding**: Difficulty visualizing how templates move across images
-- **Parameter Sensitivity**: Unclear how template size and matching thresholds affect performance
-- **Practical Applications**: Limited understanding of when template matching is appropriate
+Template matching is a fundamental computer vision technique, but students often struggle with abstract correlation concepts where mathematical correlation functions can seem disconnected from visual results. Students also have difficulty with sliding window understanding and visualizing how templates move across images, parameter sensitivity regarding how template size and matching thresholds affect performance, and practical applications with limited understanding of when template matching is appropriate.
 
 ## Key Features
 
 ### Interactive "Waldo" Detection
-- **Manual Sliding**: Physically slide Waldo template across cluttered scenes
-- **Real-Time Correlation**: See correlation values update as template moves
-- **Visual Feedback**: Color-coded correlation matrix shows matching strength
-- **Peak Detection**: Identify correlation maxima corresponding to Waldo locations
+The system allows students to manually slide the Waldo template across cluttered scenes while seeing real-time correlation values update as the template moves. Visual feedback through color-coded correlation matrix shows matching strength, and peak detection helps identify correlation maxima corresponding to Waldo locations.
 
 ### Educational Visualization
-- **Correlation Heatmap**: Visual representation of matching strength across the image
-- **Template Overlay**: See exactly where the template is being compared
-- **Score Display**: Numerical correlation values for quantitative understanding
-- **Progressive Difficulty**: Multiple scenes with varying complexity
+The tool provides a correlation heatmap offering visual representation of matching strength across the image, template overlay showing exactly where the template is being compared, score display with numerical correlation values for quantitative understanding, and progressive difficulty through multiple scenes with varying complexity.
 
 ### Algorithm Understanding
-- **Step-by-Step Process**: Watch the sliding window approach in action
-- **Correlation Computation**: Understand how similarity is mathematically calculated
-- **Threshold Effects**: Experiment with different detection thresholds
-- **False Positive Analysis**: See how clutter affects detection performance
+Students can observe the step-by-step process watching the sliding window approach in action, understand correlation computation and how similarity is mathematically calculated, experiment with threshold effects and different detection thresholds, and conduct false positive analysis to see how clutter affects detection performance.
 
 ## Technical Implementation
 
@@ -53,18 +39,12 @@ Template matching is a fundamental computer vision technique, but students often
 
 ## Learning Outcomes
 
-Students using this tool will:
-- **Master Template Matching**: Understand sliding window correlation methodology
-- **Develop Algorithm Intuition**: See how mathematical operations translate to object detection
-- **Appreciate Limitations**: Understand when template matching works well and when it fails
-- **Connect to Modern Methods**: Build foundation for understanding advanced object detection
+Students using this tool will master template matching by understanding sliding window correlation methodology, develop algorithm intuition by seeing how mathematical operations translate to object detection, appreciate limitations by understanding when template matching works well and when it fails, and connect to modern methods by building foundation for understanding advanced object detection.
 
 ## Applications in Computer Vision Education
 
 ### Fundamental Concepts
-- **Object Detection Basics**: Introduction to finding objects in images
-- **Correlation Analysis**: Practical application of mathematical correlation
-- **Feature Matching**: Foundation for more advanced feature detection methods
+The tool supports object detection basics through introduction to finding objects in images, correlation analysis with practical application of mathematical correlation, and feature matching as foundation for more advanced feature detection methods.
 
 ### Algorithm Development
 - **Sliding Window Approaches**: Understand exhaustive search strategies

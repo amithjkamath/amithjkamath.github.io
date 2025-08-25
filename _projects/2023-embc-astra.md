@@ -18,18 +18,11 @@ ASTRA (Atomic Surface Transformations for Radiotherapy quality Assurance) is an 
 
 ## Clinical Problem
 
-Glioblastoma treatment relies heavily on precise radiotherapy planning, where:
-- **Human errors** and **inter-expert variability** in tumor and organ-at-risk segmentation directly impact treatment outcomes
-- **Erroneous segmentations** translate to suboptimal dose distributions and clinical outcomes
-- **Time-intensive review processes** reduce radiation oncology team efficiency
-- Current workflows lack **dose-informed feedback** for segmentation corrections
+Glioblastoma treatment relies heavily on precise radiotherapy planning, where human errors and inter-expert variability in tumor and organ-at-risk segmentation directly impact treatment outcomes. Erroneous segmentations translate to suboptimal dose distributions and clinical outcomes, while time-intensive review processes reduce radiation oncology team efficiency. Current workflows lack dose-informed feedback for segmentation corrections.
 
 ## Key Contributions
 
-- **Dose-Aware Quality Assessment**: First automated method to predict dosimetric impact of segmentation variations
-- **Localized Sensitivity Mapping**: Provides spatial understanding of which segmentation regions most affect dose distributions
-- **Clinical Integration**: Designed for real-world radiotherapy planning workflows
-- **Comprehensive Validation**: Evaluated on 100 glioblastoma patients with quantitative dose impact analysis
+ASTRA provides dose-aware quality assessment as the first automated method to predict dosimetric impact of segmentation variations, along with localized sensitivity mapping that provides spatial understanding of which segmentation regions most affect dose distributions. The system is designed for clinical integration in real-world radiotherapy planning workflows and includes comprehensive validation evaluated on 100 glioblastoma patients with quantitative dose impact analysis.
 
 ## Methodology
 
@@ -40,10 +33,7 @@ Glioblastoma treatment relies heavily on precise radiotherapy planning, where:
 
 ## Results
 
-- **Dataset**: 100 glioblastoma patients with complete dose planning data
-- **Performance**: Strong correlation between predicted and actual dose impacts
-- **Clinical Value**: Enables prioritized review of segmentation regions with highest dosimetric consequences
-- **Workflow Integration**: Potential for automated quality assurance within radiotherapy planning systems
+The evaluation included a dataset of 100 glioblastoma patients with complete dose planning data, demonstrating strong performance with correlation between predicted and actual dose impacts. The system provides clinical value by enabling prioritized review of segmentation regions with highest dosimetric consequences and offers workflow integration potential for automated quality assurance within radiotherapy planning systems.
 
 ## Impact
 

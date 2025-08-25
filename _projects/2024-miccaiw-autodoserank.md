@@ -18,19 +18,11 @@ AutoDoseRank introduces a novel framework for ranking segmentation candidates in
 
 ## Clinical Challenge
 
-Traditional segmentation quality metrics like Dice score fail to capture the true clinical impact of contouring variations in radiotherapy. With increasing reliance on automated segmentation tools, clinical focus has shifted from manual contouring to **quality assessment of segmentation proposals**. Current evaluation methods don't account for:
-
-- **Organ-specific dose constraints** and clinical priorities
-- **Patient-specific anatomy** and treatment planning requirements  
-- **True dosimetric consequences** of segmentation variations
-- **Clinical relevance** of different types of segmentation errors
+Traditional segmentation quality metrics like Dice score fail to capture the true clinical impact of contouring variations in radiotherapy. With increasing reliance on automated segmentation tools, clinical focus has shifted from manual contouring to **quality assessment of segmentation proposals**. Current evaluation methods don't account for organ-specific dose constraints and clinical priorities, patient-specific anatomy and treatment planning requirements, true dosimetric consequences of segmentation variations, and clinical relevance of different types of segmentation errors.
 
 ## Key Innovations
 
-- **Dosimetric Impact Prediction**: Deep learning-based dose predictor estimates dose distributions from segmentation variants
-- **Clinical Priority Integration**: Incorporates organ-specific importance and dose constraints into ranking
-- **Patient-Level Assessment**: Provides comprehensive dose impact estimates across all organs-at-risk
-- **Expert Validation**: Systematic comparison with experienced radiation oncologists
+AutoDoseRank employs a deep learning-based dose predictor that estimates dose distributions from segmentation variants, while incorporating clinical priority integration that considers organ-specific importance and dose constraints into ranking. The framework provides patient-level assessment with comprehensive dose impact estimates across all organs-at-risk, and includes expert validation through systematic comparison with experienced radiation oncologists.
 
 ## Methodology
 
@@ -41,10 +33,7 @@ Traditional segmentation quality metrics like Dice score fail to capture the tru
 
 ## Results
 
-- **Superior Performance**: AutoDoseRank outperformed 3 out of 4 radiation oncology experts
-- **Consistency**: Better inter-rater agreement than human experts (Kendall's Tau evaluation)
-- **Clinical Relevance**: Strong correlation with ground truth dosimetric rankings
-- **Efficiency**: Automated ranking provides instant feedback compared to time-intensive expert review
+AutoDoseRank demonstrated superior performance by outperforming 3 out of 4 radiation oncology experts, showing better inter-rater agreement than human experts as measured by Kendall's Tau evaluation. The system showed strong correlation with ground truth dosimetric rankings and provided clinical relevance, while offering significant efficiency gains through automated ranking that provides instant feedback compared to time-intensive expert review.
 
 ## Validation Metrics
 
@@ -54,12 +43,7 @@ Traditional segmentation quality metrics like Dice score fail to capture the tru
 
 ## Clinical Impact
 
-AutoDoseRank represents a significant advancement toward **clinically relevant quality assurance** for automated segmentation in radiotherapy. The framework:
-
-- **Reduces clinician workload** through automated, dose-informed ranking
-- **Enhances patient safety** by prioritizing clinically significant segmentation variations
-- **Improves workflow efficiency** with instant, consistent quality assessment
-- **Supports clinical decision-making** with quantitative, dose-based feedback
+AutoDoseRank represents a significant advancement toward **clinically relevant quality assurance** for automated segmentation in radiotherapy. The framework reduces clinician workload through automated, dose-informed ranking and enhances patient safety by prioritizing clinically significant segmentation variations. It improves workflow efficiency with instant, consistent quality assessment while supporting clinical decision-making with quantitative, dose-based feedback.
 
 ## Citation
 

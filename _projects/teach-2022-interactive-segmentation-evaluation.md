@@ -18,32 +18,18 @@ An interactive MATLAB application that teaches image segmentation evaluation met
 
 ## Educational Motivation
 
-Image segmentation is fundamental to computer vision and medical imaging, but understanding quality metrics can be abstract without hands-on experience:
-
-- **Metric Complexity**: Students struggle to understand Dice coefficient, Hausdorff distance, and pixel accuracy conceptually
-- **Practical Disconnect**: Gap between mathematical formulas and real-world application
-- **Expert Variability**: Need to understand inter-observer agreement and segmentation quality
-- **Clinical Relevance**: Connection between segmentation accuracy and downstream applications
+Image segmentation is fundamental to computer vision and medical imaging, but understanding quality metrics can be abstract without hands-on experience. Students struggle to understand Dice coefficient, Hausdorff distance, and pixel accuracy conceptually, often facing a practical disconnect between mathematical formulas and real-world application. There's also a need to understand expert variability and inter-observer agreement in segmentation quality, as well as the clinical relevance connecting segmentation accuracy to downstream applications.
 
 ## Key Features
 
 ### Interactive Drawing Interface
-- **Real-Time Segmentation**: Draw boundaries directly on target images
-- **Multiple Objects**: Practice with various anatomical structures and objects
-- **Instant Feedback**: See quality metrics update as you draw
-- **Ground Truth Comparison**: Visual overlay of reference segmentations
+The system provides real-time segmentation capability allowing users to draw boundaries directly on target images, with support for multiple objects enabling practice with various anatomical structures and objects. Users receive instant feedback as they see quality metrics update while drawing, with ground truth comparison through visual overlay of reference segmentations.
 
 ### Comprehensive Metrics
-- **Dice Score Coefficient**: Overlap-based similarity measure
-- **Hausdorff Distance**: Maximum distance between boundary points  
-- **Pixel Accuracy**: Point-wise classification correctness
-- **Visual Feedback**: Color-coded overlays showing agreement/disagreement
+The tool implements key evaluation measures including the Dice Score Coefficient for overlap-based similarity measurement, Hausdorff Distance for maximum distance between boundary points, and Pixel Accuracy for point-wise classification correctness. Visual feedback is provided through color-coded overlays showing agreement and disagreement areas.
 
 ### Educational Scaffolding
-- **Progressive Difficulty**: Start with simple shapes, advance to complex anatomical structures
-- **Immediate Assessment**: Real-time feedback on segmentation quality
-- **Multiple Attempts**: Practice and improve segmentation accuracy
-- **Comparative Analysis**: See how different drawing approaches affect metrics
+The learning experience incorporates progressive difficulty starting with simple shapes and advancing to complex anatomical structures. Students receive immediate assessment through real-time feedback on segmentation quality and can make multiple attempts to practice and improve segmentation accuracy. The tool also supports comparative analysis allowing users to see how different drawing approaches affect metrics.
 
 ## Technical Implementation
 
@@ -54,37 +40,22 @@ Image segmentation is fundamental to computer vision and medical imaging, but un
 
 ## Learning Outcomes
 
-Students using this tool will:
-- **Master Segmentation Metrics**: Understand how different quality measures respond to boundary variations
-- **Develop Practical Skills**: Gain experience in manual segmentation techniques
-- **Appreciate Quality Trade-offs**: See how speed vs. accuracy affects different metrics
-- **Connect Theory to Practice**: Bridge mathematical concepts with visual understanding
+Students using this tool will master segmentation metrics by understanding how different quality measures respond to boundary variations, develop practical skills through experience in manual segmentation techniques, appreciate quality trade-offs by seeing how speed versus accuracy affects different metrics, and connect theory to practice by bridging mathematical concepts with visual understanding.
 
 ## Applications in Education
 
 ### Computer Vision Courses
-- **Fundamental Concepts**: Introduction to segmentation and evaluation metrics
-- **Practical Exercises**: Hands-on experience with real evaluation scenarios
-- **Metric Comparison**: Understand when different quality measures are appropriate
+The tool supports fundamental concepts through introduction to segmentation and evaluation metrics, provides practical exercises with hands-on experience in real evaluation scenarios, and enables metric comparison to understand when different quality measures are appropriate.
 
 ### Medical Imaging Training
-- **Clinical Relevance**: Practice with anatomical structures and medical images
-- **Quality Standards**: Understand acceptable segmentation quality for clinical applications
-- **Inter-Observer Studies**: Experience the challenge of consistent manual segmentation
+In medical contexts, the tool provides clinical relevance through practice with anatomical structures and medical images, helps students understand quality standards and acceptable segmentation quality for clinical applications, and offers inter-observer studies to experience the challenge of consistent manual segmentation.
 
 ### Deep Learning Education
-- **Loss Function Understanding**: See how segmentation metrics translate to training objectives
-- **Performance Evaluation**: Learn standard evaluation protocols for segmentation models
-- **Quality Assessment**: Develop intuition for model performance evaluation
+For deep learning applications, the tool provides loss function understanding by showing how segmentation metrics translate to training objectives, supports performance evaluation through learning standard evaluation protocols for segmentation models, and develops quality assessment skills with intuition for model performance evaluation.
 
 ## Impact on Understanding
 
-This interactive approach transforms abstract mathematical concepts into **tangible, visual experiences**:
-
-- **Immediate Feedback**: Students see the impact of their decisions in real-time
-- **Experiential Learning**: Understanding develops through practice rather than memorization  
-- **Metric Intuition**: Visual feedback builds understanding of what metrics actually measure
-- **Practical Skills**: Students develop real segmentation and evaluation capabilities
+This interactive approach transforms abstract mathematical concepts into **tangible, visual experiences** through immediate feedback where students see the impact of their decisions in real-time. The experiential learning approach allows understanding to develop through practice rather than memorization, building metric intuition as visual feedback helps students understand what metrics actually measure while developing practical segmentation and evaluation capabilities.
 
 ## Repository & Resources
 

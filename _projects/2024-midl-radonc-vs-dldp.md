@@ -31,16 +31,10 @@ Current segmentation quality evaluation in radiotherapy relies primarily on **ge
 ## Key Innovations
 
 ### MIDL 2024 Study
-- **AI vs Expert Comparison**: First systematic comparison of deep learning dose prediction with clinical expert assessment
-- **Dosimetric Quality Metrics**: Novel evaluation framework based on actual dose impact rather than geometric similarity
-- **Clinical Validation**: 54 contour variants across brain tumor treatment planning scenarios
-- **Efficiency Analysis**: Quantified time savings and accuracy improvements
+The study represents the first systematic comparison of deep learning dose prediction with clinical expert assessment, introducing novel dosimetric quality metrics based on actual dose impact rather than geometric similarity. The research included clinical validation with 54 contour variants across brain tumor treatment planning scenarios and quantified efficiency analysis measuring time savings and accuracy improvements.
 
 ### Extended Journal Study
-- **Large-Scale Survey**: 4 radiation oncologists and 3 medical physicists
-- **Inter-Evaluator Analysis**: Comprehensive investigation of clinical decision-making variability
-- **Systematic Evaluation**: 54 glioblastoma target volume variations across 14 patients
-- **Decision Pattern Analysis**: Understanding of expert assessment inconsistencies
+The extended study included a large-scale survey involving 4 radiation oncologists and 3 medical physicists, with comprehensive inter-evaluator analysis investigating clinical decision-making variability. The research encompassed systematic evaluation of 54 glioblastoma target volume variations across 14 patients and included decision pattern analysis to understand expert assessment inconsistencies.
 
 ## Methodology
 
@@ -52,26 +46,14 @@ Current segmentation quality evaluation in radiotherapy relies primarily on **ge
 ## Key Results
 
 ### MIDL 2024 Findings
-- **Superior Performance**: Deep learning model outperformed clinical experts in estimating dosimetric impact
-- **Accuracy Improvement**: Higher correlation with ground truth dose distributions
-- **Significant Time Savings**: Automated assessment vs. manual expert review
-- **Consistent Evaluation**: Reduced variability compared to human experts
+The study showed that the deep learning model demonstrated superior performance by outperforming clinical experts in estimating dosimetric impact, with accuracy improvement showing higher correlation with ground truth dose distributions. The automated approach provided significant time savings compared to manual expert review and achieved consistent evaluation with reduced variability compared to human experts.
 
 ### Extended Journal Results
-- **Substantial Variability**: Cohen's Kappa values ranging from weak to moderate (0.33–0.74)
-- **Systematic Overestimation**: 46% of "no change" variations misclassified as "worse"
-- **Conservative Bias**: No evaluator identified any contour variations as "better" despite 4 cases being objectively better
-- **Clinical Inefficiency**: Potential for unnecessary contour corrections due to overestimation
+The extended study revealed substantial variability in expert assessment with Cohen's Kappa values ranging from weak to moderate (0.33–0.74). The results showed systematic overestimation, with 46% of "no change" variations misclassified as "worse", and conservative bias where no evaluator identified any contour variations as "better" despite 4 cases being objectively better. This led to clinical inefficiency with potential for unnecessary contour corrections due to overestimation.
 
 ## Clinical Impact
 
-This research provides compelling evidence for integrating **AI-based dose prediction** into radiotherapy quality assurance workflows:
-
-- **Objective Assessment**: Quantitative, dose-based evaluation replacing subjective geometric metrics
-- **Workflow Efficiency**: Automated assessment reduces review time and clinical burden
-- **Improved Consistency**: Standardized evaluation reduces inter-evaluator variability
-- **Enhanced Safety**: More accurate identification of clinically significant segmentation errors
-- **Cost-Effectiveness**: Reduced unnecessary corrections and improved resource utilization
+This research provides compelling evidence for integrating **AI-based dose prediction** into radiotherapy quality assurance workflows by offering objective assessment through quantitative, dose-based evaluation replacing subjective geometric metrics. The approach improves workflow efficiency with automated assessment that reduces review time and clinical burden, while providing improved consistency through standardized evaluation that reduces inter-evaluator variability. The system enhances safety with more accurate identification of clinically significant segmentation errors and offers cost-effectiveness through reduced unnecessary corrections and improved resource utilization.
 
 ## Citations
 

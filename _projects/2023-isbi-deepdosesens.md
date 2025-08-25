@@ -21,27 +21,15 @@ This research evaluates the sensitivity and robustness of deep learning-based do
 
 ## Clinical Motivation
 
-Radiotherapy planning for brain tumors faces significant challenges from **segmentation variability**:
-
-- **Inter-expert variability** in organ-at-risk and target volume delineation
-- **Protocol differences** and **human errors** in segmentation
-- **Time-intensive re-planning** due to segmentation quality issues
-- **Delayed treatment** impacting patient outcomes
-- **Need for automated quality assurance** with dose-aware sensitivity
+Radiotherapy planning for brain tumors faces significant challenges from **segmentation variability** including inter-expert variability in organ-at-risk and target volume delineation, protocol differences and human errors in segmentation, time-intensive re-planning due to segmentation quality issues, delayed treatment impacting patient outcomes, and the need for automated quality assurance with dose-aware sensitivity.
 
 ## Key Contributions
 
 ### ISBI 2023 Study
-- **Sensitivity Analysis**: First systematic evaluation of dose prediction model sensitivity to realistic contour variations
-- **Clinical Validation**: Focus on left optic nerve segmentation due to high clinical relevance
-- **Quantitative Metrics**: Comprehensive evaluation using openKBP challenge metrics
-- **Correlation Analysis**: Strong correlation (0.921) between predicted and reference dose differences
+The study represents the first systematic evaluation of dose prediction model sensitivity to realistic contour variations, with clinical validation focusing on left optic nerve segmentation due to high clinical relevance. The research included quantitative metrics through comprehensive evaluation using openKBP challenge metrics and correlation analysis showing strong correlation (0.921) between predicted and reference dose differences.
 
 ### Extended Cancers Journal
-- **Robustness Testing**: Comprehensive evaluation with out-of-distribution cases
-- **Model Improvement**: Targeted training set updates to enhance robustness
-- **Clinical Protocol**: VMAT planning according to established clinical guidelines
-- **Quality Assurance Framework**: Practical implementation for dose-aware contouring evaluation
+The extended journal study included comprehensive robustness testing with evaluation of out-of-distribution cases and model improvement through targeted training set updates to enhance robustness. The research followed clinical protocols using VMAT planning according to established clinical guidelines and developed a quality assurance framework for practical implementation of dose-aware contouring evaluation.
 
 ## Methodology
 
@@ -54,34 +42,18 @@ Radiotherapy planning for brain tumors faces significant challenges from **segme
 ## Key Results
 
 ### Model Performance
-- **Dose Score**: 0.906 Gy mean absolute error (ISBI), 0.94 Gy (Cancers)
-- **DVH Score**: 1.942 Gy mean DVH score (ISBI), 1.95 Gy (Cancers)
-- **Sensitivity**: Predicted dose changes with mean error of 1.38 Gy (Cancers)
-- **Correlation**: 0.921 correlation coefficient between predicted and reference dose differences
+The system achieved strong performance with dose scores of 0.906 Gy mean absolute error (ISBI) and 0.94 Gy (Cancers), DVH scores of 1.942 Gy mean DVH score (ISBI) and 1.95 Gy (Cancers), sensitivity prediction with dose changes having mean error of 1.38 Gy (Cancers), and correlation showing 0.921 correlation coefficient between predicted and reference dose differences.
 
 ### Clinical Validation
-- **DVH Matching**: Predicted dose-volume histograms closely matched reference curves
-- **Inter-Expert Comparison**: Average prediction dose MAE (2.315 Gy) close to inter-expert MAE (2.443 Gy)
-- **Robustness Improvement**: Targeted training updates enhanced out-of-distribution performance
-- **Quality Assurance Potential**: Demonstrated feasibility for automated contouring evaluation
+The validation demonstrated DVH matching where predicted dose-volume histograms closely matched reference curves, inter-expert comparison showing average prediction dose MAE (2.315 Gy) close to inter-expert MAE (2.443 Gy), robustness improvement through targeted training updates that enhanced out-of-distribution performance, and quality assurance potential demonstrating feasibility for automated contouring evaluation.
 
 ## Clinical Impact
 
-This research establishes the foundation for **dose-aware quality assurance** in radiotherapy:
-
-- **Automated Sensitivity**: Real-time assessment of dose impact from segmentation variations
-- **Workflow Integration**: Fast, automated evaluation replacing time-intensive manual review
-- **Clinical Validation**: Demonstrated accuracy comparable to inter-expert variability
-- **Robustness Assurance**: Systematic approach to handling out-of-distribution scenarios
-- **Quality Improvement**: Enhanced safety and efficiency in radiotherapy planning
+This research establishes the foundation for **dose-aware quality assurance** in radiotherapy through automated sensitivity enabling real-time assessment of dose impact from segmentation variations. The approach supports workflow integration with fast, automated evaluation replacing time-intensive manual review, provides clinical validation with demonstrated accuracy comparable to inter-expert variability, ensures robustness through systematic approaches to handling out-of-distribution scenarios, and enables quality improvement with enhanced safety and efficiency in radiotherapy planning.
 
 ## Technical Innovation
 
-The work introduces novel approaches for:
-- **Quantitative sensitivity measurement** of AI models to clinical variations
-- **Robustness testing protocols** for medical AI deployment
-- **Quality assurance frameworks** combining AI prediction with clinical validation
-- **Dose-aware evaluation metrics** for segmentation quality assessment
+The work introduces novel approaches for quantitative sensitivity measurement of AI models to clinical variations, robustness testing protocols for medical AI deployment, quality assurance frameworks combining AI prediction with clinical validation, and dose-aware evaluation metrics for segmentation quality assessment.
 
 ## Citations
 

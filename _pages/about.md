@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: PhD Researcher in Computer Vision, Biomedical Imaging
+subtitle: PhD Researcher in Computer Vision, Medical Imaging
 
 profile:
   align: right
