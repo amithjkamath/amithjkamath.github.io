@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-📄 **Research Publication:** ["ASTRA: Atomic Surface Transformations for Radiotherapy quality Assurance"](https://ieeexplore.ieee.org/abstract/document/10341062) accepted for **oral presentation** at [IEEE EMBC 2023](http://embc.embs.org/2023/) in Sydney. <a href="{% link _projects/2023-embc-astra.md %}">Learn more</a>.
+**Research Publication:** ["ASTRA: Atomic Surface Transformations for Radiotherapy quality Assurance"](https://ieeexplore.ieee.org/abstract/document/10341062) accepted for **oral presentation** at [IEEE EMBC 2023](http://embc.embs.org/2023/) in Sydney. <a href="{% link _projects/2023-embc-astra.md %}">Learn more</a>.

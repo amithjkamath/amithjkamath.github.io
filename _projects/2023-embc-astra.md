@@ -18,22 +18,27 @@ ASTRA (Atomic Surface Transformations for Radiotherapy quality Assurance) is an 
 
 ## Clinical Problem
 
-Glioblastoma treatment relies heavily on precise radiotherapy planning, where human errors and inter-expert variability in tumor and organ-at-risk segmentation directly impact treatment outcomes. Erroneous segmentations translate to suboptimal dose distributions and clinical outcomes, while time-intensive review processes reduce radiation oncology team efficiency. Current workflows lack dose-informed feedback for segmentation corrections.
+Glioblastoma treatment relies heavily on precise radiotherapy planning, where the accuracy of tumor and organ-at-risk segmentation directly influences treatment outcomes and patient safety. Unfortunately, human errors and inter-expert variability in segmentation are common challenges that can lead to suboptimal dose distributions and compromised clinical outcomes. The current workflow presents significant inefficiencies as time-intensive review processes reduce the effectiveness of radiation oncology teams, while existing systems lack dose-informed feedback mechanisms for segmentation corrections.
+
+Traditional quality assurance approaches focus on geometric accuracy metrics that fail to capture the true clinical impact of segmentation variations. This disconnect between geometric correctness and dosimetric consequences represents a critical gap in current radiotherapy planning workflows, where clinicians need to understand not just whether a segmentation is geometrically accurate, but how variations will affect the actual radiation dose delivered to patients.
 
 ## Key Contributions
 
-ASTRA provides dose-aware quality assessment as the first automated method to predict dosimetric impact of segmentation variations, along with localized sensitivity mapping that provides spatial understanding of which segmentation regions most affect dose distributions. The system is designed for clinical integration in real-world radiotherapy planning workflows and includes comprehensive validation evaluated on 100 glioblastoma patients with quantitative dose impact analysis.
+ASTRA introduces **dose-aware quality assessment** as the first automated method specifically designed to predict the dosimetric impact of segmentation variations in radiotherapy planning. This represents a fundamental shift from geometric-based evaluation to clinically meaningful dose-based assessment. The system provides localized sensitivity mapping that offers spatial understanding of which segmentation regions most critically affect dose distributions, enabling clinicians to prioritize their review efforts where they matter most.
+
+The method is designed for seamless clinical integration into real-world radiotherapy planning workflows, addressing practical deployment concerns that often prevent research innovations from reaching clinical practice. Our comprehensive validation evaluated the system on 100 glioblastoma patients with complete dose planning data, providing robust evidence for clinical effectiveness through quantitative dose impact analysis.
 
 ## Methodology
 
-**Deep Learning Framework**: End-to-end prediction of dose changes from segmentation modifications  
-**Atomic Transformations**: Local surface perturbations to simulate realistic segmentation variations  
-**Dose Impact Modeling**: Direct prediction of organ-at-risk dose distribution changes  
-**Visualization System**: Interactive sensitivity maps for clinical decision support
+Our deep learning framework enables end-to-end prediction of dose changes directly from segmentation modifications, eliminating the need for time-intensive full dose recalculation. The system employs atomic transformations that simulate realistic segmentation variations through local surface perturbations, ensuring that our predictions reflect clinically relevant scenarios rather than artificial edge cases.
+
+The dose impact modeling component directly predicts organ-at-risk dose distribution changes, providing clinicians with immediately actionable information about the consequences of segmentation decisions. Additionally, our visualization system creates interactive sensitivity maps that support clinical decision-making by highlighting regions where segmentation accuracy is most critical for dose outcomes.
 
 ## Results
 
-The evaluation included a dataset of 100 glioblastoma patients with complete dose planning data, demonstrating strong performance with correlation between predicted and actual dose impacts. The system provides clinical value by enabling prioritized review of segmentation regions with highest dosimetric consequences and offers workflow integration potential for automated quality assurance within radiotherapy planning systems.
+Our evaluation on 100 glioblastoma patients with complete dose planning data demonstrated strong performance, with high correlation between predicted and actual dose impacts across various segmentation modification scenarios. The system provides clear clinical value by enabling prioritized review of segmentation regions with the highest dosimetric consequences, allowing radiation oncology teams to focus their limited time on areas where precision matters most.
+
+The workflow integration potential shows promise for automated quality assurance within radiotherapy planning systems, where ASTRA could serve as a real-time advisory tool during the contouring process. This capability could significantly enhance both the efficiency and safety of radiotherapy planning by providing immediate feedback about the dose implications of segmentation decisions.
 
 ## Impact
 

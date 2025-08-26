@@ -18,52 +18,39 @@ An interactive MATLAB application that teaches conditional probability through t
 
 ## Educational Challenge
 
-Traditional mathematics lectures often struggle with counterintuitive concepts like conditional probability. The Monty Hall problem presents a perfect case study where:
+Traditional mathematics lectures often struggle with counterintuitive concepts like conditional probability, and the Monty Hall problem presents a perfect case study where students' **intuitive logic fails** completely. Most students incorrectly assume 50/50 probability when faced with the final choice, demonstrating how our natural intuitions can mislead us in probabilistic reasoning.
 
-- **Intuitive Logic Fails**: Most students incorrectly assume 50/50 probability
-- **Abstract Theory**: Mathematical proofs can feel disconnected from reality
-- **Cognitive Resistance**: Students resist accepting the correct answer without experiential evidence
-- **Teaching Opportunity**: Interactive gameplay can demonstrate mathematical truths
+The **abstract theory** behind conditional probability often feels disconnected from reality when presented through mathematical proofs alone, making it difficult for students to internalize these concepts. Students typically exhibit **cognitive resistance** to accepting the correct answer without experiential evidence, creating a barrier to learning that traditional lecture methods struggle to overcome. However, this resistance also presents a valuable **teaching opportunity** where interactive gameplay can demonstrate mathematical truths in ways that pure theory cannot.
 
 ## Key Features
 
 ### Interactive Gameplay
-- **Three-Door Interface**: Classic Monty Hall setup with visual feedback
-- **Real-Time Statistics**: Track win/loss ratios for different strategies
-- **Immediate Feedback**: See results of switching vs. staying decisions
-- **Multiple Rounds**: Build statistical evidence through repeated gameplay
+The application provides a **three-door interface** that recreates the classic Monty Hall setup with immediate visual feedback, allowing students to experience the problem firsthand rather than just hearing about it. **Real-time statistics** tracking enables students to monitor win/loss ratios for different strategies, building empirical evidence for the counterintuitive solution.
+
+**Immediate feedback** shows students the results of their switching versus staying decisions after each round, while **multiple rounds** of gameplay allow students to build statistical evidence through repeated trials, making the mathematical truth undeniable through accumulated experience.
 
 ### Educational Value
-- **Computational Proof**: Demonstrate probability through large-sample simulation
-- **Strategy Comparison**: Quantitatively compare "stay" vs. "switch" strategies
-- **Visual Learning**: Intuitive interface reduces cognitive load
-- **Self-Discovery**: Students reach conclusions through experimentation
+The tool provides **computational proof** by demonstrating probability concepts through large-sample simulation, showing students how theoretical predictions align with experimental results. **Strategy comparison** enables quantitative comparison of "stay" versus "switch" strategies through accumulated data, making the optimal strategy obvious through evidence rather than argument.
+
+**Visual learning** through an intuitive interface reduces cognitive load and allows students to focus on the conceptual content rather than struggling with complex mathematical notation. Most importantly, the **self-discovery** approach enables students to reach conclusions through their own experimentation, creating stronger and more lasting understanding than passive instruction.
 
 ## Technical Implementation
 
-**Platform**: MATLAB App Designer for cross-platform compatibility  
-**Interface**: User-friendly GUI with door animations and statistics tracking  
-**Algorithm**: Monte Carlo simulation for probability demonstration  
-**Visualization**: Real-time graphical updates of win/loss statistics
+Our platform utilizes **MATLAB App Designer** for cross-platform compatibility, ensuring that the tool works reliably across different operating systems and MATLAB versions. The user-friendly GUI incorporates door animations and comprehensive statistics tracking that make the learning experience engaging and informative.
+
+The underlying algorithm employs Monte Carlo simulation methods for probability demonstration, providing students with hands-on experience in computational approaches to probability problems. Real-time graphical updates of win/loss statistics ensure that students can see patterns emerge as they play, making statistical concepts tangible and immediate.
 
 ## Learning Outcomes
 
-Students who use this application will:
-- **Understand Conditional Probability**: See how additional information changes probabilities
-- **Appreciate Statistical Evidence**: Learn the value of large sample sizes
-- **Overcome Cognitive Bias**: Experience the counterintuitive nature of probability
-- **Connect Theory to Practice**: Bridge abstract mathematics with interactive experience
+Students who use this application will develop **deep understanding of conditional probability** by seeing firsthand how additional information changes probability calculations and affects optimal decision-making strategies. They will **appreciate statistical evidence** by learning the value of large sample sizes in validating theoretical predictions and understanding how empirical data supports mathematical concepts.
+
+The interactive experience helps students **overcome cognitive bias** by experiencing the counterintuitive nature of probability in a way that makes the correct answer undeniable through accumulated evidence. Most importantly, students will **connect theory to practice** by bridging abstract mathematical formulations with interactive experiences that make probability concepts tangible and memorable.
 
 ## Impact on Mathematics Education
 
-This tool addresses the critical need for **making abstract mathematics tangible and engaging**:
+This tool addresses the critical need for **making abstract mathematics tangible and engaging** through active learning approaches where students participate directly rather than passively observing demonstrations. **Evidence-based understanding** develops through repeated trials that build statistical conviction, allowing students to see theoretical predictions confirmed through their own experimentation.
 
-- **Active Learning**: Students participate rather than passively observe
-- **Evidence-Based Understanding**: Repeated trials build statistical conviction  
-- **Immediate Gratification**: Real-time feedback maintains engagement
-- **Memorable Experience**: Interactive learning creates lasting understanding
-
-The application demonstrates how **computational tools can transform mathematical education**, making previously difficult concepts accessible through experiential learning.
+**Immediate gratification** through real-time feedback maintains student engagement throughout the learning process, while the **memorable experience** created through interactive learning generates lasting understanding that persists long after the lesson ends. The application demonstrates how **computational tools can transform mathematical education** by making previously difficult concepts accessible through experiential learning that engages both intellect and intuition.
 
 ## Repository & Resources
 

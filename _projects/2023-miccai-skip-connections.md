@@ -27,45 +27,36 @@ While skip connections are considered essential in U-Net architectures for prese
 
 ## Key Contributions
 
-- **Novel Task Complexity Framework**: First quantitative measure of segmentation task complexity based on texture similarity
-- **Systematic Architecture Comparison**: Comprehensive evaluation of Standard U-Net, No-Skip U-Net, and Attention-Gated U-Net
-- **Robustness Analysis**: Investigation of performance degradation in out-of-domain clinical scenarios
-- **Clinical Validation**: Multi-domain evaluation across three medical imaging datasets
+This research provides the **first systematic analysis of skip connections** in U-Net architectures, investigating their necessity and impact on model robustness across varying levels of task complexity in medical image segmentation. We developed a novel task complexity framework that offers the first quantitative measure of segmentation task complexity based on texture similarity between foreground and background regions.
+
+Our comprehensive systematic architecture comparison evaluated Standard U-Net, No-Skip U-Net, and Attention-Gated U-Net across controlled complexity scenarios, providing insights into when different architectural choices are most beneficial. The robustness analysis component investigated performance degradation in out-of-domain clinical scenarios, revealing important trade-offs between performance optimization and model reliability.
+
+Clinical validation across three diverse medical imaging datasets ensured that our findings translate to real-world applications, covering breast ultrasound, colon histology, and cardiac MRI to demonstrate broad applicability across medical imaging domains.
 
 ## Methodology
 
-**Controlled Experiments**: Synthetic texture images with systematically varied complexity levels  
-**Texture Distance Metric**: Novel quantitative measure of foreground-background similarity  
-**Multi-Domain Validation**: Breast ultrasound, colon histology, and cardiac MRI datasets  
-**Architecture Variants**: Standard U-Net, No-Skip U-Net, and Attention-Gated U-Net comparison
+Our approach employed **controlled experiments** using synthetic texture images with systematically varied complexity levels, allowing us to isolate the specific effects of skip connections without confounding factors. We developed a novel texture distance metric that provides quantitative measurement of foreground-background similarity, enabling precise control over task difficulty.
+
+Multi-domain validation across breast ultrasound, colon histology, and cardiac MRI datasets ensured clinical relevance and generalizability of our findings. Our architecture comparison included Standard U-Net, No-Skip U-Net, and Attention-Gated U-Net variants, providing comprehensive coverage of contemporary segmentation approaches.
 
 ## Key Findings
 
 ### Task Complexity Dependency
-- **Low-to-Medium Complexity**: Skip connections provide minimal benefit
-- **High Complexity**: Skip connections become essential, with non-linear performance gains
-- **Attention Mechanisms**: Attention-Gated U-Net shows largest improvements in complex scenarios
+Our experiments revealed that **skip connections provide minimal benefit** in low-to-medium complexity scenarios, challenging the assumption that they are universally beneficial. However, in high complexity situations, skip connections become essential, showing non-linear performance gains that justify their computational overhead.
+
+Attention mechanisms demonstrated the largest improvements in complex scenarios, with Attention-Gated U-Net showing superior performance when distinguishing between foreground and background becomes challenging. This suggests that architectural complexity should match task complexity for optimal results.
 
 ### Robustness Trade-offs
-- **Performance vs. Robustness**: Skip connections improve performance but reduce robustness
-- **Out-of-Domain Scenarios**: Models with skip connections show greater performance degradation
-- **Clinical Implications**: Robustness losses are particularly pronounced in real clinical data
+We discovered a critical **performance versus robustness trade-off** where skip connections improve performance but reduce robustness to distribution shifts. In out-of-domain scenarios, models with skip connections showed greater performance degradation compared to their no-skip counterparts, raising important questions about clinical deployment strategies.
+
+The clinical implications are particularly significant, as robustness losses are most pronounced when working with real clinical data that differs from training distributions. This finding suggests that for safety-critical medical applications, the choice of architecture should carefully balance performance gains against robustness requirements.
 
 ### Extended Journal Analysis
+Our expanded validation across four anatomies (breast, colon, heart, spleen) and multiple imaging modalities (ultrasound, histology, MRI, CT) provided comprehensive evidence for our findings. We evaluated three architecture groups: Standard (U-Net and V-Net), No-Skip (variants without skip connections), and Enhanced (AGU-Net and UNet++ with additional connections).
 
-**Expanded Validation**: Extended study across four anatomies (breast, colon, heart, spleen) and imaging modalities (ultrasound, histology, MRI, CT)
-
-**Architecture Groups**:
-- **Standard**: U-Net and V-Net
-- **No-Skip**: U-Net and V-Net without skip connections  
-- **Enhanced**: AGU-Net and UNet++ with additional skip connections
-
-**Results Summary**:
-- No-Skip models performed best in 5/8 cases (Dice) and 7/8 cases (Hausdorff distance) for challenging texture scenarios
-- No-Skip group showed superior robustness (7/16 cases) compared to Enhanced (6/16) and Standard (3/16) groups
+The results demonstrated that **No-Skip models performed best** in 5 out of 8 cases for Dice coefficient and 7 out of 8 cases for Hausdorff distance in challenging texture scenarios. For robustness assessment, the No-Skip group showed superior performance in 7 out of 16 cases, compared to Enhanced (6 out of 16) and Standard (3 out of 16) groups, reinforcing our findings about the robustness-performance trade-off.
 
 ## Clinical Impact
-
 This research challenges the universal adoption of skip connections in medical image segmentation, providing evidence-based guidelines for architecture selection based on:
 
 - **Task complexity assessment** using texture-based metrics

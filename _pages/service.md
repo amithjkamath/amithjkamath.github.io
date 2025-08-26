@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Leadership & Teaching
+title: Leadership
 permalink: /leadership/
 description: Conference organization, educational initiatives, and technical mentorship.
 nav: true

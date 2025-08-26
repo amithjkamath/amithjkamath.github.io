@@ -17,31 +17,26 @@ An interactive MATLAB application that teaches image registration concepts by al
 
 ## Educational Challenge
 
-Image registration is a foundational concept in medical image analysis, but students often struggle with:
+Image registration represents a foundational concept in medical image analysis, yet students consistently struggle with several key aspects that hinder their understanding and application of these critical techniques. The **abstract mathematics** underlying transformation matrices often feels completely disconnected from visual results, making it difficult for students to understand how numerical manipulations translate to meaningful image changes.
 
-- **Abstract Mathematics**: Transformation matrices can feel disconnected from visual results
-- **Parameter Understanding**: Unclear how individual parameters affect image deformation
-- **Clinical Relevance**: Difficulty connecting mathematical concepts to medical applications
-- **Spatial Intuition**: Limited understanding of rotation, translation, scaling, and shearing effects
+**Parameter understanding** presents another significant hurdle, as students find it unclear how individual transformation parameters affect image deformation and how these parameters interact with each other. The **clinical relevance** of these concepts remains obscure to many students, who struggle to connect the mathematical operations they're learning to real medical applications where precise image alignment can affect patient outcomes.
+
+Perhaps most fundamentally, students often lack adequate **spatial intuition** for understanding how rotation, translation, scaling, and shearing effects combine to create complex image transformations. Without this intuitive understanding, students resort to memorizing formulas rather than developing the conceptual framework necessary for applying these techniques to novel problems.
 
 ## Key Features
 
 ### Real-Time Parameter Control
-- **Interactive Sliders**: Modify each affine transformation matrix element independently
-- **Immediate Feedback**: See image deformation in real-time as parameters change
-- **Parameter Isolation**: Understand individual effects of rotation, translation, scaling, shearing
-- **Reset Functionality**: Return to original state and try different transformations
+The application provides **interactive sliders** that allow students to modify each affine transformation matrix element independently, creating an immediate connection between mathematical parameters and visual results. **Immediate feedback** ensures that students see image deformation in real-time as parameters change, eliminating the delay that often disrupts learning flow in traditional educational approaches.
+
+**Parameter isolation** capabilities enable students to understand the individual effects of rotation, translation, scaling, and shearing by manipulating one parameter at a time, while **reset functionality** allows them to return to the original state and systematically try different transformation combinations to build comprehensive understanding.
 
 ### Educational Visualization
-- **Before/After Comparison**: Side-by-side view of original and transformed images
-- **Grid Overlay**: Visual reference for understanding spatial deformations
-- **Parameter Display**: Current transformation matrix values shown clearly
-- **Progressive Learning**: Build understanding through incremental parameter changes
+The system offers **before/after comparison** through side-by-side views of original and transformed images, helping students clearly see the effects of their parameter adjustments. **Grid overlay** functionality provides visual reference points for understanding spatial deformations, making abstract transformations concrete and measurable.
+
+**Parameter display** shows current transformation matrix values clearly, connecting the mathematical representation to the visual results, while **progressive learning** approaches enable students to build understanding through incremental parameter changes rather than overwhelming them with complex transformations from the start.
 
 ### Practical Applications
-- **Medical Image Examples**: Use realistic medical imaging data for relevance
-- **Common Scenarios**: Demonstrate typical registration challenges and solutions
-- **Multi-Modal Registration**: Show different imaging modality alignment scenarios
+The tool incorporates **medical image examples** using realistic medical imaging data to ensure relevance and help students understand real-world applications. **Common scenarios** demonstrate typical registration challenges and solutions that students will encounter in practice, while **multi-modal registration** examples show different imaging modality alignment scenarios, preparing students for the complexity of real clinical workflows.
 
 ## Technical Implementation
 
@@ -52,28 +47,20 @@ Image registration is a foundational concept in medical image analysis, but stud
 
 ## Learning Outcomes
 
-Students using this tool will:
-- **Master Affine Transformations**: Understand how matrix elements control image deformation
-- **Develop Spatial Intuition**: Build visual understanding of geometric transformations
-- **Connect Theory to Practice**: See immediate results of mathematical operations
-- **Prepare for Advanced Topics**: Build foundation for non-rigid registration and advanced techniques
+Students using this tool will **master affine transformations** by developing thorough understanding of how matrix elements control image deformation and how different parameters interact to create complex spatial changes. They will **develop spatial intuition** by building strong visual understanding of geometric transformations that enables them to predict the effects of parameter changes before applying them.
+
+The immediate visual feedback helps students **connect theory to practice** by seeing immediate results of mathematical operations, bridging the gap between abstract linear algebra and practical image manipulation. This foundational experience **prepares students for advanced topics** by building the conceptual framework necessary for understanding non-rigid registration, advanced optimization techniques, and modern deep learning-based registration methods.
 
 ## Applications in Curriculum
 
 ### Medical Image Analysis Courses
-- **Registration Fundamentals**: Introduction to spatial alignment concepts
-- **Preprocessing Understanding**: Learn why registration is essential for image analysis
-- **Parameter Sensitivity**: Understand how small changes affect registration quality
+The tool provides comprehensive **registration fundamentals** through hands-on introduction to spatial alignment concepts that form the backbone of medical image analysis. Students develop **preprocessing understanding** by learning why registration is essential for subsequent image analysis steps and how misalignment can compromise entire analysis pipelines. **Parameter sensitivity** training helps students understand how small changes in registration parameters can dramatically affect registration quality and downstream analysis results.
 
 ### Computer Vision Education
-- **Geometric Transformations**: Practical experience with fundamental CV concepts
-- **Spatial Relationships**: Develop intuition for coordinate system transformations
-- **Image Processing Pipeline**: Understand registration's role in broader image analysis
+Students gain practical experience with **geometric transformations** that represent fundamental computer vision concepts applicable far beyond image registration. They develop intuitive understanding of **spatial relationships** and learn to visualize coordinate system transformations in ways that benefit many other computer vision applications. The tool also helps students understand registration's role in the broader **image processing pipeline** and how it connects to other essential computer vision operations.
 
 ### Mathematical Visualization
-- **Linear Algebra Applications**: See abstract mathematics applied to real data
-- **Matrix Operations**: Visual demonstration of matrix multiplication effects
-- **Geometric Understanding**: Connect algebraic operations to geometric transformations
+The application provides powerful **linear algebra applications** by allowing students to see abstract mathematical operations applied to real visual data, making theoretical concepts tangible and memorable. Students observe **matrix operations** and their effects directly, developing intuitive understanding of matrix multiplication and transformation composition. Most importantly, they develop **geometric understanding** that connects algebraic operations to geometric transformations, building the foundation for advanced mathematical concepts in computer graphics and robotics.
 
 ## Clinical Context
 

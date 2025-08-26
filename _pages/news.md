@@ -1,6 +1,6 @@
 ---
 layout: page
-title: News & Updates
+title: Updates
 permalink: /news/
 description: Latest research publications, awards, conference organization, and professional milestones.
 nav: true

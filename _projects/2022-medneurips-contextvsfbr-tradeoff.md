@@ -18,22 +18,23 @@ This work investigates a fundamental trade-off in 3D medical image segmentation:
 
 ## Key Contributions
 
-- **Novel Analysis Framework**: First systematic study of the context vs. foreground ratio trade-off in 3D medical segmentation
-- **Multi-Architecture Comparison**: Evaluated vanilla U-Net, Attention U-Net, and UNETR across this trade-off spectrum
-- **Robustness Insights**: Discovered that attention-based models are less robust to training/test distribution shifts in foreground ratios
-- **Practical Guidelines**: Demonstrated that all architectures prefer more global context over balanced foreground ratios
+This work presents the **first systematic study** of the context versus foreground ratio trade-off in 3D medical segmentation, providing a novel analysis framework that has been missing from the literature. We conducted a comprehensive multi-architecture comparison by evaluating vanilla U-Net, Attention U-Net, and UNETR across this trade-off spectrum, revealing important architectural differences in how these models handle competing demands for global context and class balance.
+
+Our investigation uncovered significant robustness insights, particularly that attention-based models are less robust to training and test distribution shifts in foreground ratios compared to traditional CNN architectures. This finding has important implications for clinical deployment where data distributions can vary significantly. Additionally, we established practical guidelines demonstrating that all architectures consistently prefer more global context over balanced foreground ratios, challenging conventional wisdom about class balance importance.
 
 ## Methodology
 
-**Synthetic Experiments**: Controlled texture-based synthetic datasets to isolate the trade-off effects  
-**Medical Validation**: Spleen segmentation from Medical Segmentation Decathlon to confirm findings  
-**Architecture Coverage**: Comprehensive evaluation across traditional CNN and Transformer-based approaches
+Our approach combined controlled synthetic experiments using texture-based synthetic datasets specifically designed to isolate the trade-off effects, allowing us to systematically vary context and foreground ratio independently. We validated these findings through spleen segmentation experiments using data from the Medical Segmentation Decathlon, confirming that our synthetic insights translate to real medical imaging scenarios.
+
+The study provided comprehensive architecture coverage by evaluating both traditional CNN approaches (vanilla U-Net, Attention U-Net) and newer Transformer-based methods (UNETR), ensuring our findings are applicable across the current landscape of 3D segmentation architectures.
 
 ## Key Findings
 
-1. **Context Preference**: All three network types consistently favor larger context windows over balanced class ratios
-2. **Robustness Differences**: UNETR and Attention U-Net show greater sensitivity to foreground ratio variations compared to vanilla U-Net
-3. **Performance Trade-offs**: Optimal performance requires careful balance between sufficient context and manageable class imbalance
+Our experiments revealed that all three network types consistently favor larger context windows over balanced class ratios, suggesting that the information gained from additional spatial context outweighs the challenges introduced by increased class imbalance. This finding held across both synthetic and real medical imaging datasets.
+
+We discovered important robustness differences between architectures, with UNETR and Attention U-Net showing greater sensitivity to foreground ratio variations compared to vanilla U-Net. This suggests that while attention mechanisms and transformer architectures may offer superior performance under ideal conditions, they may be more vulnerable to distribution shifts commonly encountered in clinical settings.
+
+The results highlight critical performance trade-offs in 3D medical segmentation, where optimal performance requires careful balance between sufficient context and manageable class imbalance. These findings provide concrete guidance for practitioners designing segmentation pipelines under GPU memory constraints.
 
 ## Citation
 
