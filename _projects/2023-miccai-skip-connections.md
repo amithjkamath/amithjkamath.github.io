@@ -19,11 +19,7 @@ This work provides the first systematic analysis of skip connections in U-Net ar
 
 ## Research Question
 
-While skip connections are considered essential in U-Net architectures for preserving image details, their actual necessity and impact on robustness remain poorly understood. This study systematically investigates:
-
-- **When are skip connections truly beneficial?**
-- **How do they interact with task complexity?**
-- **What are the robustness trade-offs in clinical scenarios?**
+While skip connections are considered essential in U-Net architectures for preserving image details, their actual necessity and impact on robustness remain poorly understood. This study systematically investigates **when skip connections are truly beneficial**, **how they interact with task complexity**, and **what robustness trade-offs exist in clinical scenarios**. These fundamental questions challenge conventional assumptions about U-Net design and have significant implications for medical imaging applications where both performance and reliability are critical.
 
 ## Key Contributions
 
@@ -57,11 +53,8 @@ Our expanded validation across four anatomies (breast, colon, heart, spleen) and
 The results demonstrated that **No-Skip models performed best** in 5 out of 8 cases for Dice coefficient and 7 out of 8 cases for Hausdorff distance in challenging texture scenarios. For robustness assessment, the No-Skip group showed superior performance in 7 out of 16 cases, compared to Enhanced (6 out of 16) and Standard (3 out of 16) groups, reinforcing our findings about the robustness-performance trade-off.
 
 ## Clinical Impact
-This research challenges the universal adoption of skip connections in medical image segmentation, providing evidence-based guidelines for architecture selection based on:
 
-- **Task complexity assessment** using texture-based metrics
-- **Robustness requirements** for clinical deployment
-- **Performance-robustness trade-off considerations** for safety-critical applications
+This research challenges the universal adoption of skip connections in medical image segmentation, providing evidence-based guidelines for architecture selection based on **task complexity assessment using texture-based metrics**, **robustness requirements for clinical deployment**, and **performance-robustness trade-off considerations for safety-critical applications**. These insights enable practitioners to make informed decisions about architecture selection that balance performance optimization with the reliability requirements essential for clinical deployment.
 
 ## Citations
 

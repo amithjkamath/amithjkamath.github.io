@@ -12,9 +12,129 @@ category: teaching
 [![Project Repository](https://img.shields.io/badge/GitHub-Repository-blue?style=flat-square&logo=github)](https://github.com/amithjkamath/monai-from-matlab)
 [![Video Tutorial](https://img.shields.io/badge/Video-MathWorks%20YouTube-red?style=flat-square&logo=youtube)](https://www.youtube.com/watch?v=az51x0bIZ9Q)
 
-A comprehensive tutorial demonstrating how to integrate MONAI (Medical Open Network for AI) deep learning models within MATLAB workflows, enabling cross-platform medical imaging AI development.
+A practical guide for integrating MONAI (Medical Open Network for AI) deep learning models within MATLAB workflows. This tutorial addresses the common need to use Python-based AI models in existing MATLAB research pipelines.
 
-**Educational Focus:** Cross-Platform Integration, Medical AI Workflows, Deep Learning Deployment
+**Target Audience:** Researchers with MATLAB workflows who need to integrate Python-based AI models
+
+## Frequently Asked Questions
+
+### Q: How do I load PyTorch models into MATLAB?
+<img src="../../assets/img/how-to-load-pytorch-matlab.png" alt="PyTorch MATLAB Integration Question" width="800"/>
+
+### Q: Can I load .pth files directly in MATLAB?
+<img src="../../assets/img/loading-pth-model-matlab.png" alt="PTH File Loading Question" width="800"/>
+
+**Answer:** Yes, through MATLAB's Python interface. This tutorial shows you exactly how.
+
+## Quick Start Guide
+
+### 1. Environment Setup
+
+**Create MATLAB-Compatible Python Environment:**
+```bash
+conda create --name matlab-env python=3.9
+conda activate matlab-env
+which python  # Note this path for MATLAB configuration
+```
+
+**Install Required Dependencies:**
+```bash
+conda install pytorch torchvision
+pip install monai
+```
+
+### 2. MATLAB-Python Interface Configuration
+
+**Configure Python Environment in MATLAB:**
+```matlab
+% Set Python executable path (adjust for your system)
+pyversion('/Users/amithkamath/opt/anaconda3/envs/matlab-env/bin/python')
+
+% Verify configuration
+pe = pyenv;
+disp(pe)
+```
+
+### 3. Model Loading and Execution
+
+**Load Pre-trained MONAI Model:**
+```matlab
+% Import necessary Python modules
+torch = py.importlib.import_module('torch');
+monai = py.importlib.import_module('monai');
+
+% Load trained model
+model = torch.load('path/to/monai_model.pth');
+model.eval();
+```
+
+**Process Medical Images:**
+```matlab
+% Load and preprocess medical image data
+input_data = prepare_medical_image(image_path);
+
+% Run inference
+with py.torch.no_grad()
+    output = model(input_data);
+end
+
+% Convert results back to MATLAB format
+segmentation_result = double(output.numpy());
+```
+
+## Best Practices and Troubleshooting
+
+### Memory Management
+- Use `py.torch.no_grad()` for inference to reduce memory consumption
+- Clear Python variables when processing large datasets
+- Monitor memory usage across both MATLAB and Python environments
+
+### Error Handling
+```matlab
+try
+    % MONAI model execution
+    result = run_monai_model(input_data);
+catch ME
+    % Handle cross-platform errors gracefully
+    fprintf('Error in Python execution: %s
+', ME.message);
+    % Fallback or error recovery logic
+end
+```
+
+### Performance Optimization
+- Pre-allocate MATLAB arrays for output data
+- Minimize data type conversions between platforms
+- Use batch processing for multiple images
+
+## When to Use This Approach
+
+**Ideal for:**
+- Existing MATLAB research pipelines that need modern AI capabilities
+- Teams working across different platforms
+- Rapid prototyping with state-of-the-art models
+- Educational environments with mixed tool preferences
+
+**Consider alternatives if:**
+- Starting a new project (pure Python might be simpler)
+- Real-time applications requiring maximum performance
+- Teams exclusively using Python
+
+## Educational Applications
+
+### Medical Image Analysis Courses
+This integration approach teaches students to work with industry-standard tools across platforms, preparing them for professional environments where tool diversity is common. Students learn practical workflow design and system integration skills.
+
+### Research Methods Training
+The tutorial demonstrates reproducible research practices and collaborative development approaches, showing how to make research accessible across different computing platforms and team preferences.
+
+## Repository Resources
+
+The [GitHub repository](https://github.com/amithjkamath/monai-from-matlab) includes:
+- **Setup Scripts**: Automated environment configuration
+- **Example Models**: Pre-trained MONAI models for testing
+- **Sample Data**: Medical imaging datasets for demonstration
+- **Documentation**: Comprehensive setup and troubleshooting guide
 
 ## Educational Motivation
 
@@ -105,95 +225,6 @@ This tutorial provides **essential professional skills** for modern AI practitio
 
 **Documentation standards** education ensures that professionals can create tutorial and documentation content that meets industry standards for clarity, completeness, and maintainability.
 
-## Community Contribution
-
-The tutorial addresses frequently asked questions in the MATLAB community:
-
-<img src="../../assets/img/how-to-load-pytorch-matlab.png" alt="PyTorch MATLAB Integration Question" width="800"/>
-*Common question: How to load PyTorch model into MATLAB*
-
-<img src="../../assets/img/loading-pth-model-matlab.png" alt="PTH File Loading Question" width="800"/>
-*Frequent inquiry: How to load .pth file into MATLAB*
-
-## Technical Tutorial: Step-by-Step Implementation
-
-### 1. Environment Setup
-
-**Create MATLAB-Compatible Python Environment:**
-```bash
-conda create --name matlab-env python=3.9
-conda activate matlab-env
-which python  # Note this path for MATLAB configuration
-```
-
-**Install Required Dependencies:**
-```bash
-conda install pytorch torchvision
-pip install monai
-```
-
-### 2. MATLAB-Python Interface Configuration
-
-**Configure Python Environment in MATLAB:**
-```matlab
-% Set Python executable path (adjust for your system)
-pyversion('/Users/amithkamath/opt/anaconda3/envs/matlab-env/bin/python')
-
-% Verify configuration
-pe = pyenv;
-disp(pe)
-```
-
-### 3. Model Loading and Execution
-
-**Load Pre-trained MONAI Model:**
-```matlab
-% Import necessary Python modules
-torch = py.importlib.import_module('torch');
-monai = py.importlib.import_module('monai');
-
-% Load trained model
-model = torch.load('path/to/monai_model.pth');
-model.eval();
-```
-
-**Process Medical Images:**
-```matlab
-% Load and preprocess medical image data
-input_data = prepare_medical_image(image_path);
-
-% Run inference
-with py.torch.no_grad()
-    output = model(input_data);
-end
-
-% Convert results back to MATLAB format
-segmentation_result = double(output.numpy());
-```
-
-## Best Practices and Troubleshooting
-
-### Memory Management
-- Use `py.torch.no_grad()` for inference to reduce memory consumption
-- Clear Python variables when processing large datasets
-- Monitor memory usage across both MATLAB and Python environments
-
-### Error Handling
-```matlab
-try
-    % MONAI model execution
-    result = run_monai_model(input_data);
-catch ME
-    % Handle cross-platform errors gracefully
-    fprintf('Error in Python execution: %s\n', ME.message);
-    % Fallback or error recovery logic
-end
-```
-
-### Performance Optimization
-- Pre-allocate MATLAB arrays for output data
-- Minimize data type conversions between platforms
-- Use batch processing for multiple images
 
 ## Repository Resources
 

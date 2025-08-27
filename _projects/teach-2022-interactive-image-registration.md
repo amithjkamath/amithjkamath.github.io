@@ -64,21 +64,15 @@ The application provides powerful **linear algebra applications** by allowing st
 
 ## Clinical Context
 
-The tool emphasizes the **medical relevance** of image registration:
+The tool emphasizes the **medical relevance** of image registration through practical applications that students encounter in real clinical workflows. **Multi-time point studies** demonstrate how to align images from different time points for disease progression analysis, showing students how registration enables longitudinal medical studies. **Multi-modal fusion** capabilities illustrate how to combine information from different imaging modalities such as CT, MRI, and PET, preparing students for the multi-modal reality of modern medical imaging.
 
-- **Multi-Time Point Studies**: Align images from different time points for disease progression analysis
-- **Multi-Modal Fusion**: Combine information from different imaging modalities (CT, MRI, PET)
-- **Surgical Planning**: Align preoperative images with intraoperative guidance systems
-- **Population Studies**: Register individual patients to standard anatomical atlases
+**Surgical planning** applications show how preoperative images align with intraoperative guidance systems, connecting registration concepts to life-saving medical procedures. **Population studies** demonstrate how individual patients register to standard anatomical atlases, providing students with understanding of how registration enables large-scale medical research and population-based studies.
 
 ## Impact on Learning
 
-This hands-on approach transforms **abstract mathematical concepts into intuitive understanding**:
+This hands-on approach transforms **abstract mathematical concepts into intuitive understanding** through direct engagement with transformation parameters and immediate visual feedback. **Experiential learning** ensures that students learn through direct manipulation rather than passive observation, creating stronger neural pathways for understanding complex spatial relationships.
 
-- **Experiential Learning**: Students learn through direct manipulation rather than passive observation
-- **Immediate Gratification**: Real-time feedback maintains engagement and motivation
-- **Visual Intuition**: Students develop spatial reasoning for transformation effects
-- **Practical Preparation**: Skills directly transfer to real medical image analysis workflows
+**Immediate gratification** through real-time feedback maintains engagement and motivation throughout the learning process, while **visual intuition** development helps students build spatial reasoning capabilities for understanding transformation effects. Most importantly, **practical preparation** ensures that skills directly transfer to real medical image analysis workflows, preparing students for professional practice in medical imaging and computer vision applications.
 
 ## Repository & Resources
 

@@ -34,7 +34,7 @@ Students can observe the step-by-step process of template matching by watching t
 
 ## Technical Implementation
 
-Our platform utilizes **MATLAB with an intuitive drag-and-drop interface** designed specifically for educational use rather than production deployment. Real-time processing capabilities ensure efficient correlation computation that enables smooth interaction without frustrating delays that could interrupt the learning flow. The visual design employs a game-like interface that maintains student engagement while preserving educational value, and educational scaffolding provides progressive complexity that builds understanding systematically.
+Our platform utilizes **Streamlit with Python and OpenCV** to create an intuitive web-based interface designed specifically for educational use rather than production deployment. The implementation leverages OpenCV's template matching capabilities with real-time processing that enables efficient correlation computation for smooth interaction without frustrating delays that could interrupt the learning flow. The visual design employs a game-like interface that maintains student engagement while preserving educational value, and educational scaffolding provides progressive complexity that builds understanding systematically.
 
 ## Learning Outcomes
 
