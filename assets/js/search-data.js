@@ -16,13 +16,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/news/";
           },
-        },{id: "nav-service",
-          title: "Service",
-          description: "Conference organization, educational initiatives, and technical mentorship.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/service/";
-          },
         },{id: "nav-cv",
           title: "CV",
           description: "Curriculum Vitae.",
@@ -36,6 +29,13 @@ ninja.data = [{
               section: "Dropdown",
               handler: () => {
                 window.location.href = "/projects/";
+              },
+            },{id: "dropdown-service",
+              title: "Service",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/service/";
               },
             },{id: "dropdown-publications",
               title: "Publications",
@@ -478,19 +478,19 @@ ninja.data = [{
           description: "Cross-platform workflow enabling MONAI deep learning models within MATLAB environments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/teach-2024-monai-with-matlab/";
-            },},{id: "projects-dosimetric-awareness-of-radiation-oncology-professionals",
-          title: 'Dosimetric Awareness of Radiation Oncology Professionals',
-          description: "Understanding what human-experts think about the impact of contour evaluations.",
+            },},{id: "projects-dosimetric-aware-quality-assessment-of-medical-image-segmentation",
+          title: 'Dosimetric-Aware Quality Assessment of Medical Image Segmentation',
+          description: "Bridging the gap between geometric accuracy and clinical impact in radiotherapy contour evaluation.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/thesis-contour-correction-qualitative-analysis/";
-            },},{id: "projects-dose-prediction-for-contour-quality-evalution",
-          title: 'Dose Prediction for Contour Quality Evalution',
-          description: "bring forward clinical outcome-knowledge into preceding workflow steps.",
+            },},{id: "projects-dose-prediction-for-contour-quality-evaluation",
+          title: 'Dose Prediction for Contour Quality Evaluation',
+          description: "Bridging the gap between geometric segmentation assessment and clinical dosimetric impact through AI-driven dose prediction.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/thesis-dose-prediction-for-contour-evaluation/";
             },},{id: "projects-robustness-of-deep-learning-segmentation-models",
           title: 'Robustness of Deep Learning Segmentation Models',
-          description: "Measuring the performance of segmentation models under image content variations.",
+          description: "Investigating architectural choices and robustness trade-offs in medical image segmentation under varying complexity and noise conditions.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/thesis-robustness-of-image-segmentation-models/";
             },},{
