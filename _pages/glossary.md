@@ -4,7 +4,7 @@ title: Glossary
 permalink: /glossary/
 description: List of terms that comes up frequently in my work.
 nav: false
-nav_order: 5
+nav_order: 4
 ---
 
 <ul>

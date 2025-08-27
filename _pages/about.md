@@ -21,12 +21,12 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-[Download my CV](../assets/pdf/amithjkamath_cv.pdf) | Connect on [LinkedIn](https://www.linkedin.com/in/amithjkamath/) | [News & Updates](/news/)
+[Read my CV](../assets/pdf/amithjkamath_cv.pdf) | Connect on [LinkedIn](https://www.linkedin.com/in/amithjkamath/) | [Updates](/news/)
 
-I am [Amith](https://en.wikipedia.org/wiki/Amit) Kamath, a computer vision and machine learning expert with a PhD in Medical Image Analysis from the University of Bern, specializing in deep learning for radiotherapy planning under Prof. Mauricio Reyes at the [ARTORG Center](https://www.artorg.unibe.ch). My work focuses on AI model development for medical imaging and clinical deployment.
+I am [Amith](https://en.wikipedia.org/wiki/Amit) Kamath, a computer vision and machine learning expert with a PhD in Medical Image Analysis from the University of Bern, specializing in deep learning for radiotherapy planning under Prof. Mauricio Reyes at the [ARTORG Center](https://www.artorg.unibe.ch). My work focuses on AI model development for medical imaging and clinical deployment, on these three themes: [automated segmentation quality assurance](/_projects/thesis-contour-correction-qualitative-analysis.md), [deep learning radiotherapy dose predictions](/_projects/thesis-dose-prediction-for-contour-evaluation.md) and [robustness of image segmentation models](/_projects/thesis-robustness-of-image-segmentation-models.md).
 
 I have experience in academic research and software development, building computer vision tools at [MathWorks](https://www.mathworks.com/products/computer-vision.html), a Master's in Computer Science from [Georgia Tech](https://omscs.gatech.edu), and MRI optimization research at the [University of Minnesota](https://www.ece.umn.edu).
 
-In 2025-26, I am exploring a spinoff to apply my expertise in computer vision and AI to real-world challenges. I have led workshops, mentored students, and organized symposia.
+In 2025-26, I am exploring building a spinoff to apply my expertise in computer vision and AI to real-world challenges. I have led workshops, mentored students, and organized symposia.
 
 **Technical Expertise:** Machine Learning, Computer Vision, Medical Imaging, Python, MATLAB, Clinical AI Deployment.

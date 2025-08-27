@@ -3,8 +3,8 @@ layout: page
 title: Service
 permalink: /service/
 description: Conference organization, educational initiatives, and technical mentorship.
-nav: true
-nav_order: 2
+nav: false
+nav_order: 4
 ---
 
 ## Academic Service and Professional Contributions

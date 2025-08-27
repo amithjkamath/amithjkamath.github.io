@@ -7,6 +7,8 @@ dropdown: true
 children:
   - title: Projects
     permalink: /projects/
+  - title: Service
+    permalink: /service/
   - title: Publications
     permalink: /publications/
   - title: Glossary

@@ -3,7 +3,7 @@ layout: default
 permalink: /notes/
 title: Notes
 nav: false
-nav_order: 2
+nav_order: 4
 pagination:
   enabled: true
   collection: posts
