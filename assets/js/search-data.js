@@ -16,12 +16,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/news/";
           },
-        },{id: "nav-leadership",
-          title: "Leadership",
+        },{id: "nav-service",
+          title: "Service",
           description: "Conference organization, educational initiatives, and technical mentorship.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/leadership/";
+            window.location.href = "/service/";
           },
         },{id: "nav-cv",
           title: "CV",
