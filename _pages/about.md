@@ -21,12 +21,15 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
+<br>
+
 [Read my CV](../assets/pdf/amithjkamath_cv.pdf) | Connect on [LinkedIn](https://www.linkedin.com/in/amithjkamath/) | [Updates](/news/)
 
-I am [Amith](https://en.wikipedia.org/wiki/Amit) Kamath, a computer vision and machine learning expert with a PhD in Medical Image Analysis from the University of Bern, specializing in deep learning for radiotherapy planning under Prof. Mauricio Reyes at the [ARTORG Center](https://www.artorg.unibe.ch). My work focuses on AI model development for medical imaging and clinical deployment, on these three themes: [automated segmentation quality assurance](/projects/thesis-contour-correction-qualitative-analysis), [deep learning radiotherapy dose predictions](/projects/thesis-dose-prediction-for-contour-evaluation) and [robustness of image segmentation models](/projects/thesis-robustness-of-image-segmentation-models).
+<br>
+<br>
 
-I have experience in academic research and software development, building computer vision tools at [MathWorks](https://www.mathworks.com/products/computer-vision.html), a Master's in Computer Science from [Georgia Tech](https://omscs.gatech.edu), and MRI optimization research at the [University of Minnesota](https://www.ece.umn.edu).
+I am [Amith](https://en.wikipedia.org/wiki/Amit) Kamath, and I have some experience with Machine Learning and Computer Vision enroute to a PhD in Medical Image Analysis from the University of Bern. I work on deep learning for radiotherapy planning under Prof. Mauricio Reyes at the [ARTORG Center](https://www.artorg.unibe.ch). My work focuses on AI model development for medical imaging and clinical deployment, on these three themes: [robustness of image segmentation models](/projects/thesis-robustness-of-image-segmentation-models), [deep learning radiotherapy dose predictions](/projects/thesis-dose-prediction-for-contour-evaluation), and [automated segmentation quality assurance](/projects/thesis-contour-correction-qualitative-analysis).
 
-In 2025-26, I am exploring building a spinoff to apply my expertise in computer vision and AI to real-world challenges. I have led workshops, mentored students, and organized symposia.
+I have dabbled in academic research and professional software development, building computer vision tools at [MathWorks](https://www.mathworks.com/products/computer-vision.html), a Master's in Computer Science from [Georgia Tech](https://omscs.gatech.edu), and MRI optimization research at the [University of Minnesota](https://www.ece.umn.edu). In 2025-26, I am exploring building a spinoff to apply my expertise in computer vision and AI to real-world challenges. I have led workshops, mentored students, and organized symposia.
 
 **Technical Expertise:** Machine Learning, Computer Vision, Medical Imaging, Python, MATLAB, Clinical AI Deployment.
