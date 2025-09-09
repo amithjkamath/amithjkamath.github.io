@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-**Research Recognition:** Awarded **2nd place Best Student Paper** at [IEEE EMBC 2023](https://embc.embs.org/2023/) for "ASTRA: Atomic Surface Transformations for Radiotherapy quality Assurance". [Award announcement](https://www.linkedin.com/posts/amithjkamath_future-healthcareleaders-embc23-activity-7090685279170093056-veiO).
+**Research Recognition:** Awarded **2nd place Best Student Paper** at [IEEE EMBC 2023](https://embc.embs.org/2023/) for "ASTRA: Atomic Surface Transformations for Radiotherapy quality Assurance". [Award announcement](https://www.linkedin.com/posts/amithjkamath_future-healthcareleaders-embc23-activity-7090685279170093056-veiO). ["ASTRA: Atomic Surface Transformations for Radiotherapy quality Assurance"](https://ieeexplore.ieee.org/abstract/document/10341062) was accepted for **oral presentation** at [IEEE EMBC 2023](http://embc.embs.org/2023/) in Sydney. <a href="{% link _projects/2023-embc-astra.md %}">Learn more</a>.
