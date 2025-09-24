@@ -423,8 +423,8 @@ ninja.data = [{
           section: "News",},{id: "news-journal-publication-the-impact-of-u-net-architecture-choices-and-skip-connections-on-the-robustness-of-segmentation-across-texture-variations-accepted-in-computers-in-biology-and-medicine-read-more",
           title: 'Journal Publication: “The impact of U-Net architecture choices and skip connections on the...',
           description: "",
-          section: "News",},{id: "news-thesis-presentation-after-four-years-of-working-on-this-doctoral-thesis-it-is-finally-time-to-present-the-dissertation-on-the-19th-of-september-please-see-a-sanitized-version-of-the-document-here",
-          title: 'Thesis Presentation: After four years of working on this doctoral thesis, it is...',
+          section: "News",},{id: "news-thesis-presentation-after-four-years-i-finally-defended-my-phd-thesis-on-the-19th-of-september-please-see-a-sanitized-version-here",
+          title: 'Thesis Presentation: After four years, I finally defended my PhD thesis on the...',
           description: "",
           section: "News",},{id: "projects-context-versus-foreground-to-background-ratio-trade-off",
           title: 'Context versus Foreground-to-Background Ratio Trade-off',
@@ -483,17 +483,17 @@ ninja.data = [{
               window.location.href = "/projects/teach-2024-monai-with-matlab/";
             },},{id: "projects-dosimetric-aware-quality-assessment-of-medical-image-segmentation",
           title: 'Dosimetric-Aware Quality Assessment of Medical Image Segmentation',
-          description: "Bridging the gap between geometric accuracy and clinical impact in radiotherapy contour evaluation.",
+          description: "Evaluating radiotherapy contour quality by linking geometric accuracy to clinical outcomes.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/thesis-contour-correction-qualitative-analysis/";
             },},{id: "projects-dose-prediction-for-contour-quality-evaluation",
           title: 'Dose Prediction for Contour Quality Evaluation',
-          description: "Bridging the gap between geometric segmentation assessment and clinical dosimetric impact through AI-driven dose prediction.",
+          description: "Using AI-driven dose prediction to link geometric segmentation to clinical dosimetric impact.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/thesis-dose-prediction-for-contour-evaluation/";
             },},{id: "projects-robustness-of-deep-learning-segmentation-models",
           title: 'Robustness of Deep Learning Segmentation Models',
-          description: "Investigating architectural choices and robustness trade-offs in medical image segmentation under varying complexity and noise conditions.",
+          description: "Exploring architectural choices and robustness trade-offs in medical image segmentation under diverse conditions.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/thesis-robustness-of-image-segmentation-models/";
             },},{
