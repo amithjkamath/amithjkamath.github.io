@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-**Thesis Presentation:** After four years of working on this doctoral thesis, it is finally time to present the dissertation on the 19th of September. Please see a sanitized version of the document [here](../assets/pdf/amithjkamath-thesis.pdf).
+**Thesis Presentation:** After four years, I finally defended my PhD thesis on the 19th of September. Please see a sanitized version [here](../assets/pdf/amithjkamath-thesis.pdf).
