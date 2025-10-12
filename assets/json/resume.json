@@ -192,5 +192,42 @@
   "languages": [],
   "interests": [],
   "references": [],
-  "projects": []
+  "projects": [],
+  "talks": [
+    {
+      "title": "Fast and Reliable AI-based Dosimetric Contour Quality Assurance for Radiotherapy",
+      "date": "2025-09-12",
+      "event": "SASRO 2025",
+      "url": "https://www.meeting-com.ch/fileadmin/user_upload/Program_SASRO2025.pdf",
+      "summary": "Delivered an invited talk on fast and reliable AI-based dosimetric contour quality assurance for radiotherapy during the Scientific session: Clinic / AI at the 29th Annual SASRO Meeting."
+    },
+    {
+      "title": "Invited Talk",
+      "date": "2024-11-01",
+      "event": "Wilson Silva's Trustworthy AI Lab, Utrecht University",
+      "url": "https://wjdssilva.github.io/trustworthy-ai-lab/",
+      "summary": "Delivered an invited talk at Wilson Silva's Trustworthy AI Lab in November 2024."
+    },
+    {
+      "title": "3-D Brain Tumour Segmentation using Deep Learning with MATLAB",
+      "date": "2021-07-12",
+      "event": "MIUA 2021",
+      "url": "https://miua2021.com",
+      "summary": "Delivered a workshop on 3D brain tumor segmentation and visualization using deep learning techniques in MATLAB, in collaboration with The MathWorks."
+    },
+    {
+      "title": "Deep Learning with MATLAB",
+      "date": "2019-10-17",
+      "event": "IEEE TENCON 2019",
+      "url": "https://www.tencon2019.org/tutorial.html",
+      "summary": "Conducted a 3-hour tutorial introducing deep learning concepts, network design, training challenges, hyper-parameter tuning, and GPU deployment using MATLAB."
+    },
+    {
+      "title": "Demystifying Deep Learning using MATLAB",
+      "date": "2019-08-10",
+      "event": "IEEE DISCOVER 2019",
+      "url": "https://2019.ieee-discover.org/?q=article/pre-conference-tutorialsworkshops",
+      "summary": "Co-presented a full-day tutorial on deep learning with MATLAB, covering pre-trained networks, transfer learning, network construction, deployment, and practical demonstrations."
+    }
+  ]
 }
