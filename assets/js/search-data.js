@@ -23,19 +23,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
+        },{id: "nav-contact",
+          title: "Contact",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/contact/";
+          },
         },{id: "dropdown-projects",
               title: "Projects",
               description: "",
               section: "Dropdown",
               handler: () => {
                 window.location.href = "/projects/";
-              },
-            },{id: "dropdown-service",
-              title: "Service",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/service/";
               },
             },{id: "dropdown-publications",
               title: "Publications",
@@ -44,12 +44,12 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/publications/";
               },
-            },{id: "dropdown-glossary",
-              title: "Glossary",
+            },{id: "dropdown-academic-service",
+              title: "Academic Service",
               description: "",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "/glossary/";
+                window.location.href = "/service/";
               },
             },{id: "post-market-need-for-auto-contouring-solutions",
         
@@ -435,8 +435,8 @@ ninja.data = [{
           section: "News",},{id: "news-journal-publication-the-impact-of-u-net-architecture-choices-and-skip-connections-on-the-robustness-of-segmentation-across-texture-variations-accepted-in-computers-in-biology-and-medicine-read-more",
           title: 'Journal Publication: “The impact of U-Net architecture choices and skip connections on the...',
           description: "",
-          section: "News",},{id: "news-thesis-presentation-after-four-years-i-finally-defended-my-phd-thesis-on-the-19th-of-september-please-see-a-sanitized-version-here",
-          title: 'Thesis Presentation: After four years, I finally defended my PhD thesis on the...',
+          section: "News",},{id: "news-invited-talk-i-was-at-sasro-2025-the-annual-scientific-association-of-swiss-radiation-oncology-at-davos-to-talk-about-fast-and-reliable-dosimetric-contour-qa-which-was-a-15-minute-version-of-my-phd-thesis",
+          title: 'Invited Talk: I was at SASRO 2025, the Annual Scientific Association of Swiss...',
           description: "",
           section: "News",},{id: "projects-context-versus-foreground-to-background-ratio-trade-off",
           title: 'Context versus Foreground-to-Background Ratio Trade-off',
