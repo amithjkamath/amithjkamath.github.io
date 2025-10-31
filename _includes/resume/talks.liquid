@@ -1,0 +1,24 @@
+<div class="card-body p-0">
+  <ul class="list-unstyled">
+    {% for talk in data[1] %}
+      <li class="mb-3">
+        <div class="d-flex justify-content-between align-items-start">
+          <div class="flex-grow-1">
+            <div class="font-weight-bold">{{ talk.title }}</div>
+            <div class="text-muted">{{ talk.event }} • {{ talk.date | date: "%B %Y" }}</div>
+            {% if talk.summary %}
+              <div class="mt-1">{{ talk.summary }}</div>
+            {% endif %}
+            {% if talk.url %}
+              <div class="mt-1">
+                <a href="{{ talk.url }}" target="_blank" rel="noopener noreferrer">
+                  <i class="fas fa-link"></i> Event page
+                </a>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

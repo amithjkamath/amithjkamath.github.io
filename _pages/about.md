@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: PhD Researcher in Computer Vision, Medical Imaging
+subtitle: Applied Researcher in Machine Learning & Medical Imaging
 
 profile:
   align: right
@@ -13,7 +13,7 @@ profile:
     <p>University of Bern</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 
 latest_posts:
   enabled: false
@@ -23,7 +23,7 @@ latest_posts:
 
 <br>
 
-[Read my CV](../assets/pdf/amithjkamath_cv.pdf) | Connect on [LinkedIn](https://www.linkedin.com/in/amithjkamath/) | [Updates](/news/)
+[Read my CV](../assets/pdf/amithjkamath_cv.pdf) | [Recent Updates](/news/) | [Contact & Connect](/contact/)
 
 <br>
 <br>
