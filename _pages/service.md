@@ -18,7 +18,7 @@ nav_order: 4
 **[Bern Interpretable AI (BIAS) Symposium](https://amithjkamath.github.io/bias23)** | March 2023  
 *Lead Organizer*
 - Hybrid event with **140 participants** (70 online from 5 countries)
-- Hosted in University of Bern's prestigious Cupola room
+- Hosted in University of Bern's Cupola room
 - Established networking platform for interpretable AI research community
 
 ---
@@ -27,17 +27,17 @@ nav_order: 4
 
 ### University of Bern - Medical Image Analysis Course
 
-**2024** | Course Instructor (with Shelley Zixin Shu)
+**2024** | Course Instructor (with Shelley Shu)
 - Introduced GitHub Classroom for automated assignment management
 - **Student evaluation: 4.89/5.0**
 - *"Absolutely enjoyed this course... fantastic job... highly appreciate how interactive the course was"*
 
-**2023** | Course Instructor (with Shelley Zixin Shu, Mike Baumann)
+**2023** | Course Instructor (with Shelley Shu, Mike Mueller)
 - Implemented video lectures, Slack communication channels, hospital clinic visits
 - **Student evaluation: 4.92/5.0**
 - *"Improved programming skills... TA was extremely helpful and nice!"*
 
-**2022** | Course Instructor (with Elias Ruefenacht, Jayden Singh)
+**2022** | Course Instructor (with Elias Ruefenacht, Jayden You)
 - Complete curriculum redesign with interactive, hands-on approach
 - **53% improvement in student satisfaction** (3.25 → 4.94/5.0)
 
