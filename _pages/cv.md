@@ -2,7 +2,7 @@
 layout: cv
 title: CV
 permalink: /cv/
-nav: true
+nav: false
 nav_order: 2
 cv_pdf: amithjkamath_cv.pdf
 description: Curriculum Vitae.

@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Predictive Modeling for Treatment Planning Assessment
-description: Leveraging machine learning to predict dosimetric outcomes and streamline radiotherapy quality assurance.
+title: Accelerated Dose Prediction for Radiotherapy
+description: Machine learning models that predict dosimetric outcomes to enable rapid quality assessment in treatment planning.
 img: assets/img/dose-prediction.png
 importance: 2
 category: themes
-related_publications: true
+related_publications: Poel2023Deep, Kamath2023HowSensitive
 ---
 
 The quality of radiation treatment planning fundamentally depends on accurate delineation of anatomical structures. Each contour variation can potentially alter the planned radiation dose distribution, affecting both tumor coverage and normal tissue exposure. Traditional quality assurance approaches require time-consuming full dose calculations for each contour variation, creating a bottleneck in clinical workflows. Our research explores how machine learning models can predict dosimetric outcomes directly from segmentation data, enabling rapid quality assessment and supporting more efficient clinical decision-making.
@@ -22,15 +22,15 @@ Machine learning offers a potential solution by learning patterns that connect a
 
 ## Developing Sensitive Dose Prediction Models
 
-Our research has focused on developing and validating deep learning models specifically designed to be sensitive to contour variations. Using 3D U-Net architectures, we created a cascaded prediction framework that first estimates the dose distribution and then refines the prediction based on detailed anatomical information {% cite kamath2023sensitivitydoseprediction %}. This approach allows the model to capture both the global dose patterns and the local variations that result from segmentation differences.
+Our research has focused on developing and validating deep learning models specifically designed to be sensitive to contour variations. Using 3D U-Net architectures, we created a cascaded prediction framework that first estimates the dose distribution and then refines the prediction based on detailed anatomical information {% cite Poel2023Deep %}. This approach allows the model to capture both the global dose patterns and the local variations that result from segmentation differences.
 
-A critical aspect of this work involved demonstrating that the models truly respond to clinically meaningful contour changes rather than simply reproducing average dose patterns. Through systematic sensitivity analysis, we showed that the predictions accurately reflect how dose distributions change with contour variations across different anatomical structures. The models maintain strong correlation with ground truth dose-volume histograms while achieving prediction times measured in seconds rather than minutes or hours.
+A critical aspect of this work involved demonstrating that the models truly respond to clinically meaningful contour changes rather than simply reproducing average dose patterns. Through systematic sensitivity analysis {% cite Kamath2023HowSensitive %}, we showed that the predictions accurately reflect how dose distributions change with contour variations across different anatomical structures. The models maintain strong correlation with ground truth dose-volume histograms while achieving prediction times measured in seconds rather than minutes or hours.
 
 This sensitivity to contour variations enables several important applications. The models can rank different segmentation versions according to their dosimetric impact, helping prioritize which cases need detailed expert review. They can identify specific anatomical regions where contour errors would have the greatest clinical consequences. And they can support the development of contour editing tools that provide real-time dosimetric feedback as clinicians refine segmentations.
 
 ## Understanding Local Dosimetric Impact
 
-Beyond global dose prediction, we developed methods to visualize and quantify the local dosimetric impact of contour variations. The ASTRA (Atomic Structure Analysis) framework {% cite kamath2023astra %} creates detailed heatmaps that highlight which regions of a contour most strongly influence dose distributions. This spatial analysis helps clinicians understand not just whether a contour will affect the treatment plan, but specifically where the most critical regions are located.
+Beyond global dose prediction, we developed methods to visualize and quantify the local dosimetric impact of contour variations. These visualization tools create detailed heatmaps that highlight which regions of a contour most strongly influence dose distributions. This spatial analysis helps clinicians understand not just whether a contour will affect the treatment plan, but specifically where the most critical regions are located.
 
 These visualization tools serve multiple purposes in clinical workflows. They can guide quality assurance by focusing attention on the most dosimetrically sensitive anatomical regions. They support clinician training by illustrating the relationship between geometric errors and clinical consequences. And they provide interpretability for automated quality assessment systems, helping build clinical trust in algorithmic predictions by showing which features drive the assessments.
 

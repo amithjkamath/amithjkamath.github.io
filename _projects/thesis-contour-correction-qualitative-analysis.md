@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Clinically-Aware Quality Assessment for Medical Image Segmentation
-description: Bridging the gap between geometric accuracy and clinical impact in radiotherapy treatment planning.
+title: Clinician-AI Performance Comparison
+description: Evaluating how deep learning models compare to human experts in predicting clinical impact of segmentation variations.
 img: assets/img/dose-awareness.png
-importance: 1
+importance: 3
 category: themes
-related_publications: true
+related_publications: Willmann2025Predicting, Kamath2024Comparing, Mercado2024AutoDoseRank
 ---
 
 In radiation therapy, the accuracy of anatomical structure delineation directly impacts treatment outcomes. While automated segmentation methods promise increased efficiency and consistency, evaluating their quality remains a fundamental challenge. Traditional approaches rely on geometric metrics that measure spatial overlap and boundary distances, but these measures often fail to capture what matters most in clinical practice: how segmentation errors affect the actual radiation dose delivered to patients.

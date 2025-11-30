@@ -5,7 +5,7 @@ permalink: /projects/
 description: An ever-work-in-progress list of things that are documentation-worthy.
 nav: false
 nav_order: 4
-display_categories: [themes, papers, teaching, others]
+display_categories: [themes, papers, teaching]
 horizontal: false
 ---
 

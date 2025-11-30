@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Architectural Foundations for Robust Medical Image Segmentation
-description: Investigating how design choices in deep learning architectures affect reliability across diverse clinical conditions.
+title: Segmentation Model Robustness
+description: Understanding how architectural choices affect model reliability across diverse clinical conditions and distribution shifts.
 img: assets/img/skip-connections.png
-importance: 3
+importance: 1
 category: themes
-related_publications: true
+related_publications: Kamath2025SkipConnections, Kamath2023DoWe
 ---
 
 Deep learning models have demonstrated remarkable performance on medical image segmentation benchmarks, often matching or exceeding human expert performance under controlled conditions. However, clinical deployment requires models that maintain reliability across the natural variability of real-world medical imaging: different scanning protocols, diverse patient populations, varied image quality, and evolving clinical practices. Our research investigates how fundamental architectural decisions in neural network design influence this robustness, with the goal of developing principled guidelines for building clinically reliable segmentation systems.
@@ -22,7 +22,7 @@ The concept of task complexity provides a useful framework for understanding the
 
 ## Investigating Skip Connections Across Task Complexity
 
-Skip connections represent one of the most widely adopted architectural innovations in medical image segmentation. The conventional understanding suggests they serve two critical functions: preserving spatial detail that might be lost in the encoding process, and providing gradient pathways that facilitate training of deep networks. However, our systematic investigation reveals a more nuanced picture of their impact {% cite kamath2023skipconnections %}.
+Skip connections represent one of the most widely adopted architectural innovations in medical image segmentation. The conventional understanding suggests they serve two critical functions: preserving spatial detail that might be lost in the encoding process, and providing gradient pathways that facilitate training of deep networks. However, our systematic investigation reveals a more nuanced picture of their impact {% cite Kamath2025SkipConnections %}.
 
 Through carefully controlled experiments across tasks of varying complexity, we found that skip connections provide clear benefits for simpler segmentation tasks where the mapping between input images and output segmentations follows relatively straightforward patterns. In these cases, the direct transfer of low-level features from encoder to decoder helps maintain precise boundary localization. However, for more complex tasks where the relationship between image appearance and semantic labels is more intricate, skip connections may inadvertently introduce misleading information that reduces model robustness.
 
@@ -32,7 +32,7 @@ Our findings also relate to the broader question of what features should be shar
 
 ## Balancing Context and Class Distribution in 3D Segmentation
 
-Three-dimensional medical image segmentation presents unique challenges related to computational constraints and data characteristics. GPU memory limitations force practical trade-offs between the spatial extent of input volumes (which determines the anatomical context available to the model) and the sampling strategy used to balance class distributions during training. Our research investigated how different approaches to managing these trade-offs affect model robustness {% cite kamath2022contextvsfbr %}.
+Three-dimensional medical image segmentation presents unique challenges related to computational constraints and data characteristics. GPU memory limitations force practical trade-offs between the spatial extent of input volumes (which determines the anatomical context available to the model) and the sampling strategy used to balance class distributions during training. Our research investigated how different approaches to managing these trade-offs affect model robustness {% cite Kamath2023DoWe %}.
 
 We found that models generally benefit more from larger spatial context than from carefully balanced sampling of foreground and background regions. This finding suggests that the anatomical relationships and spatial patterns captured by wider fields of view provide more valuable information for segmentation than ensuring equal representation of different tissue types in each training sample. However, the relative importance of these factors varies across different architectural designs.
 

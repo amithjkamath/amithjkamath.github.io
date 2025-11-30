@@ -8,7 +8,7 @@ category: teaching
 ---
 
 <div class="alert alert-info" role="alert">
-  <strong>🔧 Try it now: <a href="https://huggingface.co/spaces/amithjkamath/image-registration" target="_blank" class="alert-link">Launch Interactive Demo</a></strong>
+  <strong>🔧 Try it now: <a href="https://huggingface.co/spaces/amithjkamath/image-registration" target="_blank" class="alert-link" style="text-decoration: underline;">Launch Interactive Demo</a></strong>
 </div>
 
 [![Live Demo](https://img.shields.io/badge/🤗-HuggingFace%20Space-yellow?style=flat-square)](https://huggingface.co/spaces/amithjkamath/image-registration)

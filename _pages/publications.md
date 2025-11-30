@@ -10,7 +10,7 @@ nav_order: 4
 <!-- _pages/publications.md -->
 
 <div class="alert alert-info" role="alert">
-  <i class="fa-brands fa-google-scholar"></i> <strong>For the most up-to-date list of publications, please visit my <a href="https://scholar.google.com/citations?user=clej42kAAAAJ" target="_blank" rel="noopener noreferrer" class="alert-link">Google Scholar profile</a>.</strong>
+  <i class="fa-brands fa-google-scholar"></i> For the most up-to-date list of publications, please visit my <a href="https://scholar.google.com/citations?user=clej42kAAAAJ" target="_blank" rel="noopener noreferrer" class="alert-link" style="text-decoration: underline;">Google Scholar profile</a>.
 </div>
 
 <!-- Bibsearch Feature -->
