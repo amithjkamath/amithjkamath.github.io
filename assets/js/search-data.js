@@ -16,13 +16,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/news/";
           },
-        },{id: "nav-cv",
-          title: "CV",
-          description: "Curriculum Vitae.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
-          },
         },{id: "nav-contact",
           title: "Contact",
           description: "",
@@ -493,19 +486,19 @@ ninja.data = [{
           description: "Cross-platform workflow enabling MONAI deep learning models within MATLAB environments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/teach-2024-monai-with-matlab/";
-            },},{id: "projects-clinically-aware-quality-assessment-for-medical-image-segmentation",
-          title: 'Clinically-Aware Quality Assessment for Medical Image Segmentation',
-          description: "Bridging the gap between geometric accuracy and clinical impact in radiotherapy treatment planning.",
+            },},{id: "projects-clinician-ai-performance-comparison",
+          title: 'Clinician-AI Performance Comparison',
+          description: "Evaluating how deep learning models compare to human experts in predicting clinical impact of segmentation variations.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/thesis-contour-correction-qualitative-analysis/";
-            },},{id: "projects-predictive-modeling-for-treatment-planning-assessment",
-          title: 'Predictive Modeling for Treatment Planning Assessment',
-          description: "Leveraging machine learning to predict dosimetric outcomes and streamline radiotherapy quality assurance.",
+            },},{id: "projects-accelerated-dose-prediction-for-radiotherapy",
+          title: 'Accelerated Dose Prediction for Radiotherapy',
+          description: "Machine learning models that predict dosimetric outcomes to enable rapid quality assessment in treatment planning.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/thesis-dose-prediction-for-contour-evaluation/";
-            },},{id: "projects-architectural-foundations-for-robust-medical-image-segmentation",
-          title: 'Architectural Foundations for Robust Medical Image Segmentation',
-          description: "Investigating how design choices in deep learning architectures affect reliability across diverse clinical conditions.",
+            },},{id: "projects-segmentation-model-robustness",
+          title: 'Segmentation Model Robustness',
+          description: "Understanding how architectural choices affect model reliability across diverse clinical conditions and distribution shifts.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/thesis-robustness-of-image-segmentation-models/";
             },},{
