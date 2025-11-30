@@ -119,6 +119,47 @@ check-format: ## Check if files are properly formatted
 		echo "$(YELLOW)[WARNING]$(NC) npx not found. Install Node.js to use format checking"; \
 	fi
 
+check-dead-files: ## Check for potentially unused files in assets/
+	@echo "$(BLUE)[INFO]$(NC) Checking for potentially unused files in assets/..."
+	@echo "$(YELLOW)[INFO]$(NC) Scanning images..."
+	@for img in assets/img/*.png assets/img/*.jpg assets/img/*.jpeg assets/img/*.gif assets/img/*.svg; do \
+		if [ -f "$$img" ]; then \
+			filename=$$(basename "$$img"); \
+			if ! grep -rq "$$filename" --include="*.md" --include="*.html" --include="*.liquid" --include="*.yml" --include="*.js" --exclude-dir=_site --exclude-dir=.jekyll-cache . 2>/dev/null; then \
+				echo "  $(YELLOW)[UNUSED]$(NC) $$img"; \
+			fi; \
+		fi; \
+	done
+	@echo "$(YELLOW)[INFO]$(NC) Scanning PDFs..."
+	@for pdf in assets/pdf/*.pdf; do \
+		if [ -f "$$pdf" ]; then \
+			filename=$$(basename "$$pdf"); \
+			if ! grep -rq "$$filename" --include="*.md" --include="*.html" --include="*.liquid" --include="*.yml" --exclude-dir=_site --exclude-dir=.jekyll-cache . 2>/dev/null; then \
+				echo "  $(YELLOW)[UNUSED]$(NC) $$pdf"; \
+			fi; \
+		fi; \
+	done
+	@echo "$(YELLOW)[INFO]$(NC) Scanning CSS files..."
+	@for css in assets/css/*.css; do \
+		if [ -f "$$css" ] && [ "$$css" != "$${css%.min.css}.min.css" ]; then \
+			filename=$$(basename "$$css"); \
+			if ! grep -rq "$$filename" --include="*.md" --include="*.html" --include="*.liquid" --include="*.js" --include="*.scss" --exclude-dir=_site --exclude-dir=.jekyll-cache . 2>/dev/null; then \
+				echo "  $(YELLOW)[UNUSED]$(NC) $$css"; \
+			fi; \
+		fi; \
+	done
+	@echo "$(YELLOW)[INFO]$(NC) Scanning JS files..."
+	@for js in assets/js/*.js; do \
+		if [ -f "$$js" ] && [ "$$js" != "$${js%.min.js}.min.js" ]; then \
+			filename=$$(basename "$$js"); \
+			if ! grep -rq "$$filename" --include="*.md" --include="*.html" --include="*.liquid" --include="*.js" --exclude-dir=_site --exclude-dir=.jekyll-cache . 2>/dev/null; then \
+				echo "  $(YELLOW)[UNUSED]$(NC) $$js"; \
+			fi; \
+		fi; \
+	done
+	@echo "$(GREEN)[SUCCESS]$(NC) Dead file check completed"
+	@echo "$(BLUE)[NOTE]$(NC) Please manually verify before deleting any files"
+
 ##@ Docker
 
 docker-build: ## Build the Docker image
