@@ -1,114 +1,43 @@
 ---
 layout: page
-title: Dosimetric-Aware Quality Assessment of Medical Image Segmentation
-description: Evaluating radiotherapy contour quality by linking geometric accuracy to clinical outcomes.
+title: Clinically-Aware Quality Assessment for Medical Image Segmentation
+description: Bridging the gap between geometric accuracy and clinical impact in radiotherapy treatment planning.
 img: assets/img/dose-awareness.png
 importance: 1
 category: themes
 related_publications: true
 ---
 
-Medical image segmentation quality assessment in radiotherapy is pivotal, merging computer vision, medical physics, and clinical practice. Traditional geometric metrics are giving way to dosimetric-aware methods that prioritize clinical impact. This overview examines current approaches, their limitations, and emerging techniques revolutionizing segmentation evaluation in radiation oncology.
+In radiation therapy, the accuracy of anatomical structure delineation directly impacts treatment outcomes. While automated segmentation methods promise increased efficiency and consistency, evaluating their quality remains a fundamental challenge. Traditional approaches rely on geometric metrics that measure spatial overlap and boundary distances, but these measures often fail to capture what matters most in clinical practice: how segmentation errors affect the actual radiation dose delivered to patients.
 
----
+Our research addresses this critical gap by developing and validating methods that assess segmentation quality through the lens of clinical dosimetry. Rather than treating all errors equally, we focus on understanding and predicting which segmentation variations will meaningfully affect treatment planning and patient outcomes. This work combines insights from computer vision, medical physics, and clinical practice to create quality assessment tools that are both technically rigorous and clinically relevant.
 
-## Table of Contents
+## From Geometric Metrics to Clinical Impact
 
-- [Introduction and Clinical Context](#introduction-and-clinical-context)
-- [The Traditional Geometric Paradigm](#the-traditional-geometric-paradigm)
-  - [Overlap-Based Metrics](#overlap-based-metrics)
-  - [Distance-Based Metrics](#distance-based-metrics)
-  - [Fundamental Limitations](#fundamental-limitations)
-- [The Dosimetric Impact Perspective](#the-dosimetric-impact-perspective)
-  - [Clinical Consequences of Contour Variations](#clinical-consequences-of-contour-variations)
-  - [Dosimetric Evaluation Methodologies](#dosimetric-evaluation-methodologies)
-  - [Toward Clinically Relevant Assessment](#toward-clinically-relevant-assessment)
-- [Current Quality Assurance Frameworks](#current-quality-assurance-frameworks)
-  - [Clinical Acceptability Criteria](#clinical-acceptability-criteria)
-  - [Automated Segmentation Validation](#automated-segmentation-validation)
-- [Our Research Contributions](#our-research-contributions)
-  - [Human Expert Performance in Dosimetric Impact Prediction](#human-expert-performance-in-dosimetric-impact-prediction)
-  - [Automated Dosimetric Quality Assessment](#automated-dosimetric-quality-assessment)
-- [Future Directions and Research Opportunities](#future-directions-and-research-opportunities)
+The field of medical image segmentation has traditionally relied on geometric metrics to quantify the quality of contour delineations. Measures such as the Dice Similarity Coefficient, which quantifies the overlap between two segmented regions, or the Hausdorff Distance, which captures the maximum boundary discrepancy, have become standard evaluation tools. These metrics offer mathematical precision and computational efficiency, making them attractive for algorithm development and validation.
 
----
+However, geometric metrics suffer from an inherent limitation: they assume that all spatial errors carry equal clinical significance. In reality, a small contour variation in a region exposed to high radiation doses may have profound clinical consequences, while a larger error in a low-dose area might be clinically insignificant. The relationship between geometric accuracy and clinical impact is complex and highly context-dependent, influenced by the treatment technique, the anatomical structure involved, and the spatial distribution of planned radiation doses.
 
-## Introduction and Clinical Context
+Our work demonstrates that radiation oncologists themselves struggle to visually predict which contour variations will result in clinically significant dosimetric changes {% cite Willmann2025Predicting %}. This finding underscores the need for automated computational approaches that can accurately assess the clinical implications of segmentation errors. By focusing on dose distribution changes rather than purely geometric measures, we can provide quality assessments that directly inform clinical decision-making and resource allocation.
 
-Radiation therapy demands precise contouring of anatomical structures to optimize tumor targeting while sparing healthy tissues. Segmentation quality directly affects treatment outcomes, yet traditional geometric metrics often fail to reflect clinical relevance. Dosimetric-aware assessment, focusing on dose distribution impacts, is emerging as a critical approach, especially as AI-driven segmentation tools gain prominence. This shift addresses inter-observer variability and supports personalized, clinically relevant quality assurance.
+## Developing Automated Dosimetric Quality Assessment
 
----
+Building on these insights, we developed AutoDoseRank {% cite Mercado2024AutoDoseRank %}, a deep learning system designed to evaluate segmentation quality based on predicted dosimetric impact. The system learns to rank different contour variations according to how they would affect radiation dose distributions, enabling rapid quality assessment without requiring full dose calculations for every contour version.
 
-## The Traditional Geometric Paradigm
+The technical approach combines convolutional neural networks with radiotherapy planning knowledge, training the system to recognize patterns that correlate with clinically meaningful dose differences. By achieving ranking accuracy above 0.8 (Spearman's ρ) with sub-second inference times, the system demonstrates that automated dosimetric quality assessment can be both accurate and clinically practical. The approach is particularly valuable for validating AI-generated segmentations, where understanding the clinical acceptability of automated contours is essential for safe clinical deployment.
 
-Geometric metrics have long dominated segmentation evaluation but are increasingly inadequate for clinical needs.
+## Clinical Integration and Quality Assurance
 
-### Overlap-Based Metrics
+Modern radiation therapy workflows increasingly incorporate automated segmentation tools to improve efficiency and reduce inter-observer variability. However, the introduction of these tools requires robust quality assurance frameworks that can identify when automated contours meet clinical acceptability standards and when expert review is necessary. Our research contributes to this challenge by developing criteria and tools that prioritize clinical relevance over geometric precision.
 
-- **Dice Similarity Coefficient (DSC)**: Measures overlap as DSC = 2|A ∩ B| / (|A| + |B|). Sensitive to structure size, it often misrepresents clinical significance.
-- **Jaccard Index**: Jaccard = |A ∩ B| / |A ∪ B|. Closely related to DSC, it is more conservative.
-- **Sensitivity and Specificity**: Highlight under- or over-segmentation but struggle with class imbalance in medical images.
+We have worked to understand what makes a contour clinically acceptable from the perspective of treatment planning and delivery. This involves recognizing that different anatomical structures have different tolerance levels for segmentation errors, and that the clinical context—such as treatment intent and prescription dose—influences acceptability criteria. By incorporating dosimetric evaluation into quality assurance workflows, we can focus expert attention on the cases where it matters most, potentially reducing manual review time while maintaining or improving treatment quality.
 
-### Distance-Based Metrics
+The integration of uncertainty quantification further enhances these frameworks. When automated systems can indicate their confidence in specific predictions, clinicians can make more informed decisions about when to accept automated contours and when additional verification is warranted. This creates a more efficient, adaptive workflow that balances automation benefits with appropriate human oversight.
 
-- **Hausdorff Distance (HD)**: Captures maximum boundary distance, overly sensitive to outliers.
-- **95th Percentile Hausdorff Distance (HD95)**: More robust, focusing on the 95th percentile of distances.
-- **Mean Surface Distance (MSD)**: Averages boundary distances for balanced assessment.
+## Future Directions and Broader Impact
 
-### Fundamental Limitations
+Looking forward, several promising directions emerge from this work. The integration of multi-modal imaging data and temporal information from previous treatment sessions could enhance prediction accuracy and enable more personalized quality assessment. Advanced uncertainty quantification methods may improve clinical trust and adoption by providing interpretable confidence estimates. Real-time assessment tools could enable immediate feedback during contouring, potentially improving efficiency and accuracy.
 
-Geometric metrics suffer from scale dependency, clinical irrelevance, and ignorance of spatial context. They are sensitive to image resolution and lack universal thresholds, limiting their utility in clinical settings.
+Beyond technical advances, this research highlights the importance of outcome-based validation. While dosimetric correlation provides a more clinically relevant evaluation than geometric metrics alone, the ultimate measure of success is the impact on patient outcomes. Establishing connections between segmentation quality, treatment plan quality, and clinical outcomes represents an important frontier for future investigation.
 
----
-
-## The Dosimetric Impact Perspective
-
-Dosimetric-aware evaluation prioritizes clinical outcomes over geometric accuracy, assessing contour variations' effects on dose distributions.
-
-### Clinical Consequences of Contour Variations
-
-Contour errors impact dose-volume histograms, tumor control, and normal tissue risks. Inter-observer variability varies by structure, with clearer organs like the bladder showing higher agreement than complex targets like the prostate. Dosimetric impact depends on a structure’s proximity to high-dose regions, with subtle errors in critical areas potentially causing significant clinical consequences.
-
-### Dosimetric Evaluation Methodologies
-
-- **Standard Metrics**: Include V95%, Homogeneity Index (D5/D95), and Conformity Index, adhering to ICRU, RTOG, and QUANTEC guidelines.
-- **Novel Metrics**: Coverage with Dosimetric Concordance Index and generalized conformity indices link contour variations to dosimetric outcomes.
-- **Automated Assessment**: AI-driven tools achieve dose differences (~4.8%) comparable to human variability, enhancing efficiency.
-
-### Toward Clinically Relevant Assessment
-
-Dosimetric-aware methods integrate multi-scale data, quantify uncertainty, and correlate with outcomes, enabling personalized and automated quality assurance.
-
----
-
-## Current Quality Assurance Frameworks
-
-### Clinical Acceptability Criteria
-
-Clinical acceptability balances precision with practicality, guided by ICRU, RTOG, and QUANTEC standards. A three-tier framework categorizes contours as acceptable, minorly editable, or unacceptable. Structure-specific variability and target vs. OAR differences necessitate tailored protocols.
-
-### Automated Segmentation Validation
-
-AI-generated contours reduce delineation time (25.9 to 5.4 minutes) while maintaining dosimetric accuracy. Validation focuses on structures near high-dose regions, incorporating uncertainty quantification and adaptive protocols to optimize expert review.
-
----
-
-## Our Research Contributions
-
-### Human Expert Performance in Dosimetric Impact Prediction
-
-{% cite Willmann2025Predicting %}
-
-Our study revealed that radiation oncologists struggle to predict dosimetric impact from contour variations, overestimating insignificant errors and underestimating critical ones. This highlights the need for automated tools over visual inspection.
-
-### Automated Dosimetric Quality Assessment
-
-{% cite Mercado2024AutoDoseRank %}
-
-Our AutoDoseRank system uses deep learning to rank segmentations by dosimetric impact, achieving high accuracy (ρ > 0.8) and sub-second inference. It integrates with clinical workflows, offering interpretable outputs and scalability.
-
----
-
-## Future Directions and Research Opportunities
-
-Future work includes multi-modal and temporal integration, advanced uncertainty quantification, and AI-driven real-time assessment. Personalized protocols, outcome correlations, and global standardization will enhance clinical impact. Interdisciplinary efforts in human factors, economics, and ethics are crucial for successful implementation, aiming for integrated, predictive, and precision-focused quality assurance.
+The broader vision is to develop quality assessment frameworks that are integrated, predictive, and precision-focused—tools that not only evaluate current segmentations but also guide improvements and adaptations based on individual patient characteristics and treatment contexts. By continuing to bridge the gap between computational methods and clinical needs, we can enhance the safety, efficiency, and effectiveness of modern radiation therapy.

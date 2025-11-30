@@ -25,21 +25,18 @@ nav_order: 4
 
 ## Teaching & Curriculum Development
 
-### University of Bern - Medical Image Analysis Course
+### University of Bern - Medical Image Analysis Course (2022-2024)
 
-**2024** | Course Instructor (with Shelley Shu)
-- Introduced GitHub Classroom for automated assignment management
-- **Student evaluation: 4.89/5.0**
-- *"Absolutely enjoyed this course... fantastic job... highly appreciate how interactive the course was"*
+**Course Instructor** (with Shelley Shu, Mike Mueller, Elias Ruefenacht, Jayden You)  
+*3-year evolution of curriculum with consistently exceptional student evaluations*
 
-**2023** | Course Instructor (with Shelley Shu, Mike Mueller)
-- Implemented video lectures, Slack communication channels, hospital clinic visits
-- **Student evaluation: 4.92/5.0**
-- *"Improved programming skills... TA was extremely helpful and nice!"*
+- **2024**: Introduced GitHub Classroom for automated assignment management → **4.89/5.0**
+- **2023**: Implemented video lectures, Slack channels, hospital clinic visits → **4.92/5.0**
+- **2022**: Complete curriculum redesign with interactive, hands-on approach → **4.94/5.0** (53% improvement from 3.25)
 
-**2022** | Course Instructor (with Elias Ruefenacht, Jayden You)
-- Complete curriculum redesign with interactive, hands-on approach
-- **53% improvement in student satisfaction** (3.25 → 4.94/5.0)
+**Sustained Impact**: Maintained student satisfaction **above 4.89/5.0 across all three years** through continuous innovation in teaching methods and technology integration.
+
+*Student feedback:* "Absolutely enjoyed this course... fantastic job... highly appreciate how interactive the course was" | "Improved programming skills... TA was extremely helpful and nice!"
 
 **2022** | Biomedical Engineering Lab Instructor (with Yannick Suter)
 - Designed practical rotation course for incoming Master's students
@@ -65,12 +62,3 @@ nav_order: 4
 
 - **[AI in Radiotherapy (TARA)](https://github.com/amithjkamath/tara)** - Open-source educational content for researchers worldwide
 - **[BENDER Learning Modules](https://youtube.com/playlist?list=PLo8azKzU7Iq8IHJ5PW8DAk-yaO8i4lBP_)** - Technical workshop series delivered across India
-
----
-
-## Impact Summary
-
-- **Organized 2 international symposiums** → 240+ researchers engaged
-- **Taught 400+ students** across 3 years with consistently high evaluations (4.89-4.94/5.0)
-- **Delivered 5+ workshops** reaching 100+ industry professionals
-- **Created open educational resources** accessed by global research community

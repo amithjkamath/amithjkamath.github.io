@@ -11,11 +11,14 @@ category: papers
 
 [![Project Repository](https://img.shields.io/badge/GitHub-Repository-blue?style=flat-square&logo=github)](https://github.com/amithjkamath/to_skip_or_not)
 [![Video Abstract](https://img.shields.io/badge/Video-Abstract-red?style=flat-square&logo=youtube)](https://www.youtube.com/watch?v=YreG6vC64aw)
-[![Paper](https://img.shields.io/badge/Paper-Springer-green?style=flat-square)](https://link.springer.com/chapter/10.1007/978-3-031-43901-8_29)
+[![Journal Paper](https://img.shields.io/badge/Journal-CIBM%202025-green?style=flat-square)](https://www.sciencedirect.com/science/article/pii/S0010482524014951)
+[![Conference Paper](https://img.shields.io/badge/Conference-MICCAI%202023-orange?style=flat-square)](https://link.springer.com/chapter/10.1007/978-3-031-43901-8_29)
 
 This work provides the first systematic analysis of skip connections in U-Net architectures, investigating their necessity and impact on model robustness across varying levels of task complexity in medical image segmentation.
 
-**Published at:** International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI) 2023
+**Published at:** 
+- **Journal:** Computers in Biology and Medicine, 2025 (extended version)
+- **Conference:** International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI) 2023
 
 ## Research Question
 
@@ -58,7 +61,21 @@ This research challenges the universal adoption of skip connections in medical i
 
 ## Citations
 
-### MICCAI 2023 Paper
+### Journal Paper (Computers in Biology and Medicine, 2025)
+```bibtex
+@article{Kamath2025SkipConnections,
+    title={The impact of U-Net architecture choices and skip connections on the robustness of segmentation across texture variations},
+    author={Kamath, Amith and Willmann, Jonas and Andratschke, Nicolaus and Reyes, Mauricio},
+    journal={Computers in Biology and Medicine},
+    volume={184},
+    pages={109364},
+    year={2025},
+    publisher={Elsevier},
+    howpublished={\url{https://www.sciencedirect.com/science/article/pii/S0010482524014951}}
+}
+```
+
+### MICCAI 2023 Paper (Conference Version)
 ```bibtex
 @inproceedings{Kamath2023DoWe,
     title={Do we really need that skip-connection? understanding its interplay with task complexity},
@@ -70,6 +87,3 @@ This research challenges the universal adoption of skip connections in medical i
     howpublished={\url{https://link.springer.com/chapter/10.1007/978-3-031-43901-8_29}}
 }
 ```
-
-### Extended Journal Version (Under Review)
-*Citation will be updated upon publication*

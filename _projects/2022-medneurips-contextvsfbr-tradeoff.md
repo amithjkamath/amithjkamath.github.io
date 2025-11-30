@@ -11,6 +11,7 @@ related_publications: true
 ## Overview
 
 [![Project Repository](https://img.shields.io/badge/GitHub-Repository-blue?style=flat-square&logo=github)](https://github.com/amithjkamath/context_vs_fbr)
+[![Paper](https://img.shields.io/badge/Paper-MedNeurIPS%202022-green?style=flat-square)](http://www.cse.cuhk.edu.hk/~qdou/public/medneurips2022/72.pdf)
 
 This work investigates a fundamental trade-off in 3D medical image segmentation: balancing global context against foreground-to-background ratio when using sliding window approaches due to GPU memory constraints. While larger context windows provide more global information, they also introduce severe class imbalance between background and foreground voxels.
 
