@@ -493,19 +493,19 @@ ninja.data = [{
           description: "Cross-platform workflow enabling MONAI deep learning models within MATLAB environments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/teach-2024-monai-with-matlab/";
-            },},{id: "projects-dosimetric-aware-quality-assessment-of-medical-image-segmentation",
-          title: 'Dosimetric-Aware Quality Assessment of Medical Image Segmentation',
-          description: "Evaluating radiotherapy contour quality by linking geometric accuracy to clinical outcomes.",
+            },},{id: "projects-clinically-aware-quality-assessment-for-medical-image-segmentation",
+          title: 'Clinically-Aware Quality Assessment for Medical Image Segmentation',
+          description: "Bridging the gap between geometric accuracy and clinical impact in radiotherapy treatment planning.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/thesis-contour-correction-qualitative-analysis/";
-            },},{id: "projects-dose-prediction-for-contour-quality-evaluation",
-          title: 'Dose Prediction for Contour Quality Evaluation',
-          description: "Using AI-driven dose prediction to link geometric segmentation to clinical dosimetric impact.",
+            },},{id: "projects-predictive-modeling-for-treatment-planning-assessment",
+          title: 'Predictive Modeling for Treatment Planning Assessment',
+          description: "Leveraging machine learning to predict dosimetric outcomes and streamline radiotherapy quality assurance.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/thesis-dose-prediction-for-contour-evaluation/";
-            },},{id: "projects-robustness-of-deep-learning-segmentation-models",
-          title: 'Robustness of Deep Learning Segmentation Models',
-          description: "Exploring architectural choices and robustness trade-offs in medical image segmentation under diverse conditions.",
+            },},{id: "projects-architectural-foundations-for-robust-medical-image-segmentation",
+          title: 'Architectural Foundations for Robust Medical Image Segmentation',
+          description: "Investigating how design choices in deep learning architectures affect reliability across diverse clinical conditions.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/thesis-robustness-of-image-segmentation-models/";
             },},{
