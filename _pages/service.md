@@ -60,5 +60,5 @@ nav_order: 4
 
 ## Open Educational Resources
 
+- **[BENDER Series for Medical Imaging](https://www.youtube.com/@miagroup6528/videos)** - side-gig as a YouTube series actor learning medical imaging through BENDER. 
 - **[AI in Radiotherapy (TARA)](https://github.com/amithjkamath/tara)** - Open-source educational content for researchers worldwide
-- **[BENDER Learning Modules](https://youtube.com/playlist?list=PLo8azKzU7Iq8IHJ5PW8DAk-yaO8i4lBP_)** - Technical workshop series delivered across India
