@@ -9,6 +9,6 @@ children:
     permalink: /projects/
   - title: Publications
     permalink: /publications/
-  - title: Academic Service
+  - title: Service
     permalink: /service/
 ---
