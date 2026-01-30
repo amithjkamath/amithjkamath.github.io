@@ -16,6 +16,12 @@ nav_order: 4
 - Curated program: 3 keynote presentations, 11 posters, 3 flash talks
 - Focus: Cross-disciplinary collaboration in AI and clinical radiotherapy
 
+**[iMIMIC Interpretable AI Workshop at MICCAI](https://imimic-workshop.com)** | 2023, 2024  
+
+*General Chair*
+- Assisted in organizing CMT + paper reviewing in 2023
+- Publicity, outreach and local organization in 2024 (see [here](https://x.com/amithjkamath/status/1842907838680539272?s=20))
+
 **[Bern Interpretable AI (BIAS) Symposium](https://amithjkamath.github.io/bias23)** | March 2023  
 
 *Lead Organizer*
