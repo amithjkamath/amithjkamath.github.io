@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Service
+title: Teaching and Service
 permalink: /service/
-description: Conference organization, educational initiatives, and technical mentorship.
+description:
 nav: false
 nav_order: 4
 ---

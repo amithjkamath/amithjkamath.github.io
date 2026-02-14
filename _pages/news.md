@@ -2,7 +2,7 @@
 layout: page
 title: Updates
 permalink: /news/
-description: Latest research publications, awards, conference organization, and professional milestones.
+description:
 nav: true
 nav_order: 1
 ---
