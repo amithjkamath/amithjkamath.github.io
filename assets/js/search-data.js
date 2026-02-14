@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-updates",
           title: "Updates",
-          description: "Latest research publications, awards, conference organization, and professional milestones.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/news/";
@@ -23,14 +23,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/contact/";
           },
-        },{id: "dropdown-projects",
-              title: "Projects",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/projects/";
-              },
-            },{id: "dropdown-publications",
+        },{id: "dropdown-publications",
               title: "Publications",
               description: "",
               section: "Dropdown",
@@ -431,36 +424,51 @@ ninja.data = [{
           section: "News",},{id: "news-invited-talk-i-was-at-sasro-2025-the-annual-scientific-association-of-swiss-radiation-oncology-at-davos-to-talk-about-fast-and-reliable-dosimetric-contour-qa-which-was-a-15-minute-version-of-my-phd-thesis",
           title: 'Invited Talk: I was at SASRO 2025, the Annual Scientific Association of Swiss...',
           description: "",
-          section: "News",},{id: "projects-context-versus-foreground-to-background-ratio-trade-off",
-          title: 'Context versus Foreground-to-Background Ratio Trade-off',
-          description: "Analyzing 3D segmentation network behavior across context and class imbalance dimensions",
+          section: "News",},{id: "projects-22-medneurips",
+          title: '22 Medneurips',
+          description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2022-medneurips-contextvsfbr-tradeoff/";
-            },},{id: "projects-astra-atomic-surface-transformations-for-radiotherapy-qa",
-          title: 'ASTRA - Atomic Surface Transformations for Radiotherapy QA',
-          description: "Deep learning-based dose-aware sensitivity mapping for segmentation quality assurance",
+              window.location.href = "/projects/22-MedNeurIPS/";
+            },},{id: "projects-23-embc",
+          title: '23 Embc',
+          description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2023-embc-astra/";
-            },},{id: "projects-sensitivity-of-deep-learning-dose-prediction-to-contour-variability",
-          title: 'Sensitivity of Deep Learning Dose Prediction to Contour Variability',
-          description: "Evaluating robustness and sensitivity of dose prediction models for quality assurance in radiotherapy",
+              window.location.href = "/projects/23-EMBC/";
+            },},{id: "projects-23-isbi",
+          title: '23 Isbi',
+          description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2023-isbi-deepdosesens/";
-            },},{id: "projects-do-we-really-need-that-skip-connection",
-          title: 'Do We Really Need That Skip Connection?',
-          description: "Understanding the interplay between skip connections and task complexity in medical image segmentation",
+              window.location.href = "/projects/23-ISBI/";
+            },},{id: "projects-23-miccai",
+          title: '23 Miccai',
+          description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2023-miccai-skip-connections/";
-            },},{id: "projects-autodoserank-dosimetry-informed-segmentation-ranking",
-          title: 'AutoDoseRank - Dosimetry-informed Segmentation Ranking',
-          description: "Automated ranking system for radiotherapy segmentation candidates using clinical dose impact",
+              window.location.href = "/projects/23-MICCAI/";
+            },},{id: "projects-24-miccaiw",
+          title: '24 Miccaiw',
+          description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2024-miccaiw-autodoserank/";
-            },},{id: "projects-radiation-oncologists-vs-deep-learning-dose-prediction",
-          title: 'Radiation Oncologists vs Deep Learning Dose Prediction',
-          description: "Comparative study of expert clinicians and AI models for dosimetric impact assessment in radiotherapy",
+              window.location.href = "/projects/24-MICCAIw/";
+            },},{id: "projects-24-midl",
+          title: '24 Midl',
+          description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2024-midl-radonc-vs-dldp/";
+              window.location.href = "/projects/24-MIDL/";
+            },},{id: "projects-theme-correction",
+          title: 'Theme Correction',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Theme-Correction/";
+            },},{id: "projects-theme-dose-proposal",
+          title: 'Theme Dose Proposal',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Theme-Dose-Proposal/";
+            },},{id: "projects-theme-robustness",
+          title: 'Theme Robustness',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Theme-Robustness/";
             },},{id: "projects-interactive-image-registration-explorer",
           title: 'Interactive Image Registration Explorer',
           description: "Educational tool for understanding affine transformations through real-time image manipulation",
@@ -486,21 +494,6 @@ ninja.data = [{
           description: "Cross-platform workflow enabling MONAI deep learning models within MATLAB environments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/teach-2024-monai-with-matlab/";
-            },},{id: "projects-clinician-ai-performance-comparison",
-          title: 'Clinician-AI Performance Comparison',
-          description: "Evaluating how deep learning models compare to human experts in predicting clinical impact of segmentation variations.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/thesis-contour-correction-qualitative-analysis/";
-            },},{id: "projects-accelerated-dose-prediction-for-radiotherapy",
-          title: 'Accelerated Dose Prediction for Radiotherapy',
-          description: "Machine learning models that predict dosimetric outcomes to enable rapid quality assessment in treatment planning.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/thesis-dose-prediction-for-contour-evaluation/";
-            },},{id: "projects-segmentation-model-robustness",
-          title: 'Segmentation Model Robustness',
-          description: "Understanding how architectural choices affect model reliability across diverse clinical conditions and distribution shifts.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/thesis-robustness-of-image-segmentation-models/";
             },},{
         id: 'social-email',
         title: 'email',
