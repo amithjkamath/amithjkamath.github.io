@@ -18,7 +18,7 @@ NC := \033[0m # No Color
 .DEFAULT_GOAL := help
 
 # Phony targets
-.PHONY: help install build serve clean test format check-deps docker-build docker-serve docker-stop docker-clean
+.PHONY: help install build preview serve clean test format check-deps docker-build docker-serve docker-stop docker-clean
 
 ##@ General
 
@@ -57,6 +57,9 @@ build-production: ## Build the Jekyll site for production (with optimizations)
 	@echo "$(GREEN)[SUCCESS]$(NC) Production build completed!"
 
 ##@ Development
+
+preview: ## Preview the site locally with live reload (alias of serve)
+	@$(MAKE) serve
 
 serve: ## Build and serve the site locally with live reload
 	@echo "$(BLUE)[INFO]$(NC) Starting local development server..."
