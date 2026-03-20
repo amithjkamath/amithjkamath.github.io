@@ -1,0 +1,26 @@
+<div class="col project-image-panel-col">
+  <div class="project-image-panel">
+    {% if project.img %}
+      <a
+        class="project-image-link"
+        href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}"
+        aria-label="Open project: {{ project.title }}"
+      >
+        {%
+          include figure.liquid
+          loading="eager"
+          path=project.img
+          sizes="(min-width: 768px) 300px, 100vw"
+          alt=project.title
+          class="project-image-panel-img"
+        %}
+        <span class="project-image-overlay" aria-hidden="true">
+          <h3 class="project-image-panel-title">{{ project.title }}</h3>
+          {% if project.description %}
+            <p class="project-image-panel-description">{{ project.description }}</p>
+          {% endif %}
+        </span>
+      </a>
+    {% endif %}
+  </div>
+</div>
