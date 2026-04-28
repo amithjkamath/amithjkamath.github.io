@@ -16,7 +16,7 @@ nav_order: 4
 - Curated program: 3 keynote presentations, 11 posters, 3 flash talks
 - Focus: Cross-disciplinary collaboration in AI and clinical radiotherapy
 
-**[iMIMIC Interpretable AI Workshop at MICCAI](https://imimic-workshop.com)** | 2023, 2024  
+**[iMIMIC Interpretable AI Workshop at MICCAI](https://imimic-workshop.com)** | 2023, 2024, 2025  
 
 *General Chair*
 - Assisted in organizing CMT + paper reviewing in 2023
@@ -73,6 +73,6 @@ nav_order: 4
 - Hands-on introduction to medical image analysis research methodology
 
 ### Reviewer
-- Journals: npj Precision Oncology, Radiation Oncology, Scientific Reports;
+- Journals: npj Digital Medicine, Precision Oncology, Radiation Oncology, Scientific Reports;
 - Conferences: MIDL 2026 (full-paper x2)
 - Community: DLinRT.eu
