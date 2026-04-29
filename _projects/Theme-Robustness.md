@@ -17,6 +17,11 @@ related_publications: Kamath2025SkipConnections, Kamath2023DoWe
     <span class="badge bg-secondary me-2">Architecture Design</span>
     <span class="badge bg-success me-2">Clinical Reliability</span>
   </div>
+  <div class="mt-3 mb-2">
+    <a href="https://huggingface.co/spaces/amithjkamath/segroc" target="_blank" class="btn btn-sm btn-outline-warning me-2">
+      🤗 Try the Interactive Demo: SegRoC
+    </a>
+  </div>
 </div>
 
 ---
@@ -56,6 +61,44 @@ While research emphasizes maximizing benchmark accuracy, we investigate how arch
 Conventional wisdom holds that certain architectural components (like U-Net skip connections) are universally beneficial. Our research challenges these assumptions by systematically examining how design choices affect not just peak performance, but reliability under varying conditions.
 
 Understanding these relationships enables principled architectural design that balances performance optimization with the robustness requirements essential for clinical applications.
+
+## The Case for Standardized Robustness Metrics
+
+### Why a Single Number Is Not Enough
+
+Most published segmentation results are summarized by a single figure: mean Dice score on a held-out test set drawn from the same distribution as training data. Standard deviations are rarely reported; worst-case performance and behavior under distribution shift are even rarer. This reporting norm creates a misleading picture of real-world reliability.
+
+Consider two models with identical mean Dice of 0.85:
+
+| Model | Mean Dice | Std Dev | Worst-Case Dice | Dice under protocol shift |
+|-------|-----------|---------|-----------------|---------------------------|
+| A     | 0.85      | 0.02    | 0.81            | 0.83                      |
+| B     | 0.85      | 0.12    | 0.41            | 0.55                      |
+
+Model A is far safer to deploy—yet both would be reported identically in most papers. In mission-critical contexts like radiotherapy planning, surgical guidance, or diagnostic triage, Model B's tail behavior could directly harm patients.
+
+### What Standardized Robustness Evaluation Looks Like
+
+Robust evaluation requires measuring **how performance changes** across controlled perturbations and natural distribution shifts, not just where it sits on a favorable benchmark. Relevant dimensions include:
+
+- **Intra-site variability**: performance spread within a single institution across scanners, technicians, and protocols.
+- **Inter-site generalization**: drop in performance when moving to an unseen site—the most common real-world deployment scenario.
+- **Perturbation sensitivity**: response curves to systematic image corruptions (noise, blur, contrast shift, resolution downsampling).
+- **Class imbalance robustness**: stability when foreground prevalence changes across datasets or patient sub-populations.
+- **Tail risk**: 5th-percentile Dice or 95th-percentile Hausdorff distance as safety-relevant summary statistics.
+
+Reporting these alongside mean performance enables meaningful comparison between architectures and honest assessment of deployment readiness.
+
+### Try It Interactively: SegRoC
+
+[**SegRoC** (Segmentation Robustness Comparison)](https://huggingface.co/spaces/amithjkamath/segroc) is an interactive HuggingFace Space that lets you explore these ideas directly. You can:
+
+- **Select a segmentation task** and compare architectures (Standard U-Net, Attention U-Net, UNETR) side by side.
+- **Apply controlled distribution shifts**—noise, blur, contrast perturbations—and observe how each architecture responds across the full performance distribution, not just the mean.
+- **Inspect robustness profiles**: visualize performance curves, standard deviation bands, and worst-case behavior rather than a single summary number.
+- **Build intuition** for the performance–robustness trade-off this research characterizes, before committing to an architecture choice for a clinical pipeline.
+
+The demo is designed to make the abstract concept of *robustness under distribution shift* tangible for researchers, clinicians, and engineers evaluating model reliability for real-world use.
 
 ## Key Research Contributions
 
