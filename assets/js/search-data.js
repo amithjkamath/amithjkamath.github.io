@@ -430,7 +430,7 @@ ninja.data = [{
           section: "News",},{id: "news-innovation-fellowship-i-m-grateful-as-one-of-eighteen-bridge-proof-of-concept-fellows-in-the-37th-call-supporting-entrepreneurial-initiatives-in-technology-transfer-and-innovation",
           title: 'Innovation Fellowship: I’m grateful as one of eighteen Bridge Proof of Concept Fellows...',
           description: "",
-          section: "News",},{id: "news-invited-talk-i-was-invited-to-present-at-the-data-science-colloquium-at-the-university-of-utrecht-online-about-my-research-and-experience-in-data-science-medical-imaging-and-generally-research-in-this-space-thanks-wilson-and-angelos-for-the-invite",
+          section: "News",},{id: "news-invited-talk-i-was-invited-to-present-at-the-data-science-colloquium-at-the-university-of-utrecht-about-my-research-and-experience-in-data-science-medical-imaging-and-generally-research-in-this-space-thanks-wilson-and-angelos-for-the-invite",
           title: 'Invited Talk: I was invited to present at the Data Science colloquium at...',
           description: "",
           section: "News",},{id: "projects-22-medneurips",
