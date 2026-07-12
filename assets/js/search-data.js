@@ -421,7 +421,7 @@ ninja.data = [{
           section: "News",},{id: "news-journal-publication-the-impact-of-u-net-architecture-choices-and-skip-connections-on-the-robustness-of-segmentation-across-texture-variations-accepted-in-computers-in-biology-and-medicine-read-more",
           title: 'Journal Publication: “The impact of U-Net architecture choices and skip connections on the...',
           description: "",
-          section: "News",},{id: "news-invited-talk-i-was-at-sasro-2025-the-annual-scientific-association-of-swiss-radiation-oncology-at-davos-to-talk-about-fast-and-reliable-dosimetric-contour-qa-which-was-a-15-minute-version-of-my-phd-thesis",
+          section: "News",},{id: "news-invited-talk-i-was-at-sasro-2025-the-annual-scientific-association-of-swiss-radiation-oncology-at-davos-to-talk-about-fast-and-reliable-dosimetric-contour-qa-which-was-a-15-minute-version-of-my-phd-thesis-you-can-read-more-about-my-phd-research",
           title: 'Invited Talk: I was at SASRO 2025, the Annual Scientific Association of Swiss...',
           description: "",
           section: "News",},{id: "news-event-organization-i-am-part-of-the-program-chairs-for-miart-2026-the-first-version-of-a-satellite-workshop-at-miccai-2026-focused-on-ai-and-radiation-therapy-it-features-3-keynote-speakers-and-is-a-great-upgrade-over-bart-25",
