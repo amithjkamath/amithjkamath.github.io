@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-**Invited Talk:** I was at SASRO 2025, the Annual Scientific Association of Swiss Radiation Oncology at Davos, to talk about "Fast and Reliable Dosimetric Contour QA", which was a 15 minute version of my PhD thesis. 
+**Invited Talk:** I was at SASRO 2025, the Annual Scientific Association of Swiss Radiation Oncology at Davos, to talk about "Fast and Reliable Dosimetric Contour QA", which was a 15-minute version of my PhD thesis. You can [read more about my PhD research](https://amithjkamath.github.io/dose-aware-contour-qa/).
