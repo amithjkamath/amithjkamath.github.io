@@ -1,40 +1,35 @@
 ---
 layout: page
-title: Contact
-permalink: /contact/
-description:
-lang: en
+title: Kontakt
+permalink: /de/contact/
+description: Wege, mich zu erreichen.
+lang: de
 translation_key: contact
-nav: true
-nav_order: 3
+nav: false
 ---
 
-I'm always interested in discussing research collaborations, professional opportunities, and interesting projects at the intersection of AI and medicine.
+Ich freue mich über Gespräche zu Forschungskooperationen, beruflichen Möglichkeiten und spannenden Projekten an der Schnittstelle von KI und Medizin.
 
-### Professional Networks
+### Berufliche Netzwerke
 
-- **Email**: firstname (+) j (+) lastname at outlook (dot) com
+- **E-Mail**: Vorname (+) j (+) Nachname at outlook (Punkt) com
 - **LinkedIn**: [linkedin.com/in/amithjkamath](https://www.linkedin.com/in/amithjkamath/)
 - **Google Scholar**: [Amith Kamath](https://scholar.google.com/citations?user=clej42kAAAAJ)
 - **ORCID**: [0000-0002-7243-8883](https://orcid.org/0000-0002-7243-8883)
 - **Semantic Scholar**: [Amith Kamath](https://www.semanticscholar.org/author/9083011)
 
-### Code & Projects
+### Code und Projekte
 
 - **GitHub**: [github.com/amithjkamath](https://github.com/amithjkamath)
 - **Stack Overflow**: [stackoverflow.com/users/1704995](https://stackoverflow.com/users/1704995/akamath)
 
-### Social Media
+### Soziale Netzwerke
 
 - **X (Twitter)**: [@amithjkamath](https://twitter.com/amithjkamath)
 - **YouTube**: [youtube.com/@amithjkamath](https://www.youtube.com/@amithjkamath)
 
 ---
 
-Feel free to reach out via any of these channels. I typically respond to email within 2-3 business days.
+Sie erreichen mich gerne über jeden dieser Kanäle. E-Mails beantworte ich üblicherweise innerhalb von zwei bis drei Werktagen.
 
-### Page Views
-
-<div class="contact-pageviews-panel">
-<script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=X5SuAxyOB2c-K3H2Gs8EJhhsoCVzS5GuSIKffYSWEBo&cl=ffffff&w=a"></script>
-</div>
+<small><em>Hinweis: Nur die Seiten <a href="/de/">Über mich</a>, <a href="/de/news/">Aktuelles</a> und Kontakt liegen auf Deutsch vor. Die übrigen Seiten der Website sind auf Englisch.</em></small>

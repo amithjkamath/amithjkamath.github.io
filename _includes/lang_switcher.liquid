@@ -1,0 +1,36 @@
+{% comment %}
+  Language switcher for the hand-translated pages (about / updates / contact).
+  Each translatable page declares a `translation_key` in its front matter; every
+  page sharing that key is one language variant of the same document.
+{% endcomment %}
+
+{% assign key = page.translation_key %}
+{% if key %}
+  {% assign current = page.lang | default: 'en' %}
+  <nav class="lang-switcher" aria-label="Language">
+    {% assign variants = site.pages | where: 'translation_key', key %}
+    {% assign ordered = '' | split: '' %}
+    {% for code in site.languages %}
+      {% assign match = variants | where: 'lang', code.code | first %}
+      {% if match %}
+        {% assign ordered = ordered | push: match %}
+      {% endif %}
+    {% endfor %}
+    {% for variant in ordered %}
+      {% assign meta = site.languages | where: 'code', variant.lang | first %}
+      {% if variant.lang == current %}
+        <span class="lang-switcher-item active" lang="{{ meta.code }}" aria-current="page">{{ meta.label }}</span>
+      {% else %}
+        <a
+          class="lang-switcher-item"
+          lang="{{ meta.code }}"
+          hreflang="{{ meta.code }}"
+          href="{{ variant.permalink | relative_url }}"
+          title="{{ meta.name }}"
+        >
+          {{- meta.label -}}
+        </a>
+      {% endif %}
+    {% endfor %}
+  </nav>
+{% endif %}

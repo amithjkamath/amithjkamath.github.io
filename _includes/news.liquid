@@ -1,3 +1,11 @@
+{% comment %}
+  Renders the news collection. Pass lang="de" / lang="sa" to pick up the
+  `content_de` / `content_sa` overrides in each item's front matter; items
+  without a translation fall back to the English body.
+{% endcomment %}
+
+{% assign lang = include.lang | default: 'en' %}
+
 <div class="news">
   {% if site.news != blank %}
     {% assign news_size = site.news | size %}
@@ -15,13 +23,36 @@
           {% assign news_limit = news_size %}
         {% endif %}
         {% for item in news limit: news_limit %}
+          {% comment %} Liquid only knows English month names, so translated pages get numeric dates. {% endcomment %}
+          {% if lang == 'en' %}
+            {% assign item_date = item.date | date: '%b %d, %Y' %}
+          {% else %}
+            {% assign item_date = item.date | date: '%d.%m.%Y' %}
+          {% endif %}
+
+          {% if lang == 'de' and item.content_de %}
+            {% assign item_body = item.content_de | markdownify %}
+          {% elsif lang == 'sa' and item.content_sa %}
+            {% assign item_body = item.content_sa | markdownify %}
+          {% else %}
+            {% assign item_body = item.content %}
+          {% endif %}
+
+          {% if lang == 'de' and item.title_de %}
+            {% assign item_title = item.title_de %}
+          {% elsif lang == 'sa' and item.title_sa %}
+            {% assign item_title = item.title_sa %}
+          {% else %}
+            {% assign item_title = item.title %}
+          {% endif %}
+
           <tr>
-            <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
+            <th scope="row" style="width: 20%">{{ item_date }}</th>
             <td>
               {% if item.inline %}
-                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                {{ item_body | remove: '<p>' | remove: '</p>' | emojify }}
               {% else %}
-                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                <a class="news-title" href="{{ item.url | relative_url }}">{{ item_title }}</a>
               {% endif %}
             </td>
           </tr>

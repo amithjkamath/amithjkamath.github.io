@@ -1499,3 +1499,50 @@ figure.cover {
     color: #23212d !important;
   }
 }
+/* -------------------------------------------------------------------------- *
+ * Translated pages (about / updates / contact in Deutsch and संस्कृतम्)
+ * -------------------------------------------------------------------------- */
+
+/* Roboto carries no Devanagari, so name a fallback explicitly rather than
+   leaving the script to whatever the visitor's OS happens to ship. */
+:lang(sa) {
+  font-family:
+    "Roboto",
+    "Noto Sans Devanagari",
+    "Devanagari Sangam MN",
+    "Nirmala UI",
+    sans-serif;
+  line-height: 1.75;
+}
+
+.lang-switcher {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: -0.75rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+
+  .lang-switcher-item {
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    color: var(--global-text-color-light);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+
+    &.active {
+      color: var(--global-text-color);
+      background-color: var(--global-divider-color);
+    }
+  }
+
+  .lang-switcher-item + .lang-switcher-item {
+    border-left: 1px solid var(--global-divider-color);
+    padding-left: 0.5rem;
+  }
+}

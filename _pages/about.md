@@ -2,6 +2,8 @@
 layout: about
 title: About
 permalink: /
+lang: en
+translation_key: about
 subtitle: Applied Researcher in Machine Learning & Medical Imaging
 
 profile:

@@ -16,6 +16,20 @@ keywords: machine learning, research, technology, programming, personal website
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🔬 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
+# Languages offered for the hand-translated pages (about / updates / contact).
+# Order here is the order shown in the language switcher. A page opts in by
+# setting `lang` and a `translation_key` shared with its sibling translations.
+languages:
+  - code: en
+    label: EN
+    name: English
+  - code: de
+    label: DE
+    name: Deutsch
+  - code: sa
+    label: SA
+    name: संस्कृतम्
+
 url: https://amithjkamath.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: true # set to true if you want to display last updated in the footer
@@ -388,7 +402,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Noto+Sans+Devanagari:300,400,500,700|Material+Icons&display=swap"
   highlightjs:
     integrity:
       css:
