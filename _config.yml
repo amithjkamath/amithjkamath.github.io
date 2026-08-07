@@ -87,6 +87,13 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 
 # Analytics and verification are disabled
 
+# MapMyVisitors counts visits on every page but renders nothing: see
+# assets/js/visitor-tracking.js. Stats are only readable from the private
+# dashboard at https://mapmyvisitors.com/web/1c3dc
+visitor_tracking:
+  enabled: true
+  mapmyvisitors_id: X5SuAxyOB2c-K3H2Gs8EJhhsoCVzS5GuSIKffYSWEBo
+
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------

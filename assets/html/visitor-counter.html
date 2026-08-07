@@ -1,0 +1,40 @@
+---
+permalink: /assets/html/visitor-counter.html
+layout: null
+sitemap: false
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>&nbsp;</title>
+    <!--
+      Loaded only by assets/js/visitor-tracking.js, into a hidden iframe that is
+      sandboxed without allow-same-origin. MapMyVisitors registers the visit from
+      here, and because the sandbox gives this document an opaque origin, the
+      third-party script it runs cannot read or touch the site around it.
+
+      It lives as a real file rather than an iframe srcdoc so the vendor's
+      protocol-relative URLs have an https base to resolve against.
+    -->
+    <style>
+      /* The widget has to be laid out to report, but nothing here is ever seen:
+         the iframe is hidden, and this keeps the counts unreadable even if
+         someone opens this file directly. */
+      html,
+      body {
+        margin: 0;
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <script
+      type="text/javascript"
+      id="mapmyvisitors"
+      src="https://mapmyvisitors.com/map.js?d={{ site.visitor_tracking.mapmyvisitors_id }}&cl=ffffff&w=300"
+    ></script>
+  </body>
+</html>

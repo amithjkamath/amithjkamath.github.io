@@ -32,9 +32,3 @@ I'm always interested in discussing research collaborations, professional opport
 ---
 
 Feel free to reach out via any of these channels. I typically respond to email within 2-3 business days.
-
-### Page Views
-
-<div class="contact-pageviews-panel">
-<script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=X5SuAxyOB2c-K3H2Gs8EJhhsoCVzS5GuSIKffYSWEBo&cl=ffffff&w=a"></script>
-</div>

@@ -254,6 +254,19 @@
   <script async defer src="https://openpanel.dev/op1.js"></script>
 {% endif %}
 
+{% if site.visitor_tracking.enabled and site.visitor_tracking.mapmyvisitors_id %}
+  {% comment %}
+    Site-wide visitor counting with nothing rendered — see
+    assets/js/visitor-tracking.js. A Liquid comment, not an HTML one, so the
+    served pages carry no hint of it beyond the script tag itself.
+  {% endcomment %}
+  <script
+    defer
+    src="{{ '/assets/js/visitor-tracking.js' | relative_url | bust_file_cache }}"
+    data-visitor-counter="{{ '/assets/html/visitor-counter.html' | relative_url }}"
+  ></script>
+{% endif %}
+
 {% if site.enable_progressbar %}
   <!-- Scrolling Progress Bar -->
   <script defer src="{{ '/assets/js/progress-bar.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
