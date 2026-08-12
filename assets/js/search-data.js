@@ -9,8 +9,8 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-updates",
-          title: "Updates",
+  },{id: "nav-news",
+          title: "News",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -30,12 +30,19 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/publications/";
               },
-            },{id: "dropdown-service",
-              title: "Service",
+            },{id: "dropdown-leadership",
+              title: "Leadership",
               description: "",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "/service/";
+                window.location.href = "/leadership/";
+              },
+            },{id: "dropdown-teaching",
+              title: "Teaching",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/teaching/";
               },
             },{id: "post-market-need-for-auto-contouring-solutions",
         
@@ -469,11 +476,6 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/23-ISBI/";
-            },},{id: "projects-23-miccai",
-          title: '23 Miccai',
-          description: "",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/23-MICCAI/";
             },},{id: "projects-24-miccaiw",
           title: '24 Miccaiw',
           description: "",
