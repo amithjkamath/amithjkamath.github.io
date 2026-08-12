@@ -203,6 +203,14 @@ defaults:
 
 sass:
   style: compressed
+  # The vendored Font Awesome and Tabler icon stylesheets under _sass/ still use
+  # @import and the deprecated global unquote()/str-insert() functions. They are
+  # third-party files we do not hand-maintain, so their deprecation warnings are
+  # silenced here. Our own stylesheets use the Sass module system (@use).
+  quiet_deps: true
+  silence_deprecations:
+    - import
+    - global-builtin
 
 # -----------------------------------------------------------------------------
 # Jekyll Minifier

@@ -3,18 +3,24 @@
 ---
 @charset "utf-8";
 
-// Dimensions
-$max-content-width: {{ site.max_width }};
+@use "variables" with (
+  $max-content-width: {{ site.max_width }}
+);
+@use "themes";
+@use "layout";
+@use "base";
+@use "distill";
+@use "cv";
+@use "tabs";
+@use "typograms";
+
+// Vendored icon fonts (Font Awesome, Tabler) still use the older @import syntax
+// internally, so they are loaded that way and read these paths from the global
+// scope. Deprecation warnings from them are silenced via `sass` in _config.yml.
+$fa-font-path: "../webfonts";
+$ti-font-path: "../fonts";
 
 @import
-  "variables",
-  "themes",
-  "layout",
-  "base",
-  "distill",
-  "cv",
-  "tabs",
-  "typograms",
   "font-awesome/fontawesome",
   "font-awesome/brands",
   "font-awesome/solid",

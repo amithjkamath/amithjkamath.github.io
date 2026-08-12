@@ -2,7 +2,7 @@
 layout: post
 title: 'Market need for Auto-Contouring Solutions'
 date: 2025-01-15 00:00:00
-categories: tairo, radiation-oncology, artificial-intelligence
+categories: [tairo, radiation-oncology, artificial-intelligence]
 featured: true
 ---
 

@@ -80,7 +80,10 @@ module ExternalPosts
       when String
         Time.parse(published_date).utc
       when Date
-        published_date.to_time.utc
+        # Treat a bare date as midnight UTC. Date#to_time would use the build
+        # machine's local timezone, which shifts the post a day earlier when
+        # building west of UTC, and it triggers an ActiveSupport deprecation.
+        Time.utc(published_date.year, published_date.month, published_date.day)
       else
         raise "Invalid date format for #{published_date}"
       end

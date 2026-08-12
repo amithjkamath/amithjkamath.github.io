@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Updates
+title: News
 permalink: /news/
 description:
 lang: en
