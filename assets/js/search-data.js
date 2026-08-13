@@ -466,11 +466,6 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/24-MICCAIw/";
-            },},{id: "projects-24-midl",
-          title: '24 Midl',
-          description: "",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/24-MIDL/";
             },},{id: "projects-interactive-image-registration-explorer",
           title: 'Interactive Image Registration Explorer',
           description: "Educational tool for understanding affine transformations through real-time image manipulation",
