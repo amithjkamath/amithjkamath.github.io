@@ -38,6 +38,19 @@ nav_order: 4
 
 ---
 
+## Teaching tools
+
+Small interactive demonstrations built for the courses above, each with a write-up of
+what it teaches and how it was put together.
+
+- **[Interactive Image Registration Explorer](/projects/teach-2022-interactive-image-registration/)** (2022) — affine transformations, manipulated in real time.
+- **[Interactive Segmentation Quality Evaluator](/projects/teach-2022-interactive-segmentation-evaluation/)** (2022) — segmentation metrics, by drawing boundaries by hand and scoring them.
+- **[Interactive Template Matching Explorer](/projects/teach-2023-interactive-template-matching/)** (2023) — template matching, as a game of *Where's Waldo*.
+- **[Interactive Monty Hall Problem Explorer](/projects/teach-2023-understanding-monty-hall/)** (2023) — conditional probability, in a MATLAB app.
+- **[MONAI with MATLAB](/projects/teach-2024-monai-with-matlab/)** (2024) — running MONAI models from within MATLAB.
+
+---
+
 ## Tutorials and workshops
 
 **[IEEE TENCON 2019](https://www.tencon2019.org/tutorial.html)** | October 2019

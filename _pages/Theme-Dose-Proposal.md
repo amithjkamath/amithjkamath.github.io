@@ -2,9 +2,8 @@
 layout: page
 title:
 description:
-img: assets/img/dose-prediction.png
-importance: 3
-category: themes
+permalink: /projects/Theme-Dose-Proposal/
+nav: false
 related_publications: Poel2023Deep, Kamath2023HowSensitive
 _styles: >
   .demo-stack { margin: 1.5rem 0 2.5rem; }

@@ -2,9 +2,8 @@
 layout: page
 title:
 description:
-img: assets/img/skip-connections.png
-importance: 1
-category: themes
+permalink: /projects/Theme-Robustness/
+nav: false
 related_publications: Kamath2025SkipConnections, Kamath2023DoWe, Kamath2022ContextVsFBR
 _styles: >
   .demo-grid {

@@ -2,9 +2,8 @@
 layout: page
 title:
 description:
-img: assets/img/dose-awareness.png
-importance: 2
-category: themes
+permalink: /projects/Theme-Correction/
+nav: false
 related_publications: Willmann2025Predicting, Kamath2024Comparing, Mercado2024AutoDoseRank
 ---
 
