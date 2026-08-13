@@ -16,16 +16,19 @@ related_publications: true
     <span>Yannick Suter<sup>1</sup></span>, 
     <span>Suhang You<sup>1</sup></span>, 
     <span>Michael Mueller<sup>1</sup></span>, 
-    <span>Jonas Willmann<sup>1,2</sup></span>, 
+    <span>Jonas Willmann<sup>2,3</sup></span>, 
     <span>Nicolaus Andratschke<sup>2</sup></span>, 
     <span>Mauricio Reyes<sup>1</sup></span>
   </div>
   
   <div class="affiliations mb-4">
-    <p><sup>1</sup>University of Bern, <sup>2</sup>University Hospital Zurich</p>
+    <p><sup>1</sup>University of Bern, <sup>2</sup>University Hospital Zurich, <sup>3</sup>Paul Scherrer Institut</p>
   </div>
   
   <div class="publication-links mb-5">
+    <a href="https://amithjkamath.github.io/context_vs_fbr/" class="btn btn-success btn-sm" target="_blank">
+      <i class="fas fa-globe"></i> Project Website
+    </a>
     <a href="http://www.cse.cuhk.edu.hk/~qdou/public/medneurips2022/72.pdf" class="btn btn-primary btn-sm" target="_blank">
       <i class="fas fa-file-pdf"></i> Paper
     </a>
@@ -36,6 +39,12 @@ related_publications: true
   
   <p class="text-muted"><em>Medical Imaging meets NeurIPS Workshop, NeurIPS 2022</em></p>
 </div>
+
+---
+
+<p class="text-muted">
+  <i class="fas fa-arrow-right"></i> The full write-up lives next to its code, on its own page: <a href="https://amithjkamath.github.io/context_vs_fbr/" target="_blank" rel="noopener noreferrer">Context versus foreground ratio</a>. It has the videos, both results tables recomputed from the released per-case metrics, and the setup in full. What follows is the summary.
+</p>
 
 ---
 
@@ -66,17 +75,17 @@ Our study addresses these questions through controlled experiments on both synth
 
 ### Experimental Design
 
-We designed controlled experiments to systematically isolate the effects of context window size and foreground ratio. Our approach combines:
+Context and foreground ratio cannot be varied independently — one knob, the patch size, sets both, which is precisely what makes this a trade-off rather than two separate design choices. The experiments therefore sweep that single knob and watch both quantities move together:
 
-**Synthetic Dataset:** Texture-based synthetic volumes allowing precise control over both context and foreground ratio independently, ensuring we can attribute performance changes to specific factors.
+**Synthetic Dataset:** 100 volumes of 96³ voxels, each a single sphere of foreground on a background of uniform noise. Training spheres have radii of 25–35 voxels; an independent 100-volume test set uses radii of 5–48, reaching well past the foreground ratios training ever showed the network.
 
-**Real Medical Data:** Spleen segmentation from the Medical Segmentation Decathlon to validate that synthetic insights translate to clinical scenarios.
+**Real Medical Data:** Spleen segmentation from the Medical Segmentation Decathlon, chosen for its wide range of foreground ratio, to validate that synthetic insights translate to clinical scenarios.
 
-**Architecture Coverage:** Vanilla U-Net (pure CNN), Attention U-Net (CNN with attention), and UNETR (Transformer-based) representing the spectrum of 3D segmentation approaches.
+**Architecture Coverage:** Vanilla U-Net (pure CNN), Attention U-Net (CNN with attention), and UNETR (Transformer-based) representing the spectrum of 3D segmentation approaches. The first two share every hyperparameter they can, so the only difference between them is the attention gating on the skip connections.
 
 ### Evaluation Protocol
 
-We systematically varied context window sizes and foreground ratios, evaluating each network's performance across this 2D trade-off space. Additionally, we conducted robustness testing by training on one foreground ratio distribution and testing on others, simulating clinical distribution shifts.
+We swept five patch sizes (32, 48, 64, 80, 96), symmetric in 3D, with three seeds per configuration. Crucially, we also logged the foreground ratio of every training patch actually drawn, which bounds the range each network was exposed to. Test cases are then split into those inside that range and those outside it, so robustness to foreground-ratio drift is measured directly rather than inferred.
 
 ## Results
 
@@ -84,22 +93,30 @@ We systematically varied context window sizes and foreground ratios, evaluating 
 
 **Context Wins Over Balance:** All three network types consistently favor larger context windows over balanced class ratios, suggesting that spatial information outweighs class imbalance challenges. This finding held across both synthetic and real medical imaging datasets.
 
-**Architecture-Specific Robustness:** UNETR and Attention U-Net showed greater sensitivity to foreground ratio variations compared to vanilla U-Net. While attention mechanisms and transformers may offer superior performance under ideal conditions, they are more vulnerable to distribution shifts.
+**Architecture-Specific Robustness:** UNETR and Attention U-Net showed markedly greater sensitivity to foreground ratio variations than vanilla U-Net. On test cases outside the training range, they lose 0.26 to 0.84 Dice; the vanilla U-Net in the same setting loses 0.014 to 0.023 — more than an order of magnitude less. While attention mechanisms and transformers may match the CNN under ideal conditions, they are far more vulnerable to distribution shift.
 
-**Performance Trade-offs:** Optimal performance requires careful balance between sufficient context and manageable class imbalance, particularly under GPU memory constraints.
+**Accuracy and robustness are not the same ranking:** at a 96³ patch, UNETR matches the vanilla U-Net in-range on the synthetic task, both at 0.994 Dice, and loses fifteen times as much outside it.
+
+**The patch size sets the range, not just the ratio:** at 32³ the training patches span the full range of foreground ratios; at 96³ they span roughly a tenth of it, and 249 of the 300 test cases then fall outside. Choosing a patch size is therefore also choosing how much test-time drift the model will tolerate.
 
 ### Practical Guidelines
 
 For practitioners designing segmentation pipelines:
-- Prioritize larger context windows when facing memory constraints
-- Consider vanilla U-Net for scenarios with expected distribution shifts
-- Use attention-based models when training and test distributions are well-matched
+- Take the largest patch size memory allows; across three architectures and two tasks, context beat class balance every time
+- Then check what foreground-ratio range that leaves you, by logging the ratio of every training patch — it costs nothing and tells you which part of the test distribution you are extrapolating into
+- Report performance against foreground ratio rather than a single mean; a model at 0.99 in-range and near zero just outside it averages to something respectable and is not
+- Treat the vanilla U-Net as a real baseline for deployment across scanners and sites
 
 ## Conclusion
 
 This work provides the first systematic analysis of the context versus foreground ratio trade-off in 3D medical segmentation. Our findings challenge conventional wisdom about class balance importance, demonstrating that spatial context consistently provides greater value across architectures.
 
 Importantly, we reveal robustness differences between architectures that have practical implications for clinical deployment. These insights provide concrete guidance for practitioners designing segmentation systems under real-world constraints.
+
+<div class="mt-4 mb-4">
+  <a href="https://amithjkamath.github.io/context_vs_fbr/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-success me-2">Project website, with the videos and both tables</a>
+  <a href="/projects/Theme-Robustness/" class="btn btn-sm btn-outline-primary">Robust segmentation models</a>
+</div>
 
 ---
 

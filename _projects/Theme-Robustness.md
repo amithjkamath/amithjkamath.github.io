@@ -141,6 +141,14 @@ The same experiment on real medical images, covering four parts of the body and 
   These clips come from the skip-connection study. Its full write-up, with the method, the numbers for every architecture and the code, lives on its own page: <a href="https://amithjkamath.github.io/to_skip_or_not/" target="_blank" rel="noopener noreferrer">Do we really need that skip-connection?</a> You can also try it yourself on <a href="https://huggingface.co/spaces/amithjkamath/segroc" target="_blank" rel="noopener noreferrer">Hugging Face Spaces</a>.
 </p>
 
+### The same question, asked of the patch size
+
+A 3D network never sees a whole scan, only a cropped patch, and the size of that crop sets two things at once that pull against each other: a bigger patch shows more surrounding anatomy, and at the same time buries the object in background. All three architectures tested prefer the context. But the crop size also fixes how *wide* a range of foreground-to-background ratios the model is ever shown — at a 96³ patch it is about a tenth as wide as at 32³ — and outside that range UNETR and attention-Unet lose 0.26 to 0.84 Dice where a vanilla U-Net loses 0.014 to 0.023. The same divergence between accuracy and robustness, reached through a different knob.
+
+<p class="demo-hint text-muted">
+  Its own page has the videos, the numbers and the code: <a href="https://amithjkamath.github.io/context_vs_fbr/" target="_blank" rel="noopener noreferrer">Context versus foreground ratio</a>.
+</p>
+
 ---
 
 ## Connection to the PhD Thesis
@@ -159,7 +167,7 @@ That work supports a broader principle used throughout the thesis: dose-aware co
 Each study keeps its own write-up next to its code, rather than being restated here:
 
 - **[Do we really need that skip-connection?](https://amithjkamath.github.io/to_skip_or_not/)**, MICCAI 2023 and its Computers in Biology and Medicine 2025 journal extension. Method, all six architectures, four datasets, and the videos above in their full context.
-- **[Context versus foreground ratio](/projects/22-MedNeurIPS/)**, Medical Imaging Meets NeurIPS 2022. How 3D networks trade spatial context against class balance.
+- **[Context versus foreground ratio](https://amithjkamath.github.io/context_vs_fbr/)**, Medical Imaging Meets NeurIPS 2022. How 3D networks trade spatial context against class balance, and why the patch size also decides how much foreground-ratio drift a model survives.
 - **DreamOn**, Frontiers in Radiology 2024. Data augmentation to close the gap between expert radiologists and deep learning classifiers.
 
 The full list, with links, is on the [publications page](/publications/#robust-segmentation-models).
@@ -182,6 +190,7 @@ Robustness is the reliability axis of a three-part program. [Personalized contou
 
 <div class="mt-4">
   <a href="https://amithjkamath.github.io/to_skip_or_not/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary me-2">Read the skip-connection study</a>
+  <a href="https://amithjkamath.github.io/context_vs_fbr/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary me-2">Read the context-versus-FBR study</a>
   <a href="https://huggingface.co/spaces/amithjkamath/segroc" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-warning me-2">Try the SegRoC demo</a>
   <a href="/publications/#robust-segmentation-models" class="btn btn-sm btn-outline-primary">All publications</a>
 </div>
