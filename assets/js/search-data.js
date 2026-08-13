@@ -466,9 +466,9 @@ ninja.data = [{
           description: "How 3D segmentation networks trade spatial context against class balance — Medical Imaging meets NeurIPS 2022",
           section: "Projects",handler: () => {
               window.location.href = "/projects/22-MedNeurIPS/";
-            },},{id: "projects-23-embc",
-          title: '23 Embc',
-          description: "",
+            },},{id: "projects-where-on-a-contour-does-an-edit-change-the-dose",
+          title: 'Where on a contour does an edit change the dose?',
+          description: "Estimating, point by point, how much a local organ-at-risk contour change alters the planned dose — EMBC 2023",
           section: "Projects",handler: () => {
               window.location.href = "/projects/23-EMBC/";
             },},{id: "projects-how-sensitive-is-a-dose-predictor-to-the-contours-you-feed-it",
