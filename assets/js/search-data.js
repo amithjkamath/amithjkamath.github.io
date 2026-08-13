@@ -461,22 +461,7 @@ ninja.data = [{
           section: "News",},{id: "news-thesis-recognition-my-phd-thesis-fast-and-reliable-ai-based-dosimetric-contour-quality-assurance-for-radiotherapy-was-selected-as-a-finalist-for-the-gcb-best-thesis-award-2025-my-phd-degree-was-also-awarded-summa-cum-laude-the-highest-of-the-latin-honors",
           title: 'Thesis Recognition: My PhD thesis, “Fast and Reliable AI-based Dosimetric Contour Quality Assurance...',
           description: "",
-          section: "News",},{id: "projects-context-versus-foreground-ratio",
-          title: 'Context versus foreground ratio',
-          description: "How 3D segmentation networks trade spatial context against class balance — Medical Imaging meets NeurIPS 2022",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/22-MedNeurIPS/";
-            },},{id: "projects-where-on-a-contour-does-an-edit-change-the-dose",
-          title: 'Where on a contour does an edit change the dose?',
-          description: "Estimating, point by point, how much a local organ-at-risk contour change alters the planned dose — EMBC 2023",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/23-EMBC/";
-            },},{id: "projects-how-sensitive-is-a-dose-predictor-to-the-contours-you-feed-it",
-          title: 'How sensitive is a dose predictor to the contours you feed it?',
-          description: "Dose prediction sensitivity to organ-at-risk segmentation variability — ISBI 2023 and Cancers 2023",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/23-ISBI/";
-            },},{id: "projects-24-miccaiw",
+          section: "News",},{id: "projects-24-miccaiw",
           title: '24 Miccaiw',
           description: "",
           section: "Projects",handler: () => {
@@ -486,21 +471,6 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/24-MIDL/";
-            },},{id: "projects-theme-correction",
-          title: 'Theme Correction',
-          description: "",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/Theme-Correction/";
-            },},{id: "projects-theme-dose-proposal",
-          title: 'Theme Dose Proposal',
-          description: "",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/Theme-Dose-Proposal/";
-            },},{id: "projects-theme-robustness",
-          title: 'Theme Robustness',
-          description: "",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/Theme-Robustness/";
             },},{id: "projects-interactive-image-registration-explorer",
           title: 'Interactive Image Registration Explorer',
           description: "Educational tool for understanding affine transformations through real-time image manipulation",
