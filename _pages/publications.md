@@ -58,7 +58,7 @@ _styles: >
 <li>
 <span class="pub-id">W2</span> <span class="pub-title">How do 3D image segmentation networks behave across the context versus foreground ratio trade-off?</span><br />
 <span class="pub-meta"><b>A. Kamath</b>, Y. Suter, S. You, M. Mueller, J. Willmann, N. Andratschke, M. Reyes · <i>Medical Imaging Meets NeurIPS Workshop</i>, 2022</span><br />
-<span class="pub-links"><a href="http://www.cse.cuhk.edu.hk/~qdou/public/medneurips2022/72.pdf">paper</a> · <a href="https://github.com/amithjkamath/context_vs_fbr">code</a> · <a href="/projects/22-MedNeurIPS/">project page</a></span>
+<span class="pub-links"><a href="http://www.cse.cuhk.edu.hk/~qdou/public/medneurips2022/72.pdf">paper</a> · <a href="https://github.com/amithjkamath/context_vs_fbr">code</a> · <a href="https://amithjkamath.github.io/context_vs_fbr/">project page</a></span>
 </li>
 </ul>
 
@@ -115,12 +115,12 @@ _styles: >
 <li>
 <span class="pub-id">J2</span> <span class="pub-title">Deep-learning-based dose predictor for glioblastoma: assessing the sensitivity and robustness for dose awareness in contouring</span><br />
 <span class="pub-meta">R. Poel, <b>A. Kamath</b>, J. Willmann, N. Andratschke, E. Ermiş, D. M. Aebersold, P. Manser, M. Reyes · <i>Cancers</i>, 2023</span><br />
-<span class="pub-links"><a href="https://www.mdpi.com/2072-6694/15/17/4226">paper</a> · <a href="/projects/23-ISBI/">project page</a></span>
+<span class="pub-links"><a href="https://www.mdpi.com/2072-6694/15/17/4226">paper</a> · <a href="https://amithjkamath.github.io/deepdosesens/">project page</a></span>
 </li>
 <li>
 <span class="pub-id">C4</span> <span class="pub-title">How sensitive are deep learning based radiotherapy dose prediction models to variability in organs at risk segmentation?</span><br />
 <span class="pub-meta"><b>A. Kamath</b>, R. Poel, J. Willmann, N. Andratschke, M. Reyes · <i>IEEE ISBI</i>, 2023</span><br />
-<span class="pub-links"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10230559">paper</a> · <a href="https://github.com/amithjkamath/deepdosesens">code</a> · <a href="https://www.youtube.com/watch?v=Lz5-n4lA3QM">talk</a> · <a href="/projects/23-ISBI/">project page</a></span>
+<span class="pub-links"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10230559">paper</a> · <a href="https://github.com/amithjkamath/deepdosesens">code</a> · <a href="https://www.youtube.com/watch?v=Lz5-n4lA3QM">talk</a> · <a href="https://amithjkamath.github.io/deepdosesens/">project page</a></span>
 </li>
 <li>
 <span class="pub-id">C3</span> <span class="pub-title">Evaluating a deep learning based 3D dose prediction model for quality assurance of organ at risk contours</span><br />
