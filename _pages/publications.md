@@ -74,7 +74,7 @@ _styles: >
 <li>
 <span class="pub-id">J7</span> <span class="pub-title">Predicting the impact of target volume contouring variations on the organ at risk dose: results of a qualitative survey</span><br />
 <span class="pub-meta">J. Willmann, <b>A. Kamath</b>, R. Poel, E. Riggenbach, L. Mose, J. Bertholet, S. Muller, D. Schmidhalter, N. Andratschke, E. Ermiş, et al. · <i>Radiotherapy and Oncology</i>, 2025</span><br />
-<span class="pub-links"><a href="https://www.sciencedirect.com/science/article/pii/S0167814025045037">paper</a> · <a href="/projects/24-MIDL/">project page</a></span>
+<span class="pub-links"><a href="https://www.sciencedirect.com/science/article/pii/S0167814025045037">paper</a> · <a href="https://amithjkamath.github.io/radonc-vs-dldp/">project page</a></span>
 </li>
 <li>
 <span class="pub-id">J6</span> <span class="pub-title">Efficient review of automatic contouring of OARs in the brain: a dual-layer quality assurance approach combining geometric and dosimetric validation</span><br />
@@ -89,7 +89,7 @@ _styles: >
 <li>
 <span class="pub-id">C8</span> <span class="pub-title">Comparing the performance of radiation oncologists versus a deep learning dose predictor to estimate dosimetric impact of segmentation variations</span><br />
 <span class="pub-meta"><b>A. Kamath</b>, Z. Mercado, R. Poel, J. Willmann, E. Ermiş, E. Riggenbach, N. Andratschke, M. Reyes · <i>MIDL</i>, 2024 · oral, 18% acceptance</span><br />
-<span class="pub-links"><a href="https://openreview.net/forum?id=SlMMyPqQTm">paper</a> · <a href="https://github.com/ubern-mia/radonc-vs-dldp">code</a> · <a href="https://youtu.be/Co9yUIAw6H0?t=3587">talk</a> · <a href="/projects/24-MIDL/">project page</a></span>
+<span class="pub-links"><a href="https://openreview.net/forum?id=SlMMyPqQTm">paper</a> · <a href="https://github.com/amithjkamath/radonc-vs-dldp">code</a> · <a href="https://youtu.be/Co9yUIAw6H0?t=3587">talk</a> · <a href="https://amithjkamath.github.io/radonc-vs-dldp/">project page</a></span>
 </li>
 <li>
 <span class="pub-id">C6</span> <span class="pub-title">Dose guidance for radiotherapy-oriented deep learning segmentation</span><br />
