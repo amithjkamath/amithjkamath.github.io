@@ -461,9 +461,9 @@ ninja.data = [{
           section: "News",},{id: "news-thesis-recognition-my-phd-thesis-fast-and-reliable-ai-based-dosimetric-contour-quality-assurance-for-radiotherapy-was-selected-as-a-finalist-for-the-gcb-best-thesis-award-2025-my-phd-degree-was-also-awarded-summa-cum-laude-the-highest-of-the-latin-honors",
           title: 'Thesis Recognition: My PhD thesis, “Fast and Reliable AI-based Dosimetric Contour Quality Assurance...',
           description: "",
-          section: "News",},{id: "projects-22-medneurips",
-          title: '22 Medneurips',
-          description: "",
+          section: "News",},{id: "projects-context-versus-foreground-ratio",
+          title: 'Context versus foreground ratio',
+          description: "How 3D segmentation networks trade spatial context against class balance — Medical Imaging meets NeurIPS 2022",
           section: "Projects",handler: () => {
               window.location.href = "/projects/22-MedNeurIPS/";
             },},{id: "projects-23-embc",
@@ -471,9 +471,9 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/23-EMBC/";
-            },},{id: "projects-23-isbi",
-          title: '23 Isbi',
-          description: "",
+            },},{id: "projects-how-sensitive-is-a-dose-predictor-to-the-contours-you-feed-it",
+          title: 'How sensitive is a dose predictor to the contours you feed it?',
+          description: "Dose prediction sensitivity to organ-at-risk segmentation variability — ISBI 2023 and Cancers 2023",
           section: "Projects",handler: () => {
               window.location.href = "/projects/23-ISBI/";
             },},{id: "projects-24-miccaiw",
