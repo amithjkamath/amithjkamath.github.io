@@ -99,7 +99,7 @@ _styles: >
 <li>
 <span class="pub-id">C5</span> <span class="pub-title">ASTRA: atomic surface transformations for radiotherapy quality assurance</span><br />
 <span class="pub-meta"><b>A. Kamath</b>, R. Poel, J. Willmann, E. Ermiş, N. Andratschke, M. Reyes · <i>IEEE EMBC</i>, 2023 · 🏆 2nd Best Student Paper Award</span><br />
-<span class="pub-links"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10341062">paper</a> · <a href="https://github.com/amithjkamath/astra">code</a> · <a href="https://www.youtube.com/watch?v=vghlJh8ACOY">talk</a> · <a href="/projects/23-EMBC/">project page</a></span>
+<span class="pub-links"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10341062">paper</a> · <a href="https://github.com/amithjkamath/astra">code</a> · <a href="https://www.youtube.com/watch?v=vghlJh8ACOY">talk</a> · <a href="https://amithjkamath.github.io/astra/">project page</a></span>
 </li>
 </ul>
 

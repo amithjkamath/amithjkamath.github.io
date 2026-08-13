@@ -137,7 +137,7 @@ The completed work established that:
 Each study keeps its own write-up next to its code, rather than being restated here:
 
 - **[How sensitive is a dose prediction model to the contours you feed it?](https://amithjkamath.github.io/deepdosesens/)**, IEEE ISBI 2023 and its Cancers 2023 journal extension. The cascaded 3D U-Net, the sensitivity experiment, the out-of-distribution stress tests, and every table recomputed from the archived volumes.
-- **[ASTRA](/projects/23-EMBC/)**, IEEE EMBC 2023. Turning local dose sensitivity into review maps that point a clinician at the contour regions worth checking.
+- **[ASTRA](https://amithjkamath.github.io/astra/)**, IEEE EMBC 2023. Turning local dose sensitivity into review maps that point a clinician at the contour regions worth checking.
 
 The full list, with links, is on the [publications page](/publications/#fast-and-sensitive-dose-prediction).
 
